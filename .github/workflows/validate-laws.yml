@@ -1,0 +1,32 @@
+name: Validate Legal Sources
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  validate-legal-repo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate legal Markdown sources
+        run: python scripts/validate_sources.py
+
+      - name: Check official source URLs
+        run: python scripts/check_urls.py
+
+      - name: Build index manifest
+        run: python scripts/build_index_manifest.py
+
+      - name: Show generated manifest
+        run: cat embeddings/index_manifest.json

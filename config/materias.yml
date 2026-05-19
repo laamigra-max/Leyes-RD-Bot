@@ -1,0 +1,67 @@
+# Materias reconocidas por Leyes-RD-Bot
+
+materias:
+  - id: consumidor
+    nombre: "Protección al consumidor"
+    descripcion: "Casos sobre compras, precios, garantías, publicidad engañosa, servicios defectuosos y reclamaciones ante Pro Consumidor."
+    carpeta: "consumidor"
+
+  - id: civil
+    nombre: "Derecho civil"
+    descripcion: "Contratos, obligaciones, deudas, daños y perjuicios, responsabilidad civil e incumplimientos."
+    carpeta: "civil"
+
+  - id: penal
+    nombre: "Derecho penal"
+    descripcion: "Querellas, denuncias, estafa, abuso de confianza, amenazas, falsificación, robos y procedimiento penal."
+    carpeta: "penal"
+
+  - id: inmobiliario
+    nombre: "Derecho inmobiliario"
+    descripcion: "Títulos, terrenos, propiedad, registro inmobiliario, compraventa de inmuebles y conflictos inmobiliarios."
+    carpeta: "inmobiliario"
+
+  - id: inquilinato
+    nombre: "Inquilinato y alquileres"
+    descripcion: "Alquileres, depósitos, desalojos, desahucios, mora y conflictos entre propietario e inquilino."
+    carpeta: "inmobiliario"
+
+  - id: constitucional
+    nombre: "Derecho constitucional"
+    descripcion: "Derechos fundamentales, debido proceso, propiedad, igualdad, tutela judicial efectiva y derecho de defensa."
+    carpeta: "constitucion"
+
+  - id: administrativo
+    nombre: "Derecho administrativo"
+    descripcion: "Reclamaciones ante instituciones públicas, actos administrativos, recursos administrativos y procedimientos ante el Estado."
+    carpeta: "administrativo"
+
+  - id: jurisprudencia
+    nombre: "Jurisprudencia"
+    descripcion: "Sentencias, precedentes y criterios judiciales relevantes."
+    carpeta: "jurisprudencia"
+
+  - id: bancario
+    nombre: "Derecho bancario y financiero"
+    descripcion: "Cuentas bloqueadas, transferencias fraudulentas, tarjetas, préstamos, reclamaciones bancarias y servicios financieros."
+    carpeta: "bancario"
+
+  - id: tributario
+    nombre: "Derecho tributario"
+    descripcion: "DGII, impuestos, comprobantes fiscales, obligaciones tributarias, multas fiscales y reclamaciones tributarias."
+    carpeta: "tributario"
+
+  - id: laboral
+    nombre: "Derecho laboral"
+    descripcion: "Despidos, renuncias, prestaciones, preaviso, cesantía, vacaciones, salario de Navidad y Ministerio de Trabajo."
+    carpeta: "laboral"
+
+  - id: familia
+    nombre: "Derecho de familia"
+    descripcion: "Manutención, custodia, divorcio, filiación, régimen de visitas, violencia intrafamiliar y menores de edad."
+    carpeta: "familia"
+
+  - id: transito
+    nombre: "Derecho de tránsito"
+    descripcion: "Accidentes, multas, licencias, DIGESETT, INTRANT, seguros, choques y responsabilidad por daños."
+    carpeta: "transito"

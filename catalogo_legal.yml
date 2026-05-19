@@ -49,7 +49,7 @@ fuentes:
     fuente_oficial: "https://www.proconsumidor.gob.do/files/Ley_General_de_Proteccin_de_los_Derechos_del_Consumidor_o_Usuario_No__358-05.pdf"
     autoridad: "Pro Consumidor"
     prioridad: "alta"
-    estado: "pendiente_de_cargar"
+    estado: "cargada_pendiente_verificacion_completa"
 
   - id: constitucion_rd
     titulo: "Constitución de la República Dominicana"

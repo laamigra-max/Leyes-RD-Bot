@@ -1,0 +1,44 @@
+[
+  {
+    "id_chunk": "ley_358_05_art_1",
+    "titulo_norma": "Ley General de Protección de los Derechos del Consumidor o Usuario",
+    "numero_norma": "358-05",
+    "tipo_norma": "ley_ordinaria",
+    "materia": ["consumidor"],
+    "articulo": "1",
+    "texto": "La presente ley tiene por objeto establecer un régimen de regulación para la protección y defensa de los derechos de los consumidores y usuarios, estableciendo las atribuciones e instituciones necesarias para garantizar esos derechos. En caso de duda, las disposiciones de esta ley serán interpretadas en la forma más favorable al consumidor.",
+    "archivo_repo": "consumidor/ley_358_05_proteccion_consumidor.md",
+    "fuente_oficial": "https://www.proconsumidor.gob.do/files/Ley_General_de_Proteccin_de_los_Derechos_del_Consumidor_o_Usuario_No__358-05.pdf",
+    "url_oficial": "https://www.proconsumidor.gob.do/files/Ley_General_de_Proteccin_de_los_Derechos_del_Consumidor_o_Usuario_No__358-05.pdf",
+    "estado_vigencia": "pendiente_de_verificacion",
+    "ultima_revision_repo": "2026-05-19"
+  },
+  {
+    "id_chunk": "ley_358_05_art_2",
+    "titulo_norma": "Ley General de Protección de los Derechos del Consumidor o Usuario",
+    "numero_norma": "358-05",
+    "tipo_norma": "ley_ordinaria",
+    "materia": ["consumidor"],
+    "articulo": "2",
+    "texto": "Esta ley será de orden público y de interés social.",
+    "archivo_repo": "consumidor/ley_358_05_proteccion_consumidor.md",
+    "fuente_oficial": "https://www.proconsumidor.gob.do/files/Ley_General_de_Proteccin_de_los_Derechos_del_Consumidor_o_Usuario_No__358-05.pdf",
+    "url_oficial": "https://www.proconsumidor.gob.do/files/Ley_General_de_Proteccin_de_los_Derechos_del_Consumidor_o_Usuario_No__358-05.pdf",
+    "estado_vigencia": "pendiente_de_verificacion",
+    "ultima_revision_repo": "2026-05-19"
+  },
+  {
+    "id_chunk": "ley_358_05_art_3",
+    "titulo_norma": "Ley General de Protección de los Derechos del Consumidor o Usuario",
+    "numero_norma": "358-05",
+    "tipo_norma": "ley_ordinaria",
+    "materia": ["consumidor"],
+    "articulo": "3",
+    "texto": "Las disposiciones de la presente ley son aplicables a todos los actos jurídicos celebrados entre proveedores y consumidores dentro del territorio nacional.",
+    "archivo_repo": "consumidor/ley_358_05_proteccion_consumidor.md",
+    "fuente_oficial": "https://www.proconsumidor.gob.do/files/Ley_General_de_Proteccin_de_los_Derechos_del_Consumidor_o_Usuario_No__358-05.pdf",
+    "url_oficial": "https://www.proconsumidor.gob.do/files/Ley_General_de_Proteccin_de_los_Derechos_del_Consumidor_o_Usuario_No__358-05.pdf",
+    "estado_vigencia": "pendiente_de_verificacion",
+    "ultima_revision_repo": "2026-05-19"
+  }
+]

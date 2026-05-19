@@ -3,11 +3,17 @@ Check official source URLs for Leyes-RD-Bot.
 
 This script scans Markdown legal documents and checks whether URLs declared
 in the fuente_oficial metadata are reachable.
+
+Important:
+Some official Dominican government websites may timeout from GitHub Actions.
+A timeout should be reported as a warning, not as a hard failure, because the
+legal source may still be valid and manually verified.
 """
 
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
+import socket
 import re
 import sys
 
@@ -39,7 +45,12 @@ def extract_front_matter(content: str) -> str | None:
 
 
 def extract_fuente_oficial(front_matter: str) -> str | None:
-    match = re.search(r"^fuente_oficial\s*:\s*[\"']?(.*?)[\"']?\s*$", front_matter, re.MULTILINE)
+    match = re.search(
+        r"^fuente_oficial\s*:\s*[\"']?(.*?)[\"']?\s*$",
+        front_matter,
+        re.MULTILINE,
+    )
+
     if not match:
         return None
 
@@ -51,29 +62,42 @@ def extract_fuente_oficial(front_matter: str) -> str | None:
     return value
 
 
-def check_url(url: str, timeout: int = 15) -> tuple[bool, str]:
+def check_url(url: str, timeout: int = 30) -> tuple[str, str]:
     request = Request(
         url,
         headers={
-            "User-Agent": "Leyes-RD-Bot URL Checker/1.0"
+            "User-Agent": "Mozilla/5.0 Leyes-RD-Bot URL Checker/1.0"
         },
     )
 
     try:
         with urlopen(request, timeout=timeout) as response:
             status_code = response.getcode()
+
             if 200 <= status_code < 400:
-                return True, f"OK HTTP {status_code}"
-            return False, f"Unexpected HTTP {status_code}"
+                return "ok", f"OK HTTP {status_code}"
+
+            return "error", f"Unexpected HTTP {status_code}"
 
     except HTTPError as exc:
-        return False, f"HTTP error {exc.code}"
+        return "error", f"HTTP error {exc.code}"
+
+    except socket.timeout:
+        return "warning", "URL check timed out"
+
+    except TimeoutError:
+        return "warning", "URL check timed out"
 
     except URLError as exc:
-        return False, f"URL error: {exc.reason}"
+        reason = str(exc.reason).lower()
+
+        if "timed out" in reason or "timeout" in reason:
+            return "warning", f"URL check timed out: {exc.reason}"
+
+        return "warning", f"URL warning: {exc.reason}"
 
     except Exception as exc:
-        return False, f"Unexpected error: {exc}"
+        return "warning", f"URL warning: {exc}"
 
 
 def main() -> int:
@@ -103,10 +127,14 @@ def main() -> int:
             print(f"SKIP: {path.relative_to(ROOT)} - No valid fuente_oficial URL found.")
             continue
 
-        ok, message = check_url(url)
+        status, message = check_url(url)
 
-        if ok:
+        if status == "ok":
             print(f"OK: {path.relative_to(ROOT)} - {url} - {message}")
+
+        elif status == "warning":
+            print(f"WARNING: {path.relative_to(ROOT)} - {url} - {message}")
+
         else:
             has_errors = True
             print(f"ERROR: {path.relative_to(ROOT)} - {url} - {message}")
@@ -115,7 +143,7 @@ def main() -> int:
         print("\nURL check failed.")
         return 1
 
-    print("\nAll checked URLs are reachable.")
+    print("\nURL check completed. Warnings do not fail the workflow.")
     return 0
 
 

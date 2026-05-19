@@ -1,0 +1,66 @@
+# Prioridad de fuentes legales - Leyes-RD-Bot
+
+objetivo:
+  descripcion: "Definir qué fuentes legales puede usar el bot y en qué orden debe priorizarlas."
+
+prioridad_de_fuentes:
+  - nivel: 1
+    tipo: "Constitución"
+    descripcion: "Constitución de la República Dominicana."
+    uso: "Fuente superior para derechos fundamentales, debido proceso, propiedad, igualdad, tutela judicial efectiva y garantías constitucionales."
+
+  - nivel: 2
+    tipo: "Tratados internacionales aplicables"
+    descripcion: "Tratados internacionales ratificados por la República Dominicana, cuando estén cargados en el repositorio."
+    uso: "Fuente complementaria o superior según corresponda constitucionalmente."
+
+  - nivel: 3
+    tipo: "Leyes orgánicas"
+    descripcion: "Leyes orgánicas vigentes cargadas en el repositorio."
+    uso: "Normas de alta jerarquía para materias institucionales o derechos fundamentales."
+
+  - nivel: 4
+    tipo: "Leyes ordinarias"
+    descripcion: "Leyes aprobadas por el Congreso Nacional y promulgadas por el Poder Ejecutivo."
+    uso: "Base principal para consumidor, civil, penal, inmobiliario, laboral, tributario, bancario, familia y tránsito."
+
+  - nivel: 5
+    tipo: "Códigos"
+    descripcion: "Código Civil, Código Penal, Código Procesal Penal, Código de Trabajo, Código Tributario u otros códigos cargados."
+    uso: "Base normativa principal según la materia."
+
+  - nivel: 6
+    tipo: "Decretos"
+    descripcion: "Decretos emitidos por el Poder Ejecutivo."
+    uso: "Aplican cuando regulan o complementan una ley."
+
+  - nivel: 7
+    tipo: "Reglamentos"
+    descripcion: "Reglamentos oficiales emitidos por autoridad competente."
+    uso: "Complementan leyes y procedimientos."
+
+  - nivel: 8
+    tipo: "Resoluciones administrativas"
+    descripcion: "Resoluciones de instituciones públicas como Pro Consumidor, DGII, Superintendencia de Bancos, Ministerio de Trabajo, INTRANT u otras."
+    uso: "Útiles para procedimientos, criterios administrativos y requisitos institucionales."
+
+  - nivel: 9
+    tipo: "Jurisprudencia"
+    descripcion: "Sentencias de la Suprema Corte de Justicia, Tribunal Constitucional u otros tribunales."
+    uso: "Criterios judiciales relevantes. No deben presentarse como texto de ley."
+
+  - nivel: 10
+    tipo: "Doctrina"
+    descripcion: "Comentarios, análisis o interpretaciones jurídicas de autores o instituciones."
+    uso: "Solo como apoyo interpretativo, nunca como fuente principal si existe norma legal aplicable."
+
+fuentes_no_permitidas_como_base_principal:
+  - "Blogs no oficiales"
+  - "Redes sociales"
+  - "Opiniones personales"
+  - "Noticias sin texto legal"
+  - "Comentarios de terceros sin fuente normativa"
+  - "Memoria del modelo"
+
+regla_final:
+  mensaje: "Si el bot no encuentra fuente legal suficiente en las fuentes cargadas, debe decir que no tiene base legal suficiente para afirmarlo."

@@ -1,0 +1,72 @@
+# Esquema del manifiesto de índice legal - Leyes-RD-Bot
+
+objetivo:
+  descripcion: "Definir cómo registrar los documentos procesados para el índice de búsqueda del bot."
+
+archivo_manifest_sugerido: "embeddings/index_manifest.json"
+
+campos_obligatorios_por_documento:
+  - id_documento
+  - titulo
+  - numero
+  - tipo_norma
+  - materia
+  - archivo_repo
+  - fuente_oficial
+  - url_oficial
+  - estado_vigencia
+  - fecha_indexacion
+  - total_chunks
+
+campos_obligatorios_por_chunk:
+  - id_chunk
+  - id_documento
+  - titulo_norma
+  - articulo
+  - materia
+  - archivo_repo
+  - fuente_oficial
+  - url_oficial
+  - estado_vigencia
+  - hash_texto
+
+estado_indexacion_permitido:
+  - pendiente
+  - indexado
+  - error
+  - requiere_revision
+  - removido
+
+reglas:
+  registrar_fecha_indexacion: true
+  registrar_total_chunks: true
+  registrar_hash_texto_por_chunk: true
+  bloquear_indexacion_sin_fuente: true
+  bloquear_indexacion_sin_metadata: true
+  permitir_indexacion_pendiente_vigencia: true
+  marcar_pendiente_vigencia_en_respuesta: true
+
+ejemplo_manifest_json: |
+  {
+    "version": "1.0.0",
+    "fecha_generacion": "2026-05-19",
+    "documentos": [
+      {
+        "id_documento": "ley_358_05_consumidor",
+        "titulo": "Ley General de Protección de los Derechos del Consumidor o Usuario",
+        "numero": "358-05",
+        "tipo_norma": "ley_ordinaria",
+        "materia": ["consumidor"],
+        "archivo_repo": "consumidor/ley_358_05_proteccion_consumidor.md",
+        "fuente_oficial": "Pro Consumidor",
+        "url_oficial": "https://www.proconsumidor.gob.do/",
+        "estado_vigencia": "pendiente_de_verificacion",
+        "fecha_indexacion": "2026-05-19",
+        "total_chunks": 120,
+        "estado_indexacion": "indexado"
+      }
+    ]
+  }
+
+regla_final:
+  mensaje: "El índice debe permitir auditar qué fuente legal usó el bot para cada respuesta."

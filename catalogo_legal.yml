@@ -51,6 +51,24 @@ fuentes:
     prioridad: "alta"
     estado: "cargada_pendiente_verificacion_completa"
 
+  - id: constitucion_rd_2024
+    titulo: "Constitución de la República Dominicana 2024"
+    materia:
+      - constitucional
+      - derechos_fundamentales
+      - debido_proceso
+      - propiedad
+      - igualdad
+      - dignidad_humana
+      - estado_social_democratico_de_derecho
+      - supremacia_constitucional
+    archivo_repo: "constitucion/constitucion_rd_2024.md"
+    fuente_oficial: "https://www.consultoria.gov.do/News/GetNewsDocument?newsId=9357"
+    autoridad: "Asamblea Nacional Revisora"
+    prioridad: "alta"
+    estado: "cargada_pendiente_verificacion_completa"
+    nota: "Constitución 2024 cargada como versión constitucional prioritaria pendiente de verificación completa del texto."
+
   - id: constitucion_rd_2015
     titulo: "Constitución de la República Dominicana 2015"
     materia:
@@ -64,9 +82,9 @@ fuentes:
     archivo_repo: "constitucion/constitucion_rd_2015.md"
     fuente_oficial: "https://presidencia.gob.do/sites/default/files/statics/transparencia/base-legal/Constitucion-de-la-Republica-Dominicana-2015-actualizada.pdf"
     autoridad: "Asamblea Nacional Revisora"
-    prioridad: "alta"
+    prioridad: "media"
     estado: "cargada_historica_pendiente_verificacion"
-    nota: "Pendiente cargar y validar Constitución 2024 como versión vigente."
+    nota: "Documento histórico. Priorizar Constitución 2024 para consultas actuales cuando esté cargada y validada."
 
   - id: codigo_civil_rd
     titulo: "Código Civil de la República Dominicana"

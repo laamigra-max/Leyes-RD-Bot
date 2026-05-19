@@ -5,7 +5,7 @@
   "description": "Manifest del índice legal usado por el bot jurídico dominicano.",
   "generated_at": "2026-05-19",
   "status": "ready",
-  "total_documents": 1,
+  "total_documents": 2,
   "documents": [
     {
       "id_documento": "ley_358_05",
@@ -23,11 +23,29 @@
       "total_chunks": 3,
       "estado_indexacion": "indexado",
       "chunk_file": "embeddings/ley_358_05_chunks.json"
+    },
+    {
+      "id_documento": "constitucion_rd_2015",
+      "titulo": "Constitución de la República Dominicana 2015",
+      "numero": "",
+      "tipo_norma": "constitucion",
+      "materia": [
+        "constitucional"
+      ],
+      "archivo_repo": "constitucion/constitucion_rd_2015.md",
+      "fuente_oficial": "https://presidencia.gob.do/sites/default/files/statics/transparencia/base-legal/Constitucion-de-la-Republica-Dominicana-2015-actualizada.pdf",
+      "url_oficial": "https://presidencia.gob.do/sites/default/files/statics/transparencia/base-legal/Constitucion-de-la-Republica-Dominicana-2015-actualizada.pdf",
+      "estado_vigencia": "historica_pendiente_verificacion",
+      "fecha_indexacion": "2026-05-19",
+      "total_chunks": 8,
+      "estado_indexacion": "indexado",
+      "chunk_file": "embeddings/constitucion_rd_2015_chunks.json"
     }
   ],
   "notes": [
     "Este archivo registra los documentos legales procesados para búsqueda semántica.",
     "Cada documento indexado debe incluir metadata, fuente oficial, archivo del repositorio, estado de vigencia y total de chunks.",
-    "El bot no debe usar documentos que no estén correctamente registrados o validados."
+    "El bot no debe usar documentos que no estén correctamente registrados o validados.",
+    "La Constitución 2015 fue cargada como documento histórico pendiente de verificación frente a la Constitución 2024."
   ]
 }

@@ -1,0 +1,66 @@
+# Política de división de documentos legales - Leyes-RD-Bot
+
+objetivo:
+  descripcion: "Definir cómo dividir leyes, códigos, decretos, reglamentos y sentencias para que el bot pueda recuperar fuentes precisas."
+
+estrategia_general:
+  dividir_por_articulo: true
+  mantener_titulo_de_la_norma_en_cada_chunk: true
+  mantener_metadata_en_cada_chunk: true
+  mantener_url_oficial_en_cada_chunk: true
+  mantener_archivo_repo_en_cada_chunk: true
+
+tipos_de_chunk:
+  articulo:
+    descripcion: "Fragmento principal para leyes, códigos, decretos y reglamentos."
+    identificador_sugerido: "[id_norma]_art_[numero_articulo]"
+    ejemplo: "ley_358_05_art_1"
+
+  seccion:
+    descripcion: "Fragmento usado cuando el documento no está organizado por artículos."
+    identificador_sugerido: "[id_norma]_seccion_[numero]"
+    ejemplo: "guia_proconsumidor_seccion_1"
+
+  sentencia:
+    descripcion: "Fragmento usado para decisiones judiciales."
+    identificador_sugerido: "[tribunal]_[numero_sentencia]_[tema]"
+    ejemplo: "tc_0123_2024_debido_proceso"
+
+campos_obligatorios_por_chunk:
+  - id_chunk
+  - titulo_norma
+  - numero_norma
+  - tipo_norma
+  - materia
+  - articulo
+  - texto
+  - archivo_repo
+  - fuente_oficial
+  - url_oficial
+  - estado_vigencia
+  - ultima_revision_repo
+
+reglas:
+  no_mezclar_articulos_distintos_en_un_mismo_chunk: true
+  permitir_chunk_largo_si_el_articulo_es_largo: true
+  permitir_subdivision_de_articulo_largo: true
+  mantener_numero_articulo_original: true
+  no_resumir_texto_legal_en_el_chunk: true
+  conservar_texto_literal: true
+
+subdivision_de_articulos_largos:
+  habilitada: true
+  max_caracteres_aproximado: 3500
+  formato_id: "[id_norma]_art_[numero_articulo]_parte_[numero_parte]"
+  regla: "Si un artículo es muy largo, dividirlo en partes sin alterar el texto literal."
+
+validacion:
+  rechazar_chunk_si_falta:
+    - texto
+    - articulo
+    - titulo_norma
+    - archivo_repo
+    - fuente_oficial
+
+regla_final:
+  mensaje: "Cada chunk debe permitir rastrear la respuesta del bot hasta una ley, artículo, archivo del repositorio y fuente oficial."

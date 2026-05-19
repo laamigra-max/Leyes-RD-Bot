@@ -51,19 +51,22 @@ fuentes:
     prioridad: "alta"
     estado: "cargada_pendiente_verificacion_completa"
 
-  - id: constitucion_rd
-    titulo: "Constitución de la República Dominicana"
+  - id: constitucion_rd_2015
+    titulo: "Constitución de la República Dominicana 2015"
     materia:
       - constitucional
       - derechos_fundamentales
       - debido_proceso
       - propiedad
       - igualdad
-    archivo_repo: "constitucion/constitucion_rd.md"
-    fuente_oficial: "https://www.consultoria.gov.do/"
-    autoridad: "Consultoría Jurídica del Poder Ejecutivo"
+      - dignidad_humana
+      - estado_social_democratico_de_derecho
+    archivo_repo: "constitucion/constitucion_rd_2015.md"
+    fuente_oficial: "https://presidencia.gob.do/sites/default/files/statics/transparencia/base-legal/Constitucion-de-la-Republica-Dominicana-2015-actualizada.pdf"
+    autoridad: "Asamblea Nacional Revisora"
     prioridad: "alta"
-    estado: "pendiente_de_cargar"
+    estado: "cargada_historica_pendiente_verificacion"
+    nota: "Pendiente cargar y validar Constitución 2024 como versión vigente."
 
   - id: codigo_civil_rd
     titulo: "Código Civil de la República Dominicana"

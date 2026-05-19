@@ -2,12 +2,31 @@
   "project": "Leyes-RD-Bot",
   "version": "1.0.0",
   "country": "República Dominicana",
-  "description": "Manifest inicial del índice legal usado por el bot jurídico dominicano.",
-  "generated_at": null,
-  "status": "pending",
-  "documents": [],
+  "description": "Manifest del índice legal usado por el bot jurídico dominicano.",
+  "generated_at": "2026-05-19",
+  "status": "ready",
+  "total_documents": 1,
+  "documents": [
+    {
+      "id_documento": "ley_358_05",
+      "titulo": "Ley General de Protección de los Derechos del Consumidor o Usuario",
+      "numero": "358-05",
+      "tipo_norma": "ley_ordinaria",
+      "materia": [
+        "consumidor"
+      ],
+      "archivo_repo": "consumidor/ley_358_05_proteccion_consumidor.md",
+      "fuente_oficial": "https://www.proconsumidor.gob.do/files/Ley_General_de_Proteccin_de_los_Derechos_del_Consumidor_o_Usuario_No__358-05.pdf",
+      "url_oficial": "https://www.proconsumidor.gob.do/files/Ley_General_de_Proteccin_de_los_Derechos_del_Consumidor_o_Usuario_No__358-05.pdf",
+      "estado_vigencia": "pendiente_de_verificacion",
+      "fecha_indexacion": "2026-05-19",
+      "total_chunks": 3,
+      "estado_indexacion": "indexado",
+      "chunk_file": "embeddings/ley_358_05_chunks.json"
+    }
+  ],
   "notes": [
-    "Este archivo registrará los documentos legales procesados para búsqueda semántica.",
+    "Este archivo registra los documentos legales procesados para búsqueda semántica.",
     "Cada documento indexado debe incluir metadata, fuente oficial, archivo del repositorio, estado de vigencia y total de chunks.",
     "El bot no debe usar documentos que no estén correctamente registrados o validados."
   ]

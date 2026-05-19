@@ -1,0 +1,204 @@
+# Palabras clave para clasificar consultas legales - Leyes-RD-Bot
+
+objetivo:
+  descripcion: "Ayudar al bot a identificar la materia legal aplicable según palabras clave usadas por el usuario."
+
+clasificador:
+  consumidor:
+    palabras_clave:
+      - "pro consumidor"
+      - "consumidor"
+      - "garantía"
+      - "garantia"
+      - "precio"
+      - "oferta"
+      - "publicidad engañosa"
+      - "publicidad enganosa"
+      - "producto defectuoso"
+      - "devolución"
+      - "devolucion"
+      - "factura"
+      - "tienda"
+      - "proveedor"
+      - "servicio no prestado"
+      - "reclamación"
+      - "reclamacion"
+
+  civil:
+    palabras_clave:
+      - "contrato"
+      - "deuda"
+      - "incumplimiento"
+      - "daños y perjuicios"
+      - "danos y perjuicios"
+      - "responsabilidad civil"
+      - "demanda civil"
+      - "obligación"
+      - "obligacion"
+      - "pago"
+      - "recibo"
+      - "acto bajo firma privada"
+
+  penal:
+    palabras_clave:
+      - "estafa"
+      - "fraude"
+      - "abuso de confianza"
+      - "robo"
+      - "amenaza"
+      - "falsificación"
+      - "falsificacion"
+      - "querella"
+      - "denuncia"
+      - "fiscalía"
+      - "fiscalia"
+      - "ministerio público"
+      - "ministerio publico"
+      - "prisión"
+      - "prision"
+      - "arresto"
+
+  inmobiliario:
+    palabras_clave:
+      - "inmueble"
+      - "casa"
+      - "apartamento"
+      - "solar"
+      - "terreno"
+      - "título"
+      - "titulo"
+      - "registro inmobiliario"
+      - "deslinde"
+      - "propiedad"
+      - "condominio"
+      - "venta de inmueble"
+      - "promesa de venta"
+
+  inquilinato:
+    palabras_clave:
+      - "alquiler"
+      - "inquilino"
+      - "propietario"
+      - "arrendador"
+      - "arrendatario"
+      - "desalojo"
+      - "desahucio"
+      - "depósito"
+      - "deposito"
+      - "renta"
+      - "mora"
+      - "contrato de alquiler"
+
+  constitucional:
+    palabras_clave:
+      - "constitución"
+      - "constitucion"
+      - "derecho fundamental"
+      - "debido proceso"
+      - "tutela judicial efectiva"
+      - "derecho de defensa"
+      - "igualdad"
+      - "dignidad humana"
+      - "derecho de propiedad"
+
+  administrativo:
+    palabras_clave:
+      - "institución pública"
+      - "institucion publica"
+      - "administración pública"
+      - "administracion publica"
+      - "acto administrativo"
+      - "recurso administrativo"
+      - "silencio administrativo"
+      - "ministerio"
+      - "ayuntamiento"
+      - "resolución administrativa"
+      - "resolucion administrativa"
+
+  bancario:
+    palabras_clave:
+      - "banco"
+      - "cuenta bloqueada"
+      - "transferencia"
+      - "tarjeta de crédito"
+      - "tarjeta de credito"
+      - "préstamo"
+      - "prestamo"
+      - "superintendencia de bancos"
+      - "transacción no reconocida"
+      - "transaccion no reconocida"
+      - "fraude bancario"
+      - "buró de crédito"
+      - "buro de credito"
+
+  tributario:
+    palabras_clave:
+      - "dgii"
+      - "impuesto"
+      - "itbis"
+      - "isr"
+      - "rnc"
+      - "comprobante fiscal"
+      - "ncf"
+      - "facturación"
+      - "facturacion"
+      - "multa tributaria"
+      - "código tributario"
+      - "codigo tributario"
+
+  laboral:
+    palabras_clave:
+      - "despido"
+      - "renuncia"
+      - "dimisión"
+      - "dimision"
+      - "prestaciones laborales"
+      - "preaviso"
+      - "cesantía"
+      - "cesantia"
+      - "vacaciones"
+      - "salario de navidad"
+      - "horas extras"
+      - "ministerio de trabajo"
+      - "contrato de trabajo"
+
+  familia:
+    palabras_clave:
+      - "manutención"
+      - "manutencion"
+      - "pensión alimentaria"
+      - "pension alimentaria"
+      - "custodia"
+      - "guarda"
+      - "divorcio"
+      - "filiación"
+      - "filiacion"
+      - "régimen de visitas"
+      - "regimen de visitas"
+      - "violencia intrafamiliar"
+      - "menor de edad"
+
+  transito:
+    palabras_clave:
+      - "accidente"
+      - "choque"
+      - "multa"
+      - "digesett"
+      - "intrant"
+      - "licencia"
+      - "seguro"
+      - "vehículo"
+      - "vehiculo"
+      - "tránsito"
+      - "transito"
+      - "retención de vehículo"
+      - "retencion de vehiculo"
+
+reglas:
+  permitir_multiples_materias: true
+  materia_default_si_no_detecta: "pendiente_de_clasificacion"
+  exigir_busqueda_en_repositorio: true
+  no_responder_solo_por_palabra_clave: true
+
+nota:
+  texto: "La clasificación por palabras clave solo orienta la búsqueda. La respuesta final debe basarse en fuentes legales recuperadas del repositorio."

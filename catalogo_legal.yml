@@ -1,0 +1,131 @@
+# Catálogo legal principal del Bot de Leyes de República Dominicana
+
+proyecto:
+  nombre: "Leyes-RD-Bot"
+  descripcion: "Base legal dominicana para alimentar un bot jurídico con fuentes verificables."
+  pais: "República Dominicana"
+  alcance_inicial:
+    - "Web"
+    - "ChatGPT / GPT personalizado"
+  excluido_por_ahora:
+    - "Aplicación móvil"
+    - "WhatsApp"
+    - "Telegram"
+
+reglas_generales:
+  - "No inventar leyes, artículos, plazos, jurisprudencia ni procedimientos."
+  - "Responder únicamente con base en documentos cargados en este repositorio o fuentes oficiales verificadas."
+  - "Citar siempre ley, artículo, materia, archivo del repositorio y URL oficial cuando esté disponible."
+  - "Si no existe fuente suficiente, indicar que no hay base legal suficiente en las fuentes cargadas."
+  - "Distinguir entre orientación informativa y asesoría legal formal."
+
+materias:
+  - consumidor
+  - civil
+  - penal
+  - inmobiliario
+  - inquilinato
+  - constitucional
+  - administrativo
+  - jurisprudencia
+
+fuentes:
+  - id: ley_358_05_consumidor
+    titulo: "Ley General de Protección de los Derechos del Consumidor o Usuario"
+    numero: "358-05"
+    materia:
+      - consumidor
+      - publicidad_engañosa
+      - garantia
+      - reclamaciones
+      - proveedor
+      - consumidor
+    archivo_repo: "consumidor/ley_358_05_proteccion_consumidor.md"
+    fuente_oficial: "https://www.proconsumidor.gob.do/files/Ley_General_de_Proteccin_de_los_Derechos_del_Consumidor_o_Usuario_No__358-05.pdf"
+    autoridad: "Pro Consumidor"
+    prioridad: "alta"
+    estado: "pendiente_de_cargar"
+
+  - id: constitucion_rd
+    titulo: "Constitución de la República Dominicana"
+    materia:
+      - constitucional
+      - derechos_fundamentales
+      - debido_proceso
+      - propiedad
+      - igualdad
+    archivo_repo: "constitucion/constitucion_rd.md"
+    fuente_oficial: "https://www.consultoria.gov.do/"
+    autoridad: "Consultoría Jurídica del Poder Ejecutivo"
+    prioridad: "alta"
+    estado: "pendiente_de_cargar"
+
+  - id: codigo_civil_rd
+    titulo: "Código Civil de la República Dominicana"
+    materia:
+      - civil
+      - contratos
+      - obligaciones
+      - responsabilidad_civil
+      - danos_y_perjuicios
+    archivo_repo: "civil/codigo_civil_rd.md"
+    fuente_oficial: "https://www.oas.org/dil/esp/C%C3%B3digo%20Civil%20de%20la%20Rep%C3%BAblica%20Dominicana.pdf"
+    autoridad: "OEA"
+    prioridad: "alta"
+    estado: "pendiente_de_cargar"
+
+  - id: codigo_procesal_penal_76_02
+    titulo: "Código Procesal Penal de la República Dominicana"
+    numero: "76-02"
+    materia:
+      - penal
+      - procedimiento_penal
+      - querella
+      - denuncia
+      - ministerio_publico
+    archivo_repo: "penal/codigo_procesal_penal_76_02.md"
+    fuente_oficial: "https://poderjudicial.gob.do/wp-content/uploads/2021/06/Codigo_Procesal_Penal.pdf"
+    autoridad: "Poder Judicial"
+    prioridad: "alta"
+    estado: "pendiente_de_cargar"
+
+  - id: ley_4314_inquilinato
+    titulo: "Ley 4314 sobre prestación, aplicación y devolución de los valores en el inquilinato"
+    numero: "4314"
+    materia:
+      - inmobiliario
+      - inquilinato
+      - alquiler
+      - deposito
+    archivo_repo: "inmobiliario/ley_4314_inquilinato.md"
+    fuente_oficial: "https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/4314.pdf"
+    autoridad: "DGII"
+    prioridad: "alta"
+    estado: "pendiente_de_cargar"
+
+  - id: decreto_4807_alquileres
+    titulo: "Decreto 4807 sobre Control de Alquileres y Desahucios"
+    materia:
+      - inmobiliario
+      - inquilinato
+      - alquiler
+      - desalojo
+      - desahucio
+    archivo_repo: "inmobiliario/decreto_4807_control_alquileres.md"
+    fuente_oficial: "https://dgii.gov.do/legislacion/decretos/Documents/2007/Decreto48-07.pdf"
+    autoridad: "DGII"
+    prioridad: "alta"
+    estado: "pendiente_de_cargar"
+
+  - id: ley_5038_condominios
+    titulo: "Ley 5038 sobre Condominios"
+    numero: "5038"
+    materia:
+      - inmobiliario
+      - condominio
+      - propiedad
+    archivo_repo: "inmobiliario/ley_5038_condominios.md"
+    fuente_oficial: "https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/5038.pdf"
+    autoridad: "DGII"
+    prioridad: "alta"
+    estado: "pendiente_de_cargar"

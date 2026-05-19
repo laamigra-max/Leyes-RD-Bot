@@ -5,7 +5,7 @@
   "description": "Manifest del índice legal usado por el bot jurídico dominicano.",
   "generated_at": "2026-05-19",
   "status": "ready",
-  "total_documents": 2,
+  "total_documents": 3,
   "documents": [
     {
       "id_documento": "ley_358_05",
@@ -23,6 +23,23 @@
       "total_chunks": 3,
       "estado_indexacion": "indexado",
       "chunk_file": "embeddings/ley_358_05_chunks.json"
+    },
+    {
+      "id_documento": "constitucion_rd_2024",
+      "titulo": "Constitución de la República Dominicana 2024",
+      "numero": "",
+      "tipo_norma": "constitucion",
+      "materia": [
+        "constitucional"
+      ],
+      "archivo_repo": "constitucion/constitucion_rd_2024.md",
+      "fuente_oficial": "https://www.consultoria.gov.do/News/GetNewsDocument?newsId=9357",
+      "url_oficial": "https://www.consultoria.gov.do/News/GetNewsDocument?newsId=9357",
+      "estado_vigencia": "pendiente_de_verificacion",
+      "fecha_indexacion": "2026-05-19",
+      "total_chunks": 8,
+      "estado_indexacion": "indexado",
+      "chunk_file": "embeddings/constitucion_rd_2024_chunks.json"
     },
     {
       "id_documento": "constitucion_rd_2015",
@@ -46,6 +63,7 @@
     "Este archivo registra los documentos legales procesados para búsqueda semántica.",
     "Cada documento indexado debe incluir metadata, fuente oficial, archivo del repositorio, estado de vigencia y total de chunks.",
     "El bot no debe usar documentos que no estén correctamente registrados o validados.",
-    "La Constitución 2015 fue cargada como documento histórico pendiente de verificación frente a la Constitución 2024."
+    "La Constitución 2024 debe priorizarse para consultas constitucionales actuales, aunque su estado está pendiente de verificación completa.",
+    "La Constitución 2015 se conserva como documento histórico pendiente de verificación."
   ]
 }

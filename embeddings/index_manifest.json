@@ -1,0 +1,14 @@
+{
+  "project": "Leyes-RD-Bot",
+  "version": "1.0.0",
+  "country": "República Dominicana",
+  "description": "Manifest inicial del índice legal usado por el bot jurídico dominicano.",
+  "generated_at": null,
+  "status": "pending",
+  "documents": [],
+  "notes": [
+    "Este archivo registrará los documentos legales procesados para búsqueda semántica.",
+    "Cada documento indexado debe incluir metadata, fuente oficial, archivo del repositorio, estado de vigencia y total de chunks.",
+    "El bot no debe usar documentos que no estén correctamente registrados o validados."
+  ]
+}

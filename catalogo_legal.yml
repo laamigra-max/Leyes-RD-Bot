@@ -28,6 +28,11 @@ materias:
   - constitucional
   - administrativo
   - jurisprudencia
+  - bancario
+  - tributario
+  - laboral
+  - familia
+  - transito
 
 fuentes:
   - id: ley_358_05_consumidor

@@ -1,0 +1,103 @@
+# Política de recuperación de fuentes - Leyes-RD-Bot
+
+objetivo:
+  descripcion: "Definir cómo el bot debe buscar, seleccionar y usar fuentes legales antes de responder."
+
+busqueda:
+  fuente_principal: "Repositorio GitHub Leyes-RD-Bot"
+  usar_busqueda_semantica: true
+  usar_busqueda_por_palabras_clave: true
+  combinar_resultados: true
+
+parametros:
+  max_documentos_recuperados: 8
+  minimo_documentos_relevantes: 1
+  exigir_articulo_para_conclusion_legal: true
+  exigir_fuente_oficial: true
+  permitir_fuente_pendiente_vigencia: true
+  permitir_respuesta_general_sin_articulo: false
+
+prioridad_de_busqueda_por_materia:
+  consumidor:
+    - "consumidor/"
+    - "civil/"
+    - "jurisprudencia/"
+
+  civil:
+    - "civil/"
+    - "jurisprudencia/"
+
+  penal:
+    - "penal/"
+    - "constitucion/"
+    - "jurisprudencia/"
+
+  inmobiliario:
+    - "inmobiliario/"
+    - "civil/"
+    - "jurisprudencia/"
+
+  inquilinato:
+    - "inmobiliario/"
+    - "civil/"
+    - "jurisprudencia/"
+
+  constitucional:
+    - "constitucion/"
+    - "jurisprudencia/"
+
+  administrativo:
+    - "administrativo/"
+    - "constitucion/"
+    - "jurisprudencia/"
+
+  bancario:
+    - "bancario/"
+    - "civil/"
+    - "penal/"
+    - "jurisprudencia/"
+
+  tributario:
+    - "tributario/"
+    - "administrativo/"
+    - "jurisprudencia/"
+
+  laboral:
+    - "laboral/"
+    - "jurisprudencia/"
+
+  familia:
+    - "familia/"
+    - "civil/"
+    - "penal/"
+    - "jurisprudencia/"
+
+  transito:
+    - "transito/"
+    - "civil/"
+    - "penal/"
+    - "jurisprudencia/"
+
+reglas_de_rechazo:
+  - condicion: "No se encontró ninguna fuente relevante."
+    respuesta: "No tengo base legal suficiente en las fuentes cargadas para afirmarlo."
+
+  - condicion: "Se encontró una fuente, pero no contiene artículo específico."
+    respuesta: "No encontré un artículo específico en las fuentes cargadas para sostener esa afirmación."
+
+  - condicion: "La norma aparece como pendiente de verificación de vigencia."
+    respuesta: "La fuente fue encontrada, pero su vigencia está pendiente de verificación."
+
+  - condicion: "La consulta requiere una ley que no está cargada en el repositorio."
+    respuesta: "Para responder correctamente, sería necesario cargar o verificar la ley aplicable."
+
+reglas_de_citas:
+  citar_ley: true
+  citar_numero: true
+  citar_articulo: true
+  citar_archivo_repo: true
+  citar_url_oficial: true
+  citar_estado_vigencia: true
+
+regla_final:
+  mensaje: "El bot debe preferir una respuesta limitada y bien citada antes que una respuesta amplia sin fuente."

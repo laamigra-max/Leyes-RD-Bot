@@ -1,0 +1,76 @@
+# Validación de documentos legales - Leyes-RD-Bot
+
+objetivo:
+  descripcion: "Definir los requisitos mínimos que debe cumplir cada documento legal cargado en el repositorio."
+
+campos_obligatorios:
+  - titulo
+  - numero
+  - tipo_norma
+  - pais
+  - materia
+  - autoridad_emisora
+  - fuente_oficial
+  - estado_vigencia
+  - ultima_revision_repo
+
+campos_recomendados:
+  - fecha_promulgacion
+  - archivo_original_pdf
+  - fecha_descarga
+  - hash_sha256_pdf
+  - notas
+  - modificaciones_conocidas
+  - leyes_relacionadas
+
+estructura_obligatoria_markdown:
+  - "Información general"
+  - "Advertencia de uso"
+  - "Texto legal"
+  - "Artículo"
+
+reglas:
+  exigir_fuente_oficial: true
+  exigir_estado_vigencia: true
+  exigir_materia: true
+  exigir_separacion_por_articulos: true
+  permitir_documento_sin_numero: true
+  permitir_documento_pendiente_vigencia: true
+  bloquear_documento_sin_fuente: true
+
+estado_vigencia_permitido:
+  - vigente
+  - derogada
+  - modificada
+  - pendiente_de_verificacion
+  - parcialmente_vigente
+
+tipos_norma_permitidos:
+  - constitucion
+  - tratado
+  - ley_organica
+  - ley_ordinaria
+  - codigo
+  - decreto
+  - reglamento
+  - resolucion
+  - sentencia
+  - doctrina
+  - guia_administrativa
+
+validacion_de_citas:
+  cada_articulo_debe_tener:
+    - numero_articulo
+    - texto
+    - ley_o_norma
+    - archivo_repo
+    - fuente_oficial
+
+rechazar_si:
+  - "No tiene fuente oficial."
+  - "No indica materia."
+  - "No contiene texto legal."
+  - "No permite identificar la ley, código, decreto, reglamento o sentencia."
+  - "No contiene artículos separados cuando la norma sí tiene artículos."
+
+mensaje_error_default: "El documento no cumple con los requisitos mínimos para ser usado como fuente legal del bot."

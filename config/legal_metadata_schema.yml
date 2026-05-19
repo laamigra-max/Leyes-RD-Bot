@@ -1,0 +1,117 @@
+# Esquema de metadata legal - Leyes-RD-Bot
+
+objetivo:
+  descripcion: "Definir los campos de metadata que debe tener cada documento legal para ser usado por el bot."
+
+campos_obligatorios:
+  titulo:
+    descripcion: "Nombre oficial de la ley, código, decreto, reglamento, resolución o sentencia."
+    ejemplo: "Ley General de Protección de los Derechos del Consumidor o Usuario"
+
+  numero:
+    descripcion: "Número de la norma, si aplica."
+    ejemplo: "358-05"
+
+  tipo_norma:
+    descripcion: "Tipo de documento legal."
+    valores_permitidos:
+      - constitucion
+      - tratado
+      - ley_organica
+      - ley_ordinaria
+      - codigo
+      - decreto
+      - reglamento
+      - resolucion
+      - sentencia
+      - doctrina
+      - guia_administrativa
+
+  pais:
+    descripcion: "País de aplicación."
+    valor_default: "República Dominicana"
+
+  materia:
+    descripcion: "Materia o materias legales relacionadas."
+    valores_permitidos:
+      - consumidor
+      - civil
+      - penal
+      - inmobiliario
+      - inquilinato
+      - constitucional
+      - administrativo
+      - jurisprudencia
+      - bancario
+      - tributario
+      - laboral
+      - familia
+      - transito
+
+  autoridad_emisora:
+    descripcion: "Entidad que emitió o publicó la fuente."
+    ejemplo: "Pro Consumidor"
+
+  fuente_oficial:
+    descripcion: "URL oficial o fuente primaria de donde se obtuvo el documento."
+    ejemplo: "https://www.proconsumidor.gob.do/"
+
+  estado_vigencia:
+    descripcion: "Estado de vigencia registrado en el repositorio."
+    valores_permitidos:
+      - vigente
+      - derogada
+      - modificada
+      - parcialmente_vigente
+      - pendiente_de_verificacion
+
+  ultima_revision_repo:
+    descripcion: "Fecha en que el documento fue revisado o cargado en el repositorio."
+    formato: "YYYY-MM-DD"
+
+campos_recomendados:
+  fecha_promulgacion:
+    descripcion: "Fecha de promulgación de la norma."
+    formato: "YYYY-MM-DD"
+
+  fecha_publicacion:
+    descripcion: "Fecha de publicación oficial, si está disponible."
+    formato: "YYYY-MM-DD"
+
+  gaceta_oficial:
+    descripcion: "Número de Gaceta Oficial, si está disponible."
+
+  archivo_original_pdf:
+    descripcion: "Ruta del PDF original guardado en sources_pdf/."
+
+  hash_sha256_pdf:
+    descripcion: "Hash SHA256 del PDF original para control de integridad."
+
+  modificaciones_conocidas:
+    descripcion: "Leyes, decretos o sentencias que modifican esta norma."
+
+  leyes_relacionadas:
+    descripcion: "Otras normas relacionadas con esta fuente."
+
+  notas:
+    descripcion: "Observaciones internas de revisión."
+
+ejemplo_front_matter_markdown: |
+  ---
+  titulo: "Ley General de Protección de los Derechos del Consumidor o Usuario"
+  numero: "358-05"
+  tipo_norma: "ley_ordinaria"
+  pais: "República Dominicana"
+  materia:
+    - consumidor
+  fecha_promulgacion: "2005-09-09"
+  autoridad_emisora: "Pro Consumidor"
+  fuente_oficial: "https://www.proconsumidor.gob.do/"
+  archivo_original_pdf: "sources_pdf/ley_358_05.pdf"
+  estado_vigencia: "pendiente_de_verificacion"
+  ultima_revision_repo: "2026-05-19"
+  notas: "Documento pendiente de revisión final de vigencia."
+  ---
+
+regla_final:
+  mensaje: "Todo documento legal debe tener metadata suficiente para permitir citas verificables."

@@ -20,6 +20,7 @@ Cada fuente debe presentarse así:
 - Materia:
 - Archivo del repositorio:
 - Fuente oficial:
+- URL oficial:
 - Estado de vigencia:
 
 ## Reglas obligatorias
@@ -28,12 +29,32 @@ Cada fuente debe presentarse así:
 2. Citar siempre el artículo específico cuando esté disponible.
 3. Citar el archivo exacto del repositorio usado como fuente.
 4. Citar la URL oficial cuando esté disponible.
-5. No citar memoria del modelo.
-6. No usar blogs, opiniones o redes sociales como fuente principal si existe una ley oficial.
-7. No mezclar doctrina, jurisprudencia y ley sin aclarar la diferencia.
-8. Si una ley está pendiente de verificación de vigencia, indicarlo claramente.
-9. Si la fuente recuperada no contiene artículo exacto, decirlo expresamente.
-10. Si hay conflicto entre fuentes, priorizar la Constitución, leyes vigentes, códigos, decretos y luego jurisprudencia.
+5. Indicar el estado de vigencia registrado en el repositorio.
+6. No citar memoria del modelo.
+7. No usar blogs, opiniones, redes sociales o artículos no oficiales como fuente principal si existe una fuente oficial.
+8. No mezclar doctrina, jurisprudencia y ley sin aclarar la diferencia.
+9. Si una ley está pendiente de verificación de vigencia, indicarlo claramente.
+10. Si la fuente recuperada no contiene artículo exacto, decirlo expresamente.
+11. Si hay conflicto entre fuentes, priorizar la fuente de mayor jerarquía normativa.
+12. Si el repositorio no contiene una ley necesaria para responder, indicar que la ley debe ser cargada o verificada antes de emitir una conclusión.
+
+## Materias reconocidas para citación
+
+El bot puede citar fuentes relacionadas con estas materias:
+
+- consumidor
+- civil
+- penal
+- inmobiliario
+- inquilinato
+- constitucional
+- administrativo
+- jurisprudencia
+- bancario
+- tributario
+- laboral
+- familia
+- transito
 
 ## Jerarquía normativa de referencia
 
@@ -48,6 +69,24 @@ Cada fuente debe presentarse así:
 9. Jurisprudencia.
 10. Doctrina.
 
+## Diferencia entre tipos de fuente
+
+### Ley, código, decreto o reglamento
+
+Puede usarse como base normativa principal si está vigente o pendiente de verificación.
+
+### Jurisprudencia
+
+Debe citarse como criterio judicial, no como texto de ley.
+
+### Doctrina
+
+Debe citarse solo como apoyo interpretativo, nunca como fuente principal si existe ley aplicable.
+
+### Fuente administrativa
+
+Puede usarse para procedimientos ante instituciones públicas, siempre indicando la institución emisora.
+
 ## Ejemplo de cita correcta
 
 Base legal encontrada:
@@ -60,6 +99,10 @@ Base legal encontrada:
    - URL oficial: https://www.proconsumidor.gob.do/
    - Estado de vigencia: pendiente de verificación
 
-## Frase obligatoria cuando falte fuente
+## Frase obligatoria cuando falte artículo específico
 
 "No encontré un artículo específico en las fuentes cargadas para sostener esa afirmación."
+
+## Frase obligatoria cuando falte fuente suficiente
+
+"No tengo base legal suficiente en las fuentes cargadas para afirmarlo."

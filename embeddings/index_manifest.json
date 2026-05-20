@@ -5,7 +5,7 @@
   "description": "Manifest del índice legal usado por el bot jurídico dominicano.",
   "generated_at": "2026-05-19",
   "status": "ready",
-  "total_documents": 3,
+  "total_documents": 4,
   "documents": [
     {
       "id_documento": "ley_358_05",
@@ -57,6 +57,23 @@
       "total_chunks": 8,
       "estado_indexacion": "indexado",
       "chunk_file": "embeddings/constitucion_rd_2015_chunks.json"
+    },
+    {
+      "id_documento": "codigo_civil_rd",
+      "titulo": "Código Civil de la República Dominicana",
+      "numero": "",
+      "tipo_norma": "codigo",
+      "materia": [
+        "civil"
+      ],
+      "archivo_repo": "civil/codigo_civil_rd.md",
+      "fuente_oficial": "https://www.oas.org/dil/esp/C%C3%B3digo%20Civil%20de%20la%20Rep%C3%BAblica%20Dominicana.pdf",
+      "url_oficial": "https://www.oas.org/dil/esp/C%C3%B3digo%20Civil%20de%20la%20Rep%C3%BAblica%20Dominicana.pdf",
+      "estado_vigencia": "pendiente_de_verificacion",
+      "fecha_indexacion": "2026-05-19",
+      "total_chunks": 6,
+      "estado_indexacion": "indexado",
+      "chunk_file": "embeddings/codigo_civil_rd_chunks.json"
     }
   ],
   "notes": [
@@ -64,6 +81,7 @@
     "Cada documento indexado debe incluir metadata, fuente oficial, archivo del repositorio, estado de vigencia y total de chunks.",
     "El bot no debe usar documentos que no estén correctamente registrados o validados.",
     "La Constitución 2024 debe priorizarse para consultas constitucionales actuales, aunque su estado está pendiente de verificación completa.",
-    "La Constitución 2015 se conserva como documento histórico pendiente de verificación."
+    "La Constitución 2015 se conserva como documento histórico pendiente de verificación.",
+    "El Código Civil fue cargado desde una fuente de la OEA y debe verificarse contra una fuente dominicana oficial o versión consolidada vigente."
   ]
 }

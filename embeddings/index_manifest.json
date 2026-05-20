@@ -5,7 +5,7 @@
   "description": "Manifest del índice legal usado por el bot jurídico dominicano.",
   "generated_at": "2026-05-19",
   "status": "ready",
-  "total_documents": 6,
+  "total_documents": 7,
   "documents": [
     {
       "id_documento": "ley_358_05",
@@ -68,6 +68,21 @@
       "chunk_file": "embeddings/codigo_civil_rd_chunks.json"
     },
     {
+      "id_documento": "codigo_penal_74_25",
+      "titulo": "Código Penal de la República Dominicana",
+      "numero": "74-25",
+      "tipo_norma": "ley_organica",
+      "materia": ["penal"],
+      "archivo_repo": "penal/codigo_penal_74_25.md",
+      "fuente_oficial": "https://www.consultoria.gov.do/News/GetNewsDocument?newsId=9359",
+      "url_oficial": "https://www.consultoria.gov.do/News/GetNewsDocument?newsId=9359",
+      "estado_vigencia": "pendiente_de_verificacion",
+      "fecha_indexacion": "2026-05-19",
+      "total_chunks": 2,
+      "estado_indexacion": "indexado",
+      "chunk_file": "embeddings/codigo_penal_74_25_chunks.json"
+    },
+    {
       "id_documento": "codigo_procesal_penal_97_25",
       "titulo": "Código Procesal Penal de la República Dominicana",
       "numero": "97-25",
@@ -105,6 +120,7 @@
     "La Constitución 2024 debe priorizarse para consultas constitucionales actuales, aunque su estado está pendiente de verificación completa.",
     "La Constitución 2015 se conserva como documento histórico pendiente de verificación.",
     "El Código Civil fue cargado desde una fuente de la OEA y debe verificarse contra una fuente dominicana oficial o versión consolidada vigente.",
+    "El Código Penal Ley 74-25 fue cargado inicialmente con artículos 392 y 393. El PDF original fue dividido en dos partes por límite de tamaño.",
     "La Ley 97-25 debe priorizarse para consultas procesales penales actuales, pendiente de verificación completa de texto, entrada en vigencia, derogaciones y disposiciones transitorias.",
     "La Ley 76-02 se conserva como fuente anterior pendiente de verificación frente a la Ley 97-25."
   ]

@@ -1,0 +1,30 @@
+[
+  {
+    "id_chunk": "codigo_penal_74_25_art_392",
+    "titulo_norma": "Código Penal de la República Dominicana",
+    "numero_norma": "74-25",
+    "tipo_norma": "ley_organica",
+    "materia": ["penal"],
+    "articulo": "392",
+    "texto": "Se mantienen vigentes las leyes especiales que definan tipos penales no previstos en este código.",
+    "archivo_repo": "penal/codigo_penal_74_25.md",
+    "fuente_oficial": "https://www.consultoria.gov.do/News/GetNewsDocument?newsId=9359",
+    "url_oficial": "https://www.consultoria.gov.do/News/GetNewsDocument?newsId=9359",
+    "estado_vigencia": "pendiente_de_verificacion",
+    "ultima_revision_repo": "2026-05-19"
+  },
+  {
+    "id_chunk": "codigo_penal_74_25_art_393",
+    "titulo_norma": "Código Penal de la República Dominicana",
+    "numero_norma": "74-25",
+    "tipo_norma": "ley_organica",
+    "materia": ["penal"],
+    "articulo": "393",
+    "texto": "La presente ley entrará en vigencia a partir de los doce meses de su promulgación y publicación.",
+    "archivo_repo": "penal/codigo_penal_74_25.md",
+    "fuente_oficial": "https://www.consultoria.gov.do/News/GetNewsDocument?newsId=9359",
+    "url_oficial": "https://www.consultoria.gov.do/News/GetNewsDocument?newsId=9359",
+    "estado_vigencia": "pendiente_de_verificacion",
+    "ultima_revision_repo": "2026-05-19"
+  }
+]

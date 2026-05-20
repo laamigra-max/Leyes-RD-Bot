@@ -5,16 +5,14 @@
   "description": "Manifest del índice legal usado por el bot jurídico dominicano.",
   "generated_at": "2026-05-19",
   "status": "ready",
-  "total_documents": 4,
+  "total_documents": 5,
   "documents": [
     {
       "id_documento": "ley_358_05",
       "titulo": "Ley General de Protección de los Derechos del Consumidor o Usuario",
       "numero": "358-05",
       "tipo_norma": "ley_ordinaria",
-      "materia": [
-        "consumidor"
-      ],
+      "materia": ["consumidor"],
       "archivo_repo": "consumidor/ley_358_05_proteccion_consumidor.md",
       "fuente_oficial": "https://www.proconsumidor.gob.do/files/Ley_General_de_Proteccin_de_los_Derechos_del_Consumidor_o_Usuario_No__358-05.pdf",
       "url_oficial": "https://www.proconsumidor.gob.do/files/Ley_General_de_Proteccin_de_los_Derechos_del_Consumidor_o_Usuario_No__358-05.pdf",
@@ -29,9 +27,7 @@
       "titulo": "Constitución de la República Dominicana 2024",
       "numero": "",
       "tipo_norma": "constitucion",
-      "materia": [
-        "constitucional"
-      ],
+      "materia": ["constitucional"],
       "archivo_repo": "constitucion/constitucion_rd_2024.md",
       "fuente_oficial": "https://www.consultoria.gov.do/News/GetNewsDocument?newsId=9357",
       "url_oficial": "https://www.consultoria.gov.do/News/GetNewsDocument?newsId=9357",
@@ -46,9 +42,7 @@
       "titulo": "Constitución de la República Dominicana 2015",
       "numero": "",
       "tipo_norma": "constitucion",
-      "materia": [
-        "constitucional"
-      ],
+      "materia": ["constitucional"],
       "archivo_repo": "constitucion/constitucion_rd_2015.md",
       "fuente_oficial": "https://presidencia.gob.do/sites/default/files/statics/transparencia/base-legal/Constitucion-de-la-Republica-Dominicana-2015-actualizada.pdf",
       "url_oficial": "https://presidencia.gob.do/sites/default/files/statics/transparencia/base-legal/Constitucion-de-la-Republica-Dominicana-2015-actualizada.pdf",
@@ -63,9 +57,7 @@
       "titulo": "Código Civil de la República Dominicana",
       "numero": "",
       "tipo_norma": "codigo",
-      "materia": [
-        "civil"
-      ],
+      "materia": ["civil"],
       "archivo_repo": "civil/codigo_civil_rd.md",
       "fuente_oficial": "https://www.oas.org/dil/esp/C%C3%B3digo%20Civil%20de%20la%20Rep%C3%BAblica%20Dominicana.pdf",
       "url_oficial": "https://www.oas.org/dil/esp/C%C3%B3digo%20Civil%20de%20la%20Rep%C3%BAblica%20Dominicana.pdf",
@@ -74,6 +66,21 @@
       "total_chunks": 6,
       "estado_indexacion": "indexado",
       "chunk_file": "embeddings/codigo_civil_rd_chunks.json"
+    },
+    {
+      "id_documento": "codigo_procesal_penal_76_02",
+      "titulo": "Código Procesal Penal de la República Dominicana",
+      "numero": "76-02",
+      "tipo_norma": "codigo",
+      "materia": ["penal", "procedimiento_penal"],
+      "archivo_repo": "penal/codigo_procesal_penal_76_02.md",
+      "fuente_oficial": "https://pgr.gob.do/wpfd_file/ley-no-76-02/",
+      "url_oficial": "https://pgr.gob.do/wpfd_file/ley-no-76-02/",
+      "estado_vigencia": "pendiente_de_verificacion",
+      "fecha_indexacion": "2026-05-19",
+      "total_chunks": 5,
+      "estado_indexacion": "indexado",
+      "chunk_file": "embeddings/codigo_procesal_penal_76_02_chunks.json"
     }
   ],
   "notes": [
@@ -82,6 +89,7 @@
     "El bot no debe usar documentos que no estén correctamente registrados o validados.",
     "La Constitución 2024 debe priorizarse para consultas constitucionales actuales, aunque su estado está pendiente de verificación completa.",
     "La Constitución 2015 se conserva como documento histórico pendiente de verificación.",
-    "El Código Civil fue cargado desde una fuente de la OEA y debe verificarse contra una fuente dominicana oficial o versión consolidada vigente."
+    "El Código Civil fue cargado desde una fuente de la OEA y debe verificarse contra una fuente dominicana oficial o versión consolidada vigente.",
+    "El Código Procesal Penal Ley 76-02 fue cargado como fuente pendiente de verificación frente a la Ley núm. 97-25."
   ]
 }

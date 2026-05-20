@@ -5,7 +5,7 @@
   "description": "Manifest del índice legal usado por el bot jurídico dominicano.",
   "generated_at": "2026-05-19",
   "status": "ready",
-  "total_documents": 5,
+  "total_documents": 6,
   "documents": [
     {
       "id_documento": "ley_358_05",
@@ -68,6 +68,21 @@
       "chunk_file": "embeddings/codigo_civil_rd_chunks.json"
     },
     {
+      "id_documento": "codigo_procesal_penal_97_25",
+      "titulo": "Código Procesal Penal de la República Dominicana",
+      "numero": "97-25",
+      "tipo_norma": "ley_organica",
+      "materia": ["penal", "procedimiento_penal"],
+      "archivo_repo": "penal/codigo_procesal_penal_97_25.md",
+      "fuente_oficial": "https://www.consultoria.gov.do/Documents/GetDocument?reference=3d44f7a1-8bbb-4b9f-8564-90f3bad77acb",
+      "url_oficial": "https://www.consultoria.gov.do/Documents/GetDocument?reference=3d44f7a1-8bbb-4b9f-8564-90f3bad77acb",
+      "estado_vigencia": "pendiente_de_verificacion",
+      "fecha_indexacion": "2026-05-19",
+      "total_chunks": 5,
+      "estado_indexacion": "indexado",
+      "chunk_file": "embeddings/codigo_procesal_penal_97_25_chunks.json"
+    },
+    {
       "id_documento": "codigo_procesal_penal_76_02",
       "titulo": "Código Procesal Penal de la República Dominicana",
       "numero": "76-02",
@@ -90,6 +105,7 @@
     "La Constitución 2024 debe priorizarse para consultas constitucionales actuales, aunque su estado está pendiente de verificación completa.",
     "La Constitución 2015 se conserva como documento histórico pendiente de verificación.",
     "El Código Civil fue cargado desde una fuente de la OEA y debe verificarse contra una fuente dominicana oficial o versión consolidada vigente.",
-    "El Código Procesal Penal Ley 76-02 fue cargado como fuente pendiente de verificación frente a la Ley núm. 97-25."
+    "La Ley 97-25 debe priorizarse para consultas procesales penales actuales, pendiente de verificación completa de texto, entrada en vigencia, derogaciones y disposiciones transitorias.",
+    "La Ley 76-02 se conserva como fuente anterior pendiente de verificación frente a la Ley 97-25."
   ]
 }

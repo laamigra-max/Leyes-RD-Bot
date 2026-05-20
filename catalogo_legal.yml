@@ -98,7 +98,7 @@ fuentes:
     fuente_oficial: "https://www.oas.org/dil/esp/C%C3%B3digo%20Civil%20de%20la%20Rep%C3%BAblica%20Dominicana.pdf"
     autoridad: "OEA"
     prioridad: "alta"
-    estado: "pendiente_de_cargar"
+    estado: "cargada_pendiente_verificacion_completa"
 
   - id: codigo_procesal_penal_76_02
     titulo: "Código Procesal Penal de la República Dominicana"

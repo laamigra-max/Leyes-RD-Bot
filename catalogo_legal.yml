@@ -100,7 +100,7 @@ fuentes:
     prioridad: "alta"
     estado: "cargada_pendiente_verificacion_completa"
 
-  - id: codigo_procesal_penal_76_02
+   - id: codigo_procesal_penal_76_02
     titulo: "Código Procesal Penal de la República Dominicana"
     numero: "76-02"
     materia:
@@ -109,11 +109,15 @@ fuentes:
       - querella
       - denuncia
       - ministerio_publico
+      - garantias_procesales
+      - imputado
+      - victima
     archivo_repo: "penal/codigo_procesal_penal_76_02.md"
-    fuente_oficial: "https://poderjudicial.gob.do/wp-content/uploads/2021/06/Codigo_Procesal_Penal.pdf"
-    autoridad: "Poder Judicial"
-    prioridad: "alta"
-    estado: "pendiente_de_cargar"
+    fuente_oficial: "https://pgr.gob.do/wpfd_file/ley-no-76-02/"
+    autoridad: "Procuraduría General de la República"
+    prioridad: "media"
+    estado: "cargada_pendiente_verificacion_frente_ley_97_25"
+    nota: "Pendiente verificar vigencia y transición frente a la Ley núm. 97-25 que instituye el nuevo Código Procesal Penal."
 
   - id: ley_4314_inquilinato
     titulo: "Ley 4314 sobre prestación, aplicación y devolución de los valores en el inquilinato"

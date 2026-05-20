@@ -100,6 +100,23 @@ fuentes:
     prioridad: "alta"
     estado: "cargada_pendiente_verificacion_completa"
 
+  - id: codigo_penal_74_25
+    titulo: "Código Penal de la República Dominicana"
+    numero: "74-25"
+    materia:
+      - penal
+      - codigo_penal
+      - tipos_penales
+      - penas
+      - leyes_especiales_penales
+      - entrada_en_vigencia
+    archivo_repo: "penal/codigo_penal_74_25.md"
+    fuente_oficial: "https://www.consultoria.gov.do/News/GetNewsDocument?newsId=9359"
+    autoridad: "Consultoría Jurídica del Poder Ejecutivo"
+    prioridad: "alta"
+    estado: "cargada_pendiente_verificacion_completa"
+    nota: "Ley núm. 74-25 orgánica que instituye el Código Penal de la República Dominicana. PDF original dividido en dos partes por límite de tamaño. Pendiente completar texto íntegro, verificar entrada en vigencia, derogaciones y disposiciones transitorias."
+
   - id: codigo_procesal_penal_97_25
     titulo: "Código Procesal Penal de la República Dominicana"
     numero: "97-25"

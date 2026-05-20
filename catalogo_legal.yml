@@ -100,6 +100,26 @@ fuentes:
     prioridad: "alta"
     estado: "cargada_pendiente_verificacion_completa"
 
+  - id: codigo_procesal_penal_97_25
+    titulo: "Código Procesal Penal de la República Dominicana"
+    numero: "97-25"
+    materia:
+      - penal
+      - procedimiento_penal
+      - querella
+      - denuncia
+      - ministerio_publico
+      - garantias_procesales
+      - imputado
+      - victima
+      - nuevo_codigo_procesal_penal
+    archivo_repo: "penal/codigo_procesal_penal_97_25.md"
+    fuente_oficial: "https://www.consultoria.gov.do/Documents/GetDocument?reference=3d44f7a1-8bbb-4b9f-8564-90f3bad77acb"
+    autoridad: "Consultoría Jurídica del Poder Ejecutivo"
+    prioridad: "alta"
+    estado: "cargada_pendiente_verificacion_completa"
+    nota: "Ley núm. 97-25 orgánica que instituye el Código Procesal Penal de la República Dominicana. Pendiente verificar texto completo, entrada en vigencia, derogaciones y disposiciones transitorias."
+   
    - id: codigo_procesal_penal_76_02
     titulo: "Código Procesal Penal de la República Dominicana"
     numero: "76-02"

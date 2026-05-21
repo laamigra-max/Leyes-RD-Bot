@@ -178,17 +178,23 @@ fuentes:
   
   - id: decreto_4807_alquileres
     titulo: "Decreto 4807 sobre Control de Alquileres y Desahucios"
+    numero: "4807"
     materia:
       - inmobiliario
       - inquilinato
       - alquiler
+      - control_de_alquileres
       - desalojo
       - desahucio
-    archivo_repo: "inmobiliario/decreto_4807_control_alquileres.md"
+      - aumento_de_renta
+      - falta_de_pago
+      - subalquiler
+    archivo_repo: "inmobiliario/decreto_4807_control_alquileres_desahucios.md"
     fuente_oficial: "https://dgii.gov.do/legislacion/decretos/Documents/2007/Decreto48-07.pdf"
     autoridad: "DGII"
     prioridad: "alta"
-    estado: "pendiente_de_cargar"
+    estado: "cargada_pendiente_verificacion_completa"
+    nota: "Documento inicial cargado desde fuente oficial de DGII. Pendiente completar texto íntegro, verificar modificaciones, vigencia, aplicación actual y jurisprudencia relacionada."
 
   - id: ley_5038_condominios
     titulo: "Ley 5038 sobre Condominios"

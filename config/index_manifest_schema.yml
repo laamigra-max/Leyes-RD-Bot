@@ -13,10 +13,14 @@ campos_obligatorios_por_documento:
   - materia
   - archivo_repo
   - fuente_oficial
-  - url_oficial
+  - tipo_fuente
+  - url_descarga_pdf
+  - archivo_original_pdf
   - estado_vigencia
   - fecha_indexacion
   - total_chunks
+  - estado_indexacion
+  - chunk_file
 
 campos_obligatorios_por_chunk:
   - id_chunk
@@ -26,7 +30,9 @@ campos_obligatorios_por_chunk:
   - materia
   - archivo_repo
   - fuente_oficial
-  - url_oficial
+  - tipo_fuente
+  - url_descarga_pdf
+  - archivo_original_pdf
   - estado_vigencia
   - hash_texto
 
@@ -37,11 +43,23 @@ estado_indexacion_permitido:
   - requiere_revision
   - removido
 
+tipo_fuente_permitido:
+  - pdf_oficial
+  - pagina_oficial_descarga
+  - endpoint_documento_oficial
+  - pdf_oficial_con_bloqueo_automatizado
+  - fuente_externa_pendiente_verificacion
+  - fuente_historica
+  - pendiente_de_identificar
+
 reglas:
   registrar_fecha_indexacion: true
   registrar_total_chunks: true
   registrar_hash_texto_por_chunk: true
   bloquear_indexacion_sin_fuente: true
+  bloquear_indexacion_sin_tipo_fuente: true
+  bloquear_indexacion_sin_url_descarga_o_valor_pendiente: true
+  bloquear_indexacion_sin_archivo_original_pdf: true
   bloquear_indexacion_sin_metadata: true
   permitir_indexacion_pendiente_vigencia: true
   marcar_pendiente_vigencia_en_respuesta: true
@@ -58,15 +76,18 @@ ejemplo_manifest_json: |
         "tipo_norma": "ley_ordinaria",
         "materia": ["consumidor"],
         "archivo_repo": "consumidor/ley_358_05_proteccion_consumidor.md",
-        "fuente_oficial": "Pro Consumidor",
-        "url_oficial": "https://www.proconsumidor.gob.do/",
+        "fuente_oficial": "https://www.proconsumidor.gob.do/files/Ley_General_de_Proteccin_de_los_Derechos_del_Consumidor_o_Usuario_No__358-05.pdf",
+        "tipo_fuente": "pdf_oficial",
+        "url_descarga_pdf": "https://www.proconsumidor.gob.do/files/Ley_General_de_Proteccin_de_los_Derechos_del_Consumidor_o_Usuario_No__358-05.pdf",
+        "archivo_original_pdf": "sources_pdf/ley_358_05_proteccion_consumidor.pdf",
         "estado_vigencia": "pendiente_de_verificacion",
         "fecha_indexacion": "2026-05-19",
         "total_chunks": 120,
-        "estado_indexacion": "indexado"
+        "estado_indexacion": "indexado",
+        "chunk_file": "embeddings/ley_358_05_chunks.json"
       }
     ]
   }
 
 regla_final:
-  mensaje: "El índice debe permitir auditar qué fuente legal usó el bot para cada respuesta."
+  mensaje: "El índice debe permitir auditar qué fuente legal usó el bot para cada respuesta, incluyendo fuente oficial, tipo de fuente, URL de descarga y archivo original."

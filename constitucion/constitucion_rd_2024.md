@@ -20,14 +20,25 @@ notas: "Documento inicial cargado desde fuente oficial de la Consultoría Juríd
 
 ## Información general
 
-- Título: Constitución de la República Dominicana 2024
-- Tipo de norma: Constitución
-- Materia: Derecho constitucional
-- Autoridad emisora: Asamblea Nacional Revisora
-- Fecha de proclamación: 2024-10-27
-- Fuente oficial: Consultoría Jurídica del Poder Ejecutivo
-- Estado de vigencia: pendiente_de_verificacion
-- Última revisión en el repositorio: 2026-05-19
+---
+titulo: "Constitución de la República Dominicana 2024"
+numero: ""
+tipo_norma: "constitucion"
+pais: "República Dominicana"
+materia:
+  - constitucional
+fecha_promulgacion: "2024-10-27"
+fecha_publicacion: ""
+gaceta_oficial: ""
+autoridad_emisora: "Asamblea Nacional Revisora"
+fuente_oficial: "https://www.consultoria.gov.do/News/GetNewsDocument?newsId=9357"
+tipo_fuente: "endpoint_documento_oficial"
+url_descarga_pdf: "https://www.consultoria.gov.do/News/GetNewsDocument?newsId=9357"
+archivo_original_pdf: "sources_pdf/constitucion_rd_2024.pdf"
+estado_vigencia: "pendiente_de_verificacion"
+ultima_revision_repo: "2026-05-19"
+notas: "Documento inicial cargado desde fuente oficial de la Consultoría Jurídica del Poder Ejecutivo. Pendiente completar texto íntegro y verificar publicación oficial."
+---
 
 ## Advertencia de uso
 

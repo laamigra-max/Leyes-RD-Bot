@@ -1,0 +1,44 @@
+[
+  {
+    "id_chunk": "decreto_4807_art_1",
+    "titulo_norma": "Decreto 4807 sobre Control de Alquileres y Desahucios",
+    "numero_norma": "4807",
+    "tipo_norma": "decreto",
+    "materia": ["inmobiliario", "inquilinato"],
+    "articulo": "1",
+    "texto": "Se crea el Control de Alquileres de Casas y Desahucios, como organismo encargado de aplicar las disposiciones relativas al alquiler de casas, apartamentos, habitaciones y piezas destinadas a viviendas, comercio, industria, oficinas o cualquier otro uso.",
+    "archivo_repo": "inmobiliario/decreto_4807_control_alquileres_desahucios.md",
+    "fuente_oficial": "https://dgii.gov.do/legislacion/decretos/Documents/2007/Decreto48-07.pdf",
+    "url_oficial": "https://dgii.gov.do/legislacion/decretos/Documents/2007/Decreto48-07.pdf",
+    "estado_vigencia": "pendiente_de_verificacion",
+    "ultima_revision_repo": "2026-05-19"
+  },
+  {
+    "id_chunk": "decreto_4807_art_2",
+    "titulo_norma": "Decreto 4807 sobre Control de Alquileres y Desahucios",
+    "numero_norma": "4807",
+    "tipo_norma": "decreto",
+    "materia": ["inmobiliario", "inquilinato"],
+    "articulo": "2",
+    "texto": "Ningún propietario podrá aumentar el precio del alquiler de casas, apartamentos, habitaciones o piezas sin la autorización previa del Control de Alquileres de Casas y Desahucios.",
+    "archivo_repo": "inmobiliario/decreto_4807_control_alquileres_desahucios.md",
+    "fuente_oficial": "https://dgii.gov.do/legislacion/decretos/Documents/2007/Decreto48-07.pdf",
+    "url_oficial": "https://dgii.gov.do/legislacion/decretos/Documents/2007/Decreto48-07.pdf",
+    "estado_vigencia": "pendiente_de_verificacion",
+    "ultima_revision_repo": "2026-05-19"
+  },
+  {
+    "id_chunk": "decreto_4807_art_3",
+    "titulo_norma": "Decreto 4807 sobre Control de Alquileres y Desahucios",
+    "numero_norma": "4807",
+    "tipo_norma": "decreto",
+    "materia": ["inmobiliario", "inquilinato"],
+    "articulo": "3",
+    "texto": "Queda prohibido el desahucio del inquilino por persecución del propietario, salvo en los casos previstos por este decreto, entre ellos la falta de pago del alquiler, el uso del inmueble para fines distintos de los convenidos, o el subalquiler cuando esté prohibido.",
+    "archivo_repo": "inmobiliario/decreto_4807_control_alquileres_desahucios.md",
+    "fuente_oficial": "https://dgii.gov.do/legislacion/decretos/Documents/2007/Decreto48-07.pdf",
+    "url_oficial": "https://dgii.gov.do/legislacion/decretos/Documents/2007/Decreto48-07.pdf",
+    "estado_vigencia": "pendiente_de_verificacion",
+    "ultima_revision_repo": "2026-05-19"
+  }
+]

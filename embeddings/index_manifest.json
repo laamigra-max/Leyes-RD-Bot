@@ -5,7 +5,7 @@
   "description": "Manifest del índice legal usado por el bot jurídico dominicano.",
   "generated_at": "2026-05-19",
   "status": "ready",
-  "total_documents": 8,
+  "total_documents": 9,
   "documents": [
     {
       "id_documento": "ley_358_05",
@@ -83,6 +83,21 @@
       "chunk_file": "embeddings/ley_4314_inquilinato_chunks.json"
     },
     {
+      "id_documento": "decreto_4807_alquileres",
+      "titulo": "Decreto 4807 sobre Control de Alquileres y Desahucios",
+      "numero": "4807",
+      "tipo_norma": "decreto",
+      "materia": ["inmobiliario", "inquilinato"],
+      "archivo_repo": "inmobiliario/decreto_4807_control_alquileres_desahucios.md",
+      "fuente_oficial": "https://dgii.gov.do/legislacion/decretos/Documents/2007/Decreto48-07.pdf",
+      "url_oficial": "https://dgii.gov.do/legislacion/decretos/Documents/2007/Decreto48-07.pdf",
+      "estado_vigencia": "pendiente_de_verificacion",
+      "fecha_indexacion": "2026-05-19",
+      "total_chunks": 3,
+      "estado_indexacion": "indexado",
+      "chunk_file": "embeddings/decreto_4807_control_alquileres_desahucios_chunks.json"
+    },
+    {
       "id_documento": "codigo_penal_74_25",
       "titulo": "Código Penal de la República Dominicana",
       "numero": "74-25",
@@ -136,6 +151,7 @@
     "La Constitución 2015 se conserva como documento histórico pendiente de verificación.",
     "El Código Civil fue cargado desde una fuente de la OEA y debe verificarse contra una fuente dominicana oficial o versión consolidada vigente.",
     "La Ley 4314 fue cargada inicialmente con el artículo 1 sobre depósitos, adelantos, anticipos u otros valores exigidos en contratos de alquiler. Pendiente completar texto íntegro, Ley 17-88 y jurisprudencia constitucional relacionada.",
+    "El Decreto 4807 fue cargado inicialmente con artículos 1, 2 y 3 sobre Control de Alquileres de Casas y Desahucios, aumento de renta y prohibición de desahucio salvo causas previstas. Pendiente completar texto íntegro, verificar modificaciones, vigencia y jurisprudencia relacionada.",
     "El Código Penal Ley 74-25 fue cargado inicialmente con artículos 392 y 393. El PDF original fue dividido en dos partes por límite de tamaño.",
     "La Ley 97-25 debe priorizarse para consultas procesales penales actuales, pendiente de verificación completa de texto, entrada en vigencia, derogaciones y disposiciones transitorias.",
     "La Ley 76-02 se conserva como fuente anterior pendiente de verificación frente a la Ley 97-25."

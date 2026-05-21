@@ -1,0 +1,16 @@
+[
+  {
+    "id_chunk": "ley_4314_inquilinato_art_1",
+    "titulo_norma": "Ley 4314 sobre prestación, aplicación y devolución de los valores en el inquilinato",
+    "numero_norma": "4314",
+    "tipo_norma": "ley_ordinaria",
+    "materia": ["inmobiliario", "inquilinato"],
+    "articulo": "1",
+    "texto": "Los propietarios y encargados de casas, apartamentos, edificios, oficinas y espacios físicos para alquiler en las zonas urbanas y suburbanas; o de almacenes, naves industriales y similares, así como de instalaciones para servicios turísticos, hoteleros o de recreación cualquiera que sea su ubicación, estarán obligados a depositar y mantener en el Banco Agrícola las sumas que exijan a los inquilinos o empresarios como depósito, adelanto, anticipo u otra denominación, para garantizar el pago de los alquileres o el cumplimiento de cualquier otra obligación legal o convencional derivada del contrato.",
+    "archivo_repo": "inmobiliario/ley_4314_inquilinato.md",
+    "fuente_oficial": "https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/4314.pdf",
+    "url_oficial": "https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/4314.pdf",
+    "estado_vigencia": "pendiente_de_verificacion",
+    "ultima_revision_repo": "2026-05-19"
+  }
+]

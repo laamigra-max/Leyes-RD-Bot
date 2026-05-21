@@ -1,0 +1,53 @@
+[
+  {
+    "id_chunk": "ley_108_05_registro_inmobiliario_art_1",
+    "titulo_norma": "Ley 108-05 de Registro Inmobiliario",
+    "numero_norma": "108-05",
+    "tipo_norma": "ley_ordinaria",
+    "materia": ["inmobiliario"],
+    "articulo": "1",
+    "texto": "La presente ley se denomina Ley de Registro Inmobiliario.",
+    "archivo_repo": "inmobiliario/ley_108_05_registro_inmobiliario.md",
+    "fuente_oficial": "https://poderjudicial.gob.do/wp-content/uploads/2021/06/LEY_108_05.pdf",
+    "tipo_fuente": "pdf_oficial",
+    "url_descarga_pdf": "https://poderjudicial.gob.do/wp-content/uploads/2021/06/LEY_108_05.pdf",
+    "archivo_original_pdf": "sources_pdf/ley_108_05_registro_inmobiliario.pdf",
+    "url_oficial": "https://poderjudicial.gob.do/wp-content/uploads/2021/06/LEY_108_05.pdf",
+    "estado_vigencia": "pendiente_de_verificacion",
+    "ultima_revision_repo": "2026-05-19"
+  },
+  {
+    "id_chunk": "ley_108_05_registro_inmobiliario_art_2",
+    "titulo_norma": "Ley 108-05 de Registro Inmobiliario",
+    "numero_norma": "108-05",
+    "tipo_norma": "ley_ordinaria",
+    "materia": ["inmobiliario"],
+    "articulo": "2",
+    "texto": "La presente ley tiene por objeto regular el saneamiento y el registro de todos los derechos reales inmobiliarios, así como las cargas y gravámenes susceptibles de registro, en relación con los inmuebles que conforman el territorio de la República Dominicana.",
+    "archivo_repo": "inmobiliario/ley_108_05_registro_inmobiliario.md",
+    "fuente_oficial": "https://poderjudicial.gob.do/wp-content/uploads/2021/06/LEY_108_05.pdf",
+    "tipo_fuente": "pdf_oficial",
+    "url_descarga_pdf": "https://poderjudicial.gob.do/wp-content/uploads/2021/06/LEY_108_05.pdf",
+    "archivo_original_pdf": "sources_pdf/ley_108_05_registro_inmobiliario.pdf",
+    "url_oficial": "https://poderjudicial.gob.do/wp-content/uploads/2021/06/LEY_108_05.pdf",
+    "estado_vigencia": "pendiente_de_verificacion",
+    "ultima_revision_repo": "2026-05-19"
+  },
+  {
+    "id_chunk": "ley_108_05_registro_inmobiliario_art_3",
+    "titulo_norma": "Ley 108-05 de Registro Inmobiliario",
+    "numero_norma": "108-05",
+    "tipo_norma": "ley_ordinaria",
+    "materia": ["inmobiliario"],
+    "articulo": "3",
+    "texto": "La Jurisdicción Inmobiliaria tiene competencia exclusiva para conocer de todo lo relativo a derechos inmobiliarios y su registro en la República Dominicana, desde que se solicita la autorización para la mensura y durante toda la vida jurídica del inmueble, salvo en los casos expresamente señalados por la ley.",
+    "archivo_repo": "inmobiliario/ley_108_05_registro_inmobiliario.md",
+    "fuente_oficial": "https://poderjudicial.gob.do/wp-content/uploads/2021/06/LEY_108_05.pdf",
+    "tipo_fuente": "pdf_oficial",
+    "url_descarga_pdf": "https://poderjudicial.gob.do/wp-content/uploads/2021/06/LEY_108_05.pdf",
+    "archivo_original_pdf": "sources_pdf/ley_108_05_registro_inmobiliario.pdf",
+    "url_oficial": "https://poderjudicial.gob.do/wp-content/uploads/2021/06/LEY_108_05.pdf",
+    "estado_vigencia": "pendiente_de_verificacion",
+    "ultima_revision_repo": "2026-05-19"
+  }
+]

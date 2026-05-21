@@ -136,8 +136,8 @@ fuentes:
     prioridad: "alta"
     estado: "cargada_pendiente_verificacion_completa"
     nota: "Ley núm. 97-25 orgánica que instituye el Código Procesal Penal de la República Dominicana. Pendiente verificar texto completo, entrada en vigencia, derogaciones y disposiciones transitorias."
-   
-   - id: codigo_procesal_penal_76_02
+
+  - id: codigo_procesal_penal_76_02
     titulo: "Código Procesal Penal de la República Dominicana"
     numero: "76-02"
     materia:
@@ -176,7 +176,7 @@ fuentes:
     estado: "cargada_pendiente_verificacion_completa"
     nota: "Documento inicial cargado desde fuente oficial del Poder Judicial. Ley modificada por la Ley 51-07. Pendiente completar texto íntegro, verificar vigencia, modificaciones, reglamentos, resoluciones y jurisprudencia inmobiliaria relacionada."
 
-   - id: ley_4314_inquilinato
+  - id: ley_4314_inquilinato
     titulo: "Ley 4314 sobre prestación, aplicación y devolución de los valores en el inquilinato"
     numero: "4314"
     materia:
@@ -195,7 +195,7 @@ fuentes:
     prioridad: "alta"
     estado: "cargada_pendiente_verificacion_completa"
     nota: "Ley modificada por la Ley 17-88. Pendiente completar texto íntegro y verificar jurisprudencia constitucional relacionada, incluyendo TC/0208/21 sobre el artículo 8."
-  
+
   - id: decreto_4807_alquileres
     titulo: "Decreto 4807 sobre Control de Alquileres y Desahucios"
     numero: "4807"
@@ -216,7 +216,7 @@ fuentes:
     estado: "cargada_pendiente_verificacion_completa"
     nota: "Documento inicial cargado desde fuente oficial de DGII. Pendiente completar texto íntegro, verificar modificaciones, vigencia, aplicación actual y jurisprudencia relacionada."
 
-   - id: ley_5038_condominios
+  - id: ley_5038_condominios
     titulo: "Ley 5038 sobre Condominios"
     numero: "5038"
     materia:

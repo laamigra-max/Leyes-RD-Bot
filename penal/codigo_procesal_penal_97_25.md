@@ -11,10 +11,12 @@ fecha_publicacion: "2025-12-08"
 gaceta_oficial: "11221"
 autoridad_emisora: "Congreso Nacional de la República Dominicana"
 fuente_oficial: "https://www.consultoria.gov.do/Documents/GetDocument?reference=3d44f7a1-8bbb-4b9f-8564-90f3bad77acb"
+tipo_fuente: "endpoint_documento_oficial"
+url_descarga_pdf: "https://www.consultoria.gov.do/Documents/GetDocument?reference=3d44f7a1-8bbb-4b9f-8564-90f3bad77acb"
 archivo_original_pdf: "sources_pdf/codigo_procesal_penal_97_25.pdf"
 estado_vigencia: "pendiente_de_verificacion"
 ultima_revision_repo: "2026-05-19"
-notas: "Documento inicial cargado desde fuente oficial de la Consultoría Jurídica del Poder Ejecutivo. Ley núm. 97-25 orgánica que instituye el Código Procesal Penal de la República Dominicana. Pendiente completar texto íntegro y verificar entrada en vigencia/transición."
+notas: "Documento inicial cargado desde fuente oficial de la Consultoría Jurídica del Poder Ejecutivo. Ley núm. 97-25 orgánica que instituye el Código Procesal Penal de la República Dominicana. Pendiente completar texto íntegro y verificar entrada en vigencia, derogaciones, transición y disposiciones transitorias."
 ---
 
 # Código Procesal Penal de la República Dominicana Ley núm. 97-25

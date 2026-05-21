@@ -5,7 +5,7 @@
   "description": "Manifest del índice legal usado por el bot jurídico dominicano.",
   "generated_at": "2026-05-19",
   "status": "ready",
-  "total_documents": 10,
+  "total_documents": 11,
   "documents": [
     {
       "id_documento": "ley_358_05",
@@ -66,6 +66,21 @@
       "total_chunks": 6,
       "estado_indexacion": "indexado",
       "chunk_file": "embeddings/codigo_civil_rd_chunks.json"
+    },
+    {
+      "id_documento": "ley_108_05_registro_inmobiliario",
+      "titulo": "Ley 108-05 de Registro Inmobiliario",
+      "numero": "108-05",
+      "tipo_norma": "ley_ordinaria",
+      "materia": ["inmobiliario"],
+      "archivo_repo": "inmobiliario/ley_108_05_registro_inmobiliario.md",
+      "fuente_oficial": "https://poderjudicial.gob.do/wp-content/uploads/2021/06/LEY_108_05.pdf",
+      "url_oficial": "https://poderjudicial.gob.do/wp-content/uploads/2021/06/LEY_108_05.pdf",
+      "estado_vigencia": "pendiente_de_verificacion",
+      "fecha_indexacion": "2026-05-19",
+      "total_chunks": 3,
+      "estado_indexacion": "indexado",
+      "chunk_file": "embeddings/ley_108_05_registro_inmobiliario_chunks.json"
     },
     {
       "id_documento": "ley_4314_inquilinato",
@@ -165,6 +180,7 @@
     "La Constitución 2024 debe priorizarse para consultas constitucionales actuales, aunque su estado está pendiente de verificación completa.",
     "La Constitución 2015 se conserva como documento histórico pendiente de verificación.",
     "El Código Civil fue cargado desde una fuente de la OEA y debe verificarse contra una fuente dominicana oficial o versión consolidada vigente.",
+    "La Ley 108-05 fue cargada inicialmente con artículos 1, 2 y 3 sobre denominación, objeto y competencia de la Jurisdicción Inmobiliaria. Pendiente completar texto íntegro, verificar modificaciones por Ley 51-07, reglamentos y jurisprudencia inmobiliaria relacionada.",
     "La Ley 4314 fue cargada inicialmente con el artículo 1 sobre depósitos, adelantos, anticipos u otros valores exigidos en contratos de alquiler. Pendiente completar texto íntegro, Ley 17-88 y jurisprudencia constitucional relacionada.",
     "El Decreto 4807 fue cargado inicialmente con artículos 1, 2 y 3 sobre Control de Alquileres de Casas y Desahucios, aumento de renta y prohibición de desahucio salvo causas previstas. Pendiente completar texto íntegro, verificar modificaciones, vigencia y jurisprudencia relacionada.",
     "La Ley 5038 fue cargada inicialmente con el artículo 1 sobre división de edificios por pisos, departamentos, viviendas o locales independientes bajo régimen de condominio. Pendiente completar texto íntegro, verificar modificaciones, vigencia y relación con Ley 108-05.",

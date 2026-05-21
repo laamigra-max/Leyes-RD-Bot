@@ -196,15 +196,22 @@ fuentes:
     estado: "cargada_pendiente_verificacion_completa"
     nota: "Documento inicial cargado desde fuente oficial de DGII. Pendiente completar texto íntegro, verificar modificaciones, vigencia, aplicación actual y jurisprudencia relacionada."
 
-  - id: ley_5038_condominios
+   - id: ley_5038_condominios
     titulo: "Ley 5038 sobre Condominios"
     numero: "5038"
     materia:
       - inmobiliario
       - condominio
       - propiedad
+      - propiedad_horizontal
+      - departamentos
+      - viviendas
+      - locales_independientes
+      - areas_comunes
+      - registro_inmobiliario
     archivo_repo: "inmobiliario/ley_5038_condominios.md"
     fuente_oficial: "https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/5038.pdf"
     autoridad: "DGII"
     prioridad: "alta"
-    estado: "pendiente_de_cargar"
+    estado: "cargada_pendiente_verificacion_completa"
+    nota: "Documento inicial cargado desde fuente oficial de DGII. Pendiente completar texto íntegro, verificar modificaciones, vigencia, aplicación actual y relación con Ley 108-05 de Registro Inmobiliario."

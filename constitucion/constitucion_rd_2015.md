@@ -10,10 +10,12 @@ fecha_publicacion: "2015-07-10"
 gaceta_oficial: "10805"
 autoridad_emisora: "Asamblea Nacional Revisora"
 fuente_oficial: "https://presidencia.gob.do/sites/default/files/statics/transparencia/base-legal/Constitucion-de-la-Republica-Dominicana-2015-actualizada.pdf"
+tipo_fuente: "fuente_historica"
+url_descarga_pdf: "https://presidencia.gob.do/sites/default/files/statics/transparencia/base-legal/Constitucion-de-la-Republica-Dominicana-2015-actualizada.pdf"
 archivo_original_pdf: "sources_pdf/constitucion_rd_2015.pdf"
 estado_vigencia: "historica_pendiente_verificacion"
 ultima_revision_repo: "2026-05-19"
-notas: "Documento inicial cargado desde fuente oficial. Debe verificarse frente a la Constitución proclamada en 2024."
+notas: "Documento inicial cargado desde fuente oficial. Documento histórico pendiente de verificación frente a la Constitución 2024."
 ---
 
 # Constitución de la República Dominicana 2015

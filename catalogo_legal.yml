@@ -156,7 +156,7 @@ fuentes:
     estado: "cargada_pendiente_verificacion_frente_ley_97_25"
     nota: "Pendiente verificar vigencia y transición frente a la Ley núm. 97-25 que instituye el nuevo Código Procesal Penal."
 
-  - id: ley_4314_inquilinato
+   - id: ley_4314_inquilinato
     titulo: "Ley 4314 sobre prestación, aplicación y devolución de los valores en el inquilinato"
     numero: "4314"
     materia:
@@ -164,12 +164,18 @@ fuentes:
       - inquilinato
       - alquiler
       - deposito
+      - anticipo
+      - adelanto
+      - banco_agricola
+      - arrendador
+      - arrendatario
     archivo_repo: "inmobiliario/ley_4314_inquilinato.md"
     fuente_oficial: "https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/4314.pdf"
     autoridad: "DGII"
     prioridad: "alta"
-    estado: "pendiente_de_cargar"
-
+    estado: "cargada_pendiente_verificacion_completa"
+    nota: "Ley modificada por la Ley 17-88. Pendiente completar texto íntegro y verificar jurisprudencia constitucional relacionada, incluyendo TC/0208/21 sobre el artículo 8."
+  
   - id: decreto_4807_alquileres
     titulo: "Decreto 4807 sobre Control de Alquileres y Desahucios"
     materia:

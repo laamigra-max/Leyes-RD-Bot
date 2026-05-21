@@ -5,9 +5,10 @@ This script scans Markdown legal documents and checks whether URLs declared
 in the fuente_oficial metadata are reachable.
 
 Important:
-Some official Dominican government websites may timeout from GitHub Actions.
-A timeout should be reported as a warning, not as a hard failure, because the
-legal source may still be valid and manually verified.
+Some official Dominican government websites may timeout or return temporary
+HTTP errors from GitHub Actions. These cases should be reported as warnings,
+not hard failures, because the legal source may still be valid and manually
+verified.
 """
 
 from pathlib import Path
@@ -80,6 +81,8 @@ def check_url(url: str, timeout: int = 30) -> tuple[str, str]:
             return "error", f"Unexpected HTTP {status_code}"
 
     except HTTPError as exc:
+        if exc.code in (403, 408, 429, 500, 502, 503, 504):
+            return "warning", f"HTTP warning {exc.code}"
         return "error", f"HTTP error {exc.code}"
 
     except socket.timeout:

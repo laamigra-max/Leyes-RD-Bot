@@ -35,10 +35,12 @@ REQUIRED_FIELDS = [
     "materia",
     "autoridad_emisora",
     "fuente_oficial",
+    "tipo_fuente",
+    "url_descarga_pdf",
+    "archivo_original_pdf",
     "estado_vigencia",
     "ultima_revision_repo",
 ]
-
 
 def extract_front_matter(content: str) -> str | None:
     """

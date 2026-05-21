@@ -47,14 +47,35 @@ campos_obligatorios:
       - laboral
       - familia
       - transito
+      - condominio
+      - procedimiento_penal
 
   autoridad_emisora:
-    descripcion: "Entidad que emitió o publicó la fuente."
-    ejemplo: "Pro Consumidor"
+    descripcion: "Entidad que emitió, promulgó o publicó la fuente."
+    ejemplo: "Congreso Nacional de la República Dominicana"
 
   fuente_oficial:
-    descripcion: "URL oficial o fuente primaria de donde se obtuvo el documento."
-    ejemplo: "https://www.proconsumidor.gob.do/"
+    descripcion: "Página oficial, ficha oficial, endpoint oficial o documento oficial donde se obtuvo o verificó la norma."
+    ejemplo: "https://pgr.gob.do/wpfd_file/ley-no-76-02/"
+
+  tipo_fuente:
+    descripcion: "Tipo de fuente oficial utilizada."
+    valores_permitidos:
+      - pdf_oficial
+      - pagina_oficial_descarga
+      - endpoint_documento_oficial
+      - pdf_oficial_con_bloqueo_automatizado
+      - fuente_externa_pendiente_verificacion
+      - fuente_historica
+      - pendiente_de_identificar
+
+  url_descarga_pdf:
+    descripcion: "Enlace directo al PDF cuando exista. Si no se conoce, usar pendiente_de_identificar."
+    ejemplo: "https://www.consultoria.gov.do/Documents/GetDocument?reference=..."
+
+  archivo_original_pdf:
+    descripcion: "Ruta del PDF original guardado en sources_pdf/. Si el PDF se dividió, puede ser una lista."
+    ejemplo: "sources_pdf/ley_358_05.pdf"
 
   estado_vigencia:
     descripcion: "Estado de vigencia registrado en el repositorio."
@@ -64,6 +85,8 @@ campos_obligatorios:
       - modificada
       - parcialmente_vigente
       - pendiente_de_verificacion
+      - historica_pendiente_verificacion
+      - cargada_pendiente_verificacion_completa
 
   ultima_revision_repo:
     descripcion: "Fecha en que el documento fue revisado o cargado en el repositorio."
@@ -81,9 +104,6 @@ campos_recomendados:
   gaceta_oficial:
     descripcion: "Número de Gaceta Oficial, si está disponible."
 
-  archivo_original_pdf:
-    descripcion: "Ruta del PDF original guardado en sources_pdf/."
-
   hash_sha256_pdf:
     descripcion: "Hash SHA256 del PDF original para control de integridad."
 
@@ -92,6 +112,9 @@ campos_recomendados:
 
   leyes_relacionadas:
     descripcion: "Otras normas relacionadas con esta fuente."
+
+  jurisprudencia_relacionada:
+    descripcion: "Sentencias o criterios judiciales relacionados con la norma."
 
   notas:
     descripcion: "Observaciones internas de revisión."
@@ -105,13 +128,22 @@ ejemplo_front_matter_markdown: |
   materia:
     - consumidor
   fecha_promulgacion: "2005-09-09"
-  autoridad_emisora: "Pro Consumidor"
+  autoridad_emisora: "Congreso Nacional de la República Dominicana"
   fuente_oficial: "https://www.proconsumidor.gob.do/"
-  archivo_original_pdf: "sources_pdf/ley_358_05.pdf"
+  tipo_fuente: "pdf_oficial"
+  url_descarga_pdf: "https://www.proconsumidor.gob.do/files/Ley_General_de_Proteccin_de_los_Derechos_del_Consumidor_o_Usuario_No__358-05.pdf"
+  archivo_original_pdf: "sources_pdf/ley_358_05_proteccion_consumidor.pdf"
   estado_vigencia: "pendiente_de_verificacion"
   ultima_revision_repo: "2026-05-19"
   notas: "Documento pendiente de revisión final de vigencia."
   ---
 
+reglas:
+  separar_fuente_oficial_de_url_descarga: true
+  permitir_fuente_oficial_como_pagina: true
+  permitir_url_descarga_pdf_pendiente: true
+  permitir_archivo_original_pdf_como_lista: true
+  no_usar_url_descarga_como_unica_prueba_de_vigencia: true
+
 regla_final:
-  mensaje: "Todo documento legal debe tener metadata suficiente para permitir citas verificables."
+  mensaje: "Todo documento legal debe tener metadata suficiente para permitir citas verificables, diferenciando fuente oficial, URL de descarga y archivo PDF guardado en el repositorio."

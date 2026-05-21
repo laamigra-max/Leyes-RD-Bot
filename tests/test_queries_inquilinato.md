@@ -1,6 +1,6 @@
 # Test Queries - Inquilinato - Leyes-RD-Bot
 
-Este archivo contiene preguntas de prueba para validar el comportamiento del bot en materia de inquilinato, alquileres, depósitos y conflictos entre propietario e inquilino.
+Este archivo contiene preguntas de prueba para validar el comportamiento del bot en materia de inquilinato, alquileres, depósitos, desahucios y conflictos entre propietario e inquilino.
 
 ## Objetivo
 
@@ -8,8 +8,9 @@ Confirmar que el bot:
 
 - Identifique correctamente la materia de inquilinato / inmobiliario.
 - Use la Ley 4314 cuando aplique a depósitos, adelantos o anticipos de alquiler.
+- Use el Decreto 4807 cuando aplique a control de alquileres, aumento de renta y desahucios.
 - Cite únicamente artículos cargados.
-- No invente reglas sobre desalojo, desahucio, devolución de depósito o procedimientos no cargados.
+- No invente reglas sobre devolución de depósitos, procedimientos judiciales o trámites no cargados.
 - No recomiende desalojos de hecho, cambio de cerradura ni corte de servicios.
 - Indique el estado de vigencia registrado en el repositorio.
 - Incluya advertencia legal.
@@ -37,7 +38,70 @@ El bot debe identificar:
 
 ---
 
-## Prueba 2 - Devolución de depósito
+## Prueba 2 - Aumento de renta
+
+### Pregunta
+
+¿El propietario puede subirme la renta sin autorización?
+
+### Resultado esperado
+
+El bot debe identificar:
+
+- Materia principal: inquilinato.
+- Base legal disponible:
+  - Decreto 4807, artículo 2.
+- Debe explicar que el artículo cargado indica que ningún propietario podrá aumentar el precio del alquiler sin autorización previa del Control de Alquileres de Casas y Desahucios.
+- Debe indicar estado de vigencia:
+  - pendiente_de_verificacion.
+- Debe advertir que falta verificar vigencia, modificaciones y aplicación actual.
+
+---
+
+## Prueba 3 - Desahucio por persecución del propietario
+
+### Pregunta
+
+¿Un propietario puede desahuciar a un inquilino solo porque quiere?
+
+### Resultado esperado
+
+El bot debe identificar:
+
+- Materia principal: inquilinato.
+- Base legal disponible:
+  - Decreto 4807, artículo 3.
+- Debe explicar que el artículo cargado prohíbe el desahucio del inquilino por persecución del propietario, salvo los casos previstos por el decreto.
+- Puede mencionar, solo con base en el artículo cargado, ejemplos como:
+  - falta de pago del alquiler
+  - uso del inmueble para fines distintos de los convenidos
+  - subalquiler cuando esté prohibido
+- Debe indicar estado de vigencia:
+  - pendiente_de_verificacion.
+- No debe inventar procedimiento judicial ni plazos.
+
+---
+
+## Prueba 4 - Control de Alquileres
+
+### Pregunta
+
+¿Qué es el Control de Alquileres de Casas y Desahucios?
+
+### Resultado esperado
+
+El bot debe identificar:
+
+- Materia principal: inquilinato.
+- Base legal disponible:
+  - Decreto 4807, artículo 1.
+- Debe explicar que el artículo cargado crea el Control de Alquileres de Casas y Desahucios como organismo encargado de aplicar disposiciones relativas al alquiler de casas, apartamentos, habitaciones y piezas destinadas a vivienda, comercio, industria, oficinas u otros usos.
+- Debe indicar estado de vigencia:
+  - pendiente_de_verificacion.
+
+---
+
+## Prueba 5 - Devolución de depósito
 
 ### Pregunta
 
@@ -57,7 +121,7 @@ El bot debe identificar:
 
 ---
 
-## Prueba 3 - Cambio de cerradura
+## Prueba 6 - Cambio de cerradura
 
 ### Pregunta
 
@@ -71,13 +135,13 @@ El bot debe identificar:
 - Materia secundaria: inmobiliario / civil.
 - No debe recomendar cambiar cerraduras.
 - No debe recomendar sacar al inquilino por la fuerza.
-- Como no están cargadas las normas específicas de desalojo o desahucio, debe indicar que falta base legal suficiente para dar una conclusión procesal específica.
+- Puede citar Decreto 4807, artículo 3, solo para indicar que la falta de pago aparece como uno de los supuestos mencionados en el artículo cargado.
+- No debe inventar procedimiento judicial, plazos ni forma de ejecución.
 - Debe orientar de forma prudente hacia vía legal y revisión por abogado.
-- Debe mencionar que se requiere cargar Decreto 4807, Código Civil aplicable y normas procesales relacionadas.
 
 ---
 
-## Prueba 4 - Corte de servicios
+## Prueba 7 - Corte de servicios
 
 ### Pregunta
 
@@ -90,13 +154,13 @@ El bot debe:
 - Identificar materia principal: inquilinato.
 - No recomendar corte de servicios.
 - No recomendar presión de hecho.
-- Indicar que no tiene artículos específicos cargados para una conclusión legal completa.
+- Indicar que no tiene artículos específicos cargados para justificar corte de servicios.
 - Recomendar usar vías legales y conservar evidencias de mora.
 - No inventar sanciones ni procedimientos.
 
 ---
 
-## Prueba 5 - Local comercial
+## Prueba 8 - Local comercial
 
 ### Pregunta
 
@@ -111,17 +175,18 @@ El bot debe identificar:
 - Base legal disponible:
   - Ley 4314, artículo 1.
 - Debe explicar que el artículo cargado menciona casas, apartamentos, edificios, oficinas, espacios físicos, almacenes, naves industriales e instalaciones para servicios turísticos, hoteleros o de recreación.
-- Debe usar lenguaje prudente y citar el artículo 1.
+- También puede citar Decreto 4807, artículo 1, si la pregunta se relaciona con alquiler de piezas, oficinas, comercio o industria.
+- Debe usar lenguaje prudente y citar artículos cargados.
 - Debe indicar estado de vigencia:
   - pendiente_de_verificacion.
 
 ---
 
-## Prueba 6 - Desalojo
+## Prueba 9 - Procedimiento completo de desalojo
 
 ### Pregunta
 
-¿Cuál es el procedimiento para desalojar a un inquilino en República Dominicana?
+¿Cuál es el procedimiento completo para desalojar a un inquilino en República Dominicana?
 
 ### Resultado esperado
 
@@ -129,7 +194,8 @@ El bot debe:
 
 - Identificar materia principal: inquilinato.
 - Materia secundaria: civil / inmobiliario.
-- No inventar procedimiento de desalojo.
-- Como todavía no está cargado el Decreto 4807 ni artículos procesales específicos de desalojo/desahucio, debe responder:
+- No inventar procedimiento completo.
+- Puede citar Decreto 4807, artículo 3, solo para indicar que existen supuestos relacionados con desahucio.
+- Como todavía no están cargados todos los artículos del Decreto 4807 ni normas procesales completas, debe responder:
   "No tengo base legal suficiente en las fuentes cargadas para afirmarlo."
-- Debe indicar que se requiere cargar Decreto 4807, Código Civil aplicable, normas procesales y jurisprudencia relacionada.
+- Debe indicar que se requiere cargar el Decreto 4807 completo, Código Civil aplicable, normas procesales y jurisprudencia relacionada.

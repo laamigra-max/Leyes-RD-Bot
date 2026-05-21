@@ -10,12 +10,14 @@ fecha_publicacion: "2025-08-05"
 gaceta_oficial: "11208"
 autoridad_emisora: "Congreso Nacional de la República Dominicana"
 fuente_oficial: "https://www.consultoria.gov.do/News/GetNewsDocument?newsId=9359"
+tipo_fuente: "endpoint_documento_oficial"
+url_descarga_pdf: "https://www.consultoria.gov.do/News/GetNewsDocument?newsId=9359"
 archivo_original_pdf:
   - "sources_pdf/codigo_penal_74_25_parte_1.pdf"
   - "sources_pdf/codigo_penal_74_25_parte_2.pdf"
 estado_vigencia: "pendiente_de_verificacion"
 ultima_revision_repo: "2026-05-19"
-notas: "Documento inicial cargado desde fuente oficial. PDF dividido en dos partes por límite de tamaño de GitHub. Pendiente completar texto íntegro, verificar entrada en vigencia y revisar disposiciones transitorias."
+notas: "Documento inicial cargado desde fuente oficial. PDF dividido en dos partes por límite de tamaño de GitHub. Pendiente completar texto íntegro, verificar entrada en vigencia, derogaciones y disposiciones transitorias."
 ---
 
 # Código Penal de la República Dominicana Ley núm. 74-25

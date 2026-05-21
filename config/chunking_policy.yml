@@ -7,8 +7,11 @@ estrategia_general:
   dividir_por_articulo: true
   mantener_titulo_de_la_norma_en_cada_chunk: true
   mantener_metadata_en_cada_chunk: true
-  mantener_url_oficial_en_cada_chunk: true
+  mantener_fuente_oficial_en_cada_chunk: true
+  mantener_tipo_fuente_en_cada_chunk: true
+  mantener_url_descarga_pdf_en_cada_chunk: true
   mantener_archivo_repo_en_cada_chunk: true
+  mantener_archivo_original_pdf_en_cada_chunk: true
 
 tipos_de_chunk:
   articulo:
@@ -36,9 +39,21 @@ campos_obligatorios_por_chunk:
   - texto
   - archivo_repo
   - fuente_oficial
-  - url_oficial
+  - tipo_fuente
+  - url_descarga_pdf
+  - archivo_original_pdf
   - estado_vigencia
   - ultima_revision_repo
+
+campos_recomendados_por_chunk:
+  - fecha_promulgacion
+  - fecha_publicacion
+  - gaceta_oficial
+  - autoridad_emisora
+  - leyes_relacionadas
+  - jurisprudencia_relacionada
+  - notas
+  - hash_texto
 
 reglas:
   no_mezclar_articulos_distintos_en_un_mismo_chunk: true
@@ -47,6 +62,9 @@ reglas:
   mantener_numero_articulo_original: true
   no_resumir_texto_legal_en_el_chunk: true
   conservar_texto_literal: true
+  no_usar_chunk_sin_fuente_oficial: true
+  no_usar_chunk_sin_url_descarga_o_valor_pendiente: true
+  no_usar_chunk_sin_estado_vigencia: true
 
 subdivision_de_articulos_largos:
   habilitada: true
@@ -61,6 +79,9 @@ validacion:
     - titulo_norma
     - archivo_repo
     - fuente_oficial
+    - tipo_fuente
+    - url_descarga_pdf
+    - estado_vigencia
 
 regla_final:
-  mensaje: "Cada chunk debe permitir rastrear la respuesta del bot hasta una ley, artículo, archivo del repositorio y fuente oficial."
+  mensaje: "Cada chunk debe permitir rastrear la respuesta del bot hasta una ley, artículo, archivo del repositorio, fuente oficial, tipo de fuente y URL de descarga o valor pendiente."

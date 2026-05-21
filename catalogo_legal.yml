@@ -156,6 +156,26 @@ fuentes:
     estado: "cargada_pendiente_verificacion_frente_ley_97_25"
     nota: "Pendiente verificar vigencia y transición frente a la Ley núm. 97-25 que instituye el nuevo Código Procesal Penal."
 
+  - id: ley_108_05_registro_inmobiliario
+    titulo: "Ley 108-05 de Registro Inmobiliario"
+    numero: "108-05"
+    materia:
+      - inmobiliario
+      - registro_inmobiliario
+      - derechos_reales
+      - saneamiento
+      - titulos
+      - cargas_y_gravamenes
+      - mensuras
+      - jurisdiccion_inmobiliaria
+      - propiedad_inmobiliaria
+    archivo_repo: "inmobiliario/ley_108_05_registro_inmobiliario.md"
+    fuente_oficial: "https://poderjudicial.gob.do/wp-content/uploads/2021/06/LEY_108_05.pdf"
+    autoridad: "Poder Judicial"
+    prioridad: "alta"
+    estado: "cargada_pendiente_verificacion_completa"
+    nota: "Documento inicial cargado desde fuente oficial del Poder Judicial. Ley modificada por la Ley 51-07. Pendiente completar texto íntegro, verificar vigencia, modificaciones, reglamentos, resoluciones y jurisprudencia inmobiliaria relacionada."
+
    - id: ley_4314_inquilinato
     titulo: "Ley 4314 sobre prestación, aplicación y devolución de los valores en el inquilinato"
     numero: "4314"

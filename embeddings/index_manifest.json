@@ -5,7 +5,7 @@
   "description": "Manifest del índice legal usado por el bot jurídico dominicano.",
   "generated_at": "2026-05-19",
   "status": "ready",
-  "total_documents": 9,
+  "total_documents": 10,
   "documents": [
     {
       "id_documento": "ley_358_05",
@@ -98,6 +98,21 @@
       "chunk_file": "embeddings/decreto_4807_control_alquileres_desahucios_chunks.json"
     },
     {
+      "id_documento": "ley_5038_condominios",
+      "titulo": "Ley 5038 sobre Condominios",
+      "numero": "5038",
+      "tipo_norma": "ley_ordinaria",
+      "materia": ["inmobiliario", "condominio"],
+      "archivo_repo": "inmobiliario/ley_5038_condominios.md",
+      "fuente_oficial": "https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/5038.pdf",
+      "url_oficial": "https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/5038.pdf",
+      "estado_vigencia": "pendiente_de_verificacion",
+      "fecha_indexacion": "2026-05-19",
+      "total_chunks": 1,
+      "estado_indexacion": "indexado",
+      "chunk_file": "embeddings/ley_5038_condominios_chunks.json"
+    },
+    {
       "id_documento": "codigo_penal_74_25",
       "titulo": "Código Penal de la República Dominicana",
       "numero": "74-25",
@@ -152,6 +167,7 @@
     "El Código Civil fue cargado desde una fuente de la OEA y debe verificarse contra una fuente dominicana oficial o versión consolidada vigente.",
     "La Ley 4314 fue cargada inicialmente con el artículo 1 sobre depósitos, adelantos, anticipos u otros valores exigidos en contratos de alquiler. Pendiente completar texto íntegro, Ley 17-88 y jurisprudencia constitucional relacionada.",
     "El Decreto 4807 fue cargado inicialmente con artículos 1, 2 y 3 sobre Control de Alquileres de Casas y Desahucios, aumento de renta y prohibición de desahucio salvo causas previstas. Pendiente completar texto íntegro, verificar modificaciones, vigencia y jurisprudencia relacionada.",
+    "La Ley 5038 fue cargada inicialmente con el artículo 1 sobre división de edificios por pisos, departamentos, viviendas o locales independientes bajo régimen de condominio. Pendiente completar texto íntegro, verificar modificaciones, vigencia y relación con Ley 108-05.",
     "El Código Penal Ley 74-25 fue cargado inicialmente con artículos 392 y 393. El PDF original fue dividido en dos partes por límite de tamaño.",
     "La Ley 97-25 debe priorizarse para consultas procesales penales actuales, pendiente de verificación completa de texto, entrada en vigencia, derogaciones y disposiciones transitorias.",
     "La Ley 76-02 se conserva como fuente anterior pendiente de verificación frente a la Ley 97-25."

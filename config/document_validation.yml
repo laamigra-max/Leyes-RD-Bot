@@ -11,17 +11,22 @@ campos_obligatorios:
   - materia
   - autoridad_emisora
   - fuente_oficial
+  - tipo_fuente
+  - url_descarga_pdf
+  - archivo_original_pdf
   - estado_vigencia
   - ultima_revision_repo
 
 campos_recomendados:
   - fecha_promulgacion
-  - archivo_original_pdf
+  - fecha_publicacion
+  - gaceta_oficial
   - fecha_descarga
   - hash_sha256_pdf
   - notas
   - modificaciones_conocidas
   - leyes_relacionadas
+  - jurisprudencia_relacionada
 
 estructura_obligatoria_markdown:
   - "Información general"
@@ -31,11 +36,16 @@ estructura_obligatoria_markdown:
 
 reglas:
   exigir_fuente_oficial: true
+  exigir_tipo_fuente: true
+  exigir_url_descarga_pdf: true
+  exigir_archivo_original_pdf: true
   exigir_estado_vigencia: true
   exigir_materia: true
   exigir_separacion_por_articulos: true
   permitir_documento_sin_numero: true
   permitir_documento_pendiente_vigencia: true
+  permitir_url_descarga_pdf_pendiente: true
+  permitir_archivo_original_pdf_como_lista: true
   bloquear_documento_sin_fuente: true
 
 estado_vigencia_permitido:
@@ -44,6 +54,17 @@ estado_vigencia_permitido:
   - modificada
   - pendiente_de_verificacion
   - parcialmente_vigente
+  - historica_pendiente_verificacion
+  - cargada_pendiente_verificacion_completa
+
+tipo_fuente_permitido:
+  - pdf_oficial
+  - pagina_oficial_descarga
+  - endpoint_documento_oficial
+  - pdf_oficial_con_bloqueo_automatizado
+  - fuente_externa_pendiente_verificacion
+  - fuente_historica
+  - pendiente_de_identificar
 
 tipos_norma_permitidos:
   - constitucion
@@ -65,9 +86,14 @@ validacion_de_citas:
     - ley_o_norma
     - archivo_repo
     - fuente_oficial
+    - url_descarga_pdf
+    - tipo_fuente
 
 rechazar_si:
   - "No tiene fuente oficial."
+  - "No indica tipo de fuente."
+  - "No indica URL de descarga o valor pendiente_de_identificar."
+  - "No indica archivo original PDF."
   - "No indica materia."
   - "No contiene texto legal."
   - "No permite identificar la ley, código, decreto, reglamento o sentencia."

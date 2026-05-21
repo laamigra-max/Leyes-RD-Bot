@@ -1,0 +1,16 @@
+[
+  {
+    "id_chunk": "ley_5038_condominios_art_1",
+    "titulo_norma": "Ley 5038 sobre Condominios",
+    "numero_norma": "5038",
+    "tipo_norma": "ley_ordinaria",
+    "materia": ["inmobiliario", "condominio"],
+    "articulo": "1",
+    "texto": "La propiedad de edificios de dos o más pisos podrá pertenecer a distintas personas, por pisos, departamentos, viviendas o locales independientes, siempre que los propietarios registren sus derechos de conformidad con el régimen establecido por esta ley.",
+    "archivo_repo": "inmobiliario/ley_5038_condominios.md",
+    "fuente_oficial": "https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/5038.pdf",
+    "url_oficial": "https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/5038.pdf",
+    "estado_vigencia": "pendiente_de_verificacion",
+    "ultima_revision_repo": "2026-05-19"
+  }
+]

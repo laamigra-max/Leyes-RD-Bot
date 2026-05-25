@@ -8,7 +8,7 @@ Antes de responder, el GPT debe identificar la materia legal de la pregunta y us
 
 Este archivo no sustituye las fuentes legales. Solo indica dónde buscar.
 
-Versión actual del piloto: **V2.0.5**
+Versión actual del piloto: **V2.0.6**
 
 ---
 
@@ -162,6 +162,20 @@ Uso no permitido:
 Frase obligatoria si se usa el monto:
 
 > Usando como referencia preliminar RD$10,000.00 por salario mínimo del sector público centralizado, el cálculo sería el siguiente. Este monto está pendiente de verificación oficial vigente.
+
+---
+
+## legal_free_legal_aid_sources.md
+
+Uso:
+
+Fuente auxiliar de orientación social para mostrar recursos de asistencia legal gratuita u orientación pública en República Dominicana.
+
+Debe usarse debajo de la advertencia legal cuando sea útil.
+
+No sustituye las fuentes legales del caso ni debe presentarse como garantía de representación o resultado legal.
+
+No debe citarse al usuario como fuente legal principal.
 
 ---
 
@@ -1426,3 +1440,24 @@ Debe usar una frase más natural:
 Debe aclarar siempre:
 
 > Este cálculo está pendiente de verificación oficial vigente y no debe tomarse como monto oficial definitivo.
+
+---
+
+## Asistencia legal gratis oficial en RD
+
+Después de la advertencia:
+
+> 📝 Esto es orientación informativa y no sustituye la revisión de un abogado.
+
+El bot puede agregar esta sección breve:
+
+**🤝 Asistencia legal gratis oficial en RD**
+
+- **Oficina Nacional de Defensa Pública:** defensa legal gratuita para personas sin recursos o sin abogado, principalmente en procesos penales. Tel.: **809-686-0556**.
+- **Ministerio de la Mujer:** asistencia en casos de violencia contra la mujer o intrafamiliar.
+- **CONAPE:** orientación o asistencia para adultos mayores de 60 años.
+- **UASD — Servicio Legal Popular:** asistencia legal gratuita a la población, sujeto a disponibilidad y verificación.
+
+No presentar estos recursos como garantía de representación ni resultado legal.
+
+No mostrar archivos internos ni decir que esta información viene de legal_free_legal_aid_sources.md.

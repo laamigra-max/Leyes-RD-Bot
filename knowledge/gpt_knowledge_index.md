@@ -194,65 +194,339 @@ Artículos cargados en legal_traffic_sources.md:
 - Artículo 307: obstrucción de vías públicas / remoción de vehículos.
 - Artículo 321: medidas precautorias / retención temporal del vehículo.
 
-### Mapa rápido de tránsito
+---
 
-- Preguntas sobre cuánto dura o cuándo vence la licencia:
-  - usar artículo 208.
+# Mapa rápido de tránsito
 
-- Preguntas sobre licencia vencida o no renovación:
-  - usar artículo 209.
+## Licencias de conducir
 
-- Preguntas sobre manejar sin licencia o sin permiso vigente:
-  - usar artículo 210.
+### Preguntas sobre cuánto dura, cuándo vence o cada cuánto se renueva la licencia
 
-- Preguntas sobre suspensión de licencia:
-  - usar artículo 211.
+Usar:
 
-- Preguntas sobre cancelación definitiva de licencia:
-  - usar artículo 212.
+- Ley 63-17, artículo 208.
 
-- Preguntas sobre entrega de licencia por suspensión o cancelación:
-  - usar artículo 213.
+Regla cargada:
 
-- Preguntas sobre alcohol permitido:
-  - usar artículo 258.
+- La licencia de conducir tiene una vigencia de cuatro (4) años.
+- La licencia vence el día del cumpleaños del titular.
 
-- Preguntas sobre alcoholímetro:
-  - usar artículos 259, 261, 262 y 263 según aplique.
+No inventar:
 
-- Preguntas sobre negativa al alcoholímetro:
-  - usar artículo 263.
-
-- Preguntas sobre pago voluntario de multa:
-  - usar artículo 293.
-
-- Preguntas sobre plazo para pagar o impugnar multa:
-  - usar artículo 295.
-
-- Preguntas sobre recargos por pago tardío de multas:
-  - usar artículo 296.
-
-- Preguntas sobre grúa o remoción por obstrucción de vía:
-  - usar artículo 307.
-
-- Preguntas sobre retención temporal de vehículo:
-  - usar artículo 321.
-
-### Regla especial sobre sistema de puntos
-
-La Ley 63-17 puede mencionar reducción de puntos según reglamento.
-
-El GPT no debe afirmar que en República Dominicana existe actualmente un sistema de puntos operativo o aplicado si no hay fuente oficial vigente cargada que lo confirme.
-
-Frase recomendada:
-
-> La Ley 63-17 menciona reducción de puntos según reglamento, pero con las fuentes cargadas no puedo confirmar que ese sistema esté operativo o aplicado actualmente.
-
-No indicar puntos específicos ni consecuencias prácticas por puntos.
+- costos;
+- plataformas;
+- citas;
+- exámenes médicos;
+- requisitos;
+- procedimiento completo de renovación.
 
 ---
 
-## Consumidor / proveedor / precios / publicidad / garantías
+### Preguntas sobre licencia vencida o no renovación
+
+Usar:
+
+- Ley 63-17, artículo 209.
+
+Regla cargada:
+
+- La no renovación de la licencia en el plazo establecido se considera falta administrativa.
+- La sanción cargada es una multa equivalente al costo general del servicio multiplicado por el número de años que se haya demorado para renovar.
+
+Ejemplo hipotético permitido:
+
+- Si el costo general del servicio fuera RD$X y la demora fue de 2 años, la multa sería RD$X multiplicado por 2.
+
+Limitación:
+
+- No convertir la multa a pesos dominicanos si no está cargado el costo general actual del servicio.
+- No inventar plataformas, requisitos, recargos adicionales ni procedimiento de renovación tardía.
+- El ejemplo con RD$X debe aclararse como ilustrativo, no como monto oficial.
+
+---
+
+### Preguntas sobre manejar sin licencia o sin permiso vigente
+
+Usar:
+
+- Ley 63-17, artículo 210.
+
+Regla cargada:
+
+- Conducir por vías públicas sin poseer licencia de conducir o permiso de aprendizaje vigente está cargado como violación a la autorización para conducir.
+- La sanción cargada es multa equivalente de uno (1) a cinco (5) salarios mínimos del sector público centralizado.
+- La Ley menciona reducción de puntos según reglamento, pero no debe presentarse como sistema operativo confirmado.
+
+Limitación:
+
+- No convertir salarios mínimos a pesos dominicanos.
+- No inventar puntos exactos.
+- No afirmar que el sistema de puntos está operativo o aplicado actualmente sin fuente oficial vigente cargada.
+
+Frase correcta sobre puntos:
+
+> La Ley 63-17 menciona reducción de puntos según reglamento, pero con las fuentes cargadas no puedo confirmar que ese sistema esté operativo o aplicado actualmente.
+
+---
+
+### Preguntas sobre suspensión de licencia
+
+Usar:
+
+- Ley 63-17, artículo 211.
+
+Regla cargada:
+
+El artículo 211 establece que el INTRANT puede suspender la licencia de conducir en ciertos casos, incluyendo:
+
+- cuando la persona autorizada haya agotado los puntos acreditados por el reglamento;
+- cuando la persona autorizada deje de cumplir los requisitos y condiciones exigidos por la ley o sus reglamentos;
+- cuando la autorización se haya obtenido por medios fraudulentos;
+- por prestar servicio público de transporte con vehículos privados, salvo cuando el orden público lo justifique, previa decisión del INTRANT.
+
+Duración cargada:
+
+- La suspensión puede ser por hasta un (1) año.
+- En caso de reincidencia, puede ser por hasta dos (2) años.
+
+Limitación:
+
+- No decir que no están cargadas las causas generales de suspensión ni la duración general.
+- No afirmar que el sistema de puntos está operativo actualmente.
+- No explicar procedimiento completo de recurso, notificación, apelación o ejecución si no está cargado.
+- No afirmar que DIGESETT puede suspender la licencia si el artículo cargado atribuye esa función al INTRANT.
+
+Frase correcta sobre puntos:
+
+> La Ley 63-17 menciona puntos según reglamento, pero con las fuentes cargadas no puedo confirmar que ese sistema esté operativo o aplicado actualmente.
+
+---
+
+### Preguntas sobre cancelación definitiva de licencia
+
+Usar:
+
+- Ley 63-17, artículo 212.
+
+Regla cargada:
+
+El artículo 212 establece casos de cancelación definitiva de licencia, incluyendo:
+
+- imposibilidad permanente física o mental del titular para conducir, sustentada en certificado médico;
+- decisión judicial;
+- conducir un vehículo de motor o remolque con licencia suspendida;
+- muerte del titular.
+
+Limitación:
+
+- No afirmar cancelación automática fuera de los casos indicados.
+- No explicar procedimiento médico, judicial o administrativo completo si no está cargado.
+
+---
+
+### Preguntas sobre entrega de licencia al INTRANT por suspensión o cancelación
+
+Usar:
+
+- Ley 63-17, artículo 213.
+
+Regla cargada:
+
+- La suspensión o cancelación de la licencia implica la entrega obligatoria del documento al INTRANT por el período de suspensión o a partir de la cancelación.
+- Cuando la suspensión o cancelación sea ordenada por un tribunal, el juez dispone la incautación al conductor afectado y la remite al INTRANT junto con copia de la sentencia.
+
+Limitación:
+
+- No afirmar que cualquier agente puede incautar la licencia en cualquier circunstancia.
+- No inventar procedimiento de entrega, recurso o recuperación de licencia.
+
+---
+
+# Alcohol, alcoholímetro y alcoholemia
+
+### Preguntas sobre alcohol permitido
+
+Usar:
+
+- Ley 63-17, artículo 258.
+
+Regla cargada:
+
+- Para conductores generales, es ilegal conducir con alcoholemia superior a 0.5 gramos por litro de sangre o 0.25 miligramos por litro en aire espirado.
+- Para transporte público, transporte de carga y permiso de aprendizaje, el límite indicado es 0.0.
+- Para motocicletas, el límite indicado es 0.2 gramos por litro de sangre o 0.1 miligramos por litro en aire espirado.
+
+Limitación:
+
+- No explicar calibración, laboratorio ni protocolo completo si no está cargado.
+
+---
+
+### Preguntas sobre alcoholímetro
+
+Usar según aplique:
+
+- Ley 63-17, artículo 259.
+- Ley 63-17, artículo 261.
+- Ley 63-17, artículo 262.
+- Ley 63-17, artículo 263.
+
+Reglas cargadas:
+
+- El artículo 259 regula la prueba del alcoholímetro sobre conductores y peatones.
+- El artículo 261 autoriza controles de alcoholemia o toxicológicos por agentes de DIGESETT.
+- Si son pruebas orgánicas o invasivas, se requiere consentimiento y respeto a la dignidad e integridad.
+- El artículo 262 contempla pruebas preventivas o aleatorias bajo condiciones específicas.
+- El artículo 263 regula procedimiento, equipos certificados/calibrados, negativa, acta, tribunal o juzgado de paz y contraprueba.
+
+Limitación:
+
+- No afirmar arresto automático.
+- No afirmar condena.
+- No afirmar antecedentes.
+- No inventar multas adicionales ni resultado judicial.
+
+---
+
+### Preguntas sobre negativa al alcoholímetro
+
+Usar:
+
+- Ley 63-17, artículo 263.
+
+Regla cargada:
+
+- Si el conductor se niega a realizarse la prueba, el agente de DIGESETT debe hacerlo constar en el acta levantada al efecto.
+- El conductor debe ser conducido al Tribunal Especial de Tránsito más cercano o al juzgado de paz correspondiente.
+- Si se dificulta constatar el nivel de alcohol por causa atribuible al conductor, se procede igual que ante la negativa.
+- Si la prueba resulta positiva, el conductor puede solicitar análisis confirmatorios como contraprueba.
+
+Limitación:
+
+- No afirmar resultado judicial.
+- No afirmar arresto definitivo.
+- No afirmar condena.
+- No afirmar sanciones adicionales no cargadas.
+
+---
+
+# Multas, pago voluntario e impugnación
+
+### Preguntas sobre pago voluntario de multa
+
+Usar:
+
+- Ley 63-17, artículo 293.
+
+Regla cargada:
+
+- Cuando el infractor decide aceptar la penalidad de una multa, sin acudir a un tribunal de tránsito, puede pagarla directamente en o a través de entidades bancarias autorizadas.
+- En caso de pago voluntario, el importe a pagar será el de menor cuantía dentro del rango establecido para la sanción correspondiente en la ley.
+
+Limitación:
+
+- No identificar bancos específicos si no están cargados.
+- No inventar montos de multas si el artículo específico de la infracción no está cargado.
+- No decir que el pago elimina acciones civiles o penales derivadas de la infracción.
+
+---
+
+### Preguntas sobre plazo para pagar o impugnar multas
+
+Usar:
+
+- Ley 63-17, artículo 295.
+
+Regla cargada:
+
+- La persona contra quien se levante un acta de infracción tiene treinta (30) días para pagar la multa o impugnarla.
+- La solicitud formal de revocación se hace mediante apoderamiento directo al tribunal competente.
+- Si no se paga voluntariamente ni se impugna en el plazo establecido, el infractor será declarado en rebeldía.
+
+Limitación:
+
+- No explicar procedimiento judicial completo de impugnación si no está cargado.
+- No identificar tribunal específico por jurisdicción si no hay datos del caso.
+- No inventar costos, formularios, plataformas o requisitos no mencionados en el artículo.
+
+---
+
+### Preguntas sobre recargo por pago tardío de multas
+
+Usar:
+
+- Ley 63-17, artículo 296.
+
+Regla cargada:
+
+- Los pagos realizados después de vencido el plazo sin que la persona haya solicitado revocación tendrán recargo conforme al Código Tributario y leyes complementarias.
+
+Limitación:
+
+- No calcular recargos.
+- No citar reglas del Código Tributario si no están cargadas.
+
+---
+
+### Preguntas sobre multas a peatones y pasajeros
+
+Usar:
+
+- Ley 63-17, artículo 294.
+
+Regla cargada:
+
+- Las multas a peatones y pasajeros se impondrán usando el número de cédula de identidad y electoral.
+- Estas multas serán registradas para fines de expedición de certificados de buena conducta, antecedentes penales u otros documentos oficiales.
+
+Limitación:
+
+- No inventar infracciones específicas de peatones o pasajeros si no están cargadas.
+- No explicar efectos registrales adicionales fuera de lo cargado.
+
+---
+
+# Grúas, remoción y retención de vehículos
+
+### Preguntas sobre grúa o remoción por obstrucción de vía
+
+Usar:
+
+- Ley 63-17, artículo 307.
+
+Regla cargada:
+
+- Los agentes de DIGESETT pueden remover inmediatamente los vehículos que obstruyan las vías públicas.
+- Cuando la obstrucción sea consecuencia de un accidente, los costos de remoción serán pagados por sus propietarios, salvo que las circunstancias se lo impidan.
+
+Limitación:
+
+- No decir que toda grúa o remoción es legal en cualquier circunstancia.
+- No inventar costos, patios, tarifas, procedimiento de entrega, documentos de retiro o autoridad específica si no están cargados.
+
+---
+
+### Preguntas sobre retención temporal de vehículo
+
+Usar:
+
+- Ley 63-17, artículo 321.
+
+Regla cargada:
+
+- El INTRANT y los ayuntamientos pueden dictar medidas precautorias cuando se verifiquen actos u omisiones que conlleven la comisión de infracción.
+- Entre las medidas precautorias cargadas está la retención temporal del vehículo involucrado en la infracción.
+- La retención temporal puede disponerse por un plazo de hasta sesenta (60) días calendarios.
+
+Limitación:
+
+- No decir que cualquier agente puede retener cualquier vehículo en cualquier caso.
+- No inventar procedimiento de retención, depósito, entrega, acta, inventario, recurso o autoridad específica fuera de lo cargado.
+- Distinguir entre remoción por obstrucción de vías públicas del artículo 307 y retención temporal como medida precautoria del artículo 321.
+
+---
+
+# Consumidor / proveedor / precios / publicidad / garantías
 
 Archivo principal:
 
@@ -290,7 +564,7 @@ Si falta el artículo específico, responder que no hay base legal suficiente.
 
 ---
 
-## Constitucional / jerarquía normativa / contradicción con Constitución
+# Constitucional / jerarquía normativa / contradicción con Constitución
 
 Archivo principal:
 
@@ -323,7 +597,7 @@ No inventar procedimientos constitucionales como:
 
 ---
 
-## Penal / delitos / penas
+# Penal / delitos / penas
 
 Archivo principal:
 
@@ -358,7 +632,7 @@ Si el artículo penal o procesal específico no está cargado, responder que no 
 
 ---
 
-## Querella / denuncia / procedimiento penal
+# Querella / denuncia / procedimiento penal
 
 Archivo principal:
 
@@ -386,7 +660,7 @@ Respuesta segura:
 
 ---
 
-## Inquilinato / alquileres / desahucio
+# Inquilinato / alquileres / desahucio
 
 Archivo principal:
 
@@ -420,7 +694,7 @@ Nunca recomendar vías de hecho.
 
 ---
 
-## Condominios / áreas comunes / propiedad horizontal
+# Condominios / áreas comunes / propiedad horizontal
 
 Archivo principal:
 
@@ -453,7 +727,7 @@ No inventar reglas sobre:
 
 ---
 
-## Registro inmobiliario / títulos / saneamiento / derechos reales
+# Registro inmobiliario / títulos / saneamiento / derechos reales
 
 Archivo principal:
 

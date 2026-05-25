@@ -1,11 +1,11 @@
 {
   "project": "Leyes-RD-Bot",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "country": "República Dominicana",
   "description": "Manifest del índice legal usado por el bot jurídico dominicano.",
-  "generated_at": "2026-05-19",
+  "generated_at": "2026-05-25",
   "status": "ready",
-  "total_documents": 11,
+  "total_documents": 12,
   "documents": [
     {
       "id_documento": "ley_358_05",
@@ -171,6 +171,22 @@
       "total_chunks": 5,
       "estado_indexacion": "indexado",
       "chunk_file": "embeddings/codigo_procesal_penal_76_02_chunks.json"
+    },
+    {
+      "id_documento": "ley_63_17_transito_movilidad_seguridad_vial",
+      "titulo": "Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial",
+      "numero": "63-17",
+      "tipo_norma": "ley_ordinaria",
+      "materia": ["transito", "movilidad", "transporte_terrestre", "seguridad_vial"],
+      "archivo_repo": "transito/ley_63_17_transito_movilidad_seguridad_vial.md",
+      "fuente_oficial": "https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/63-17.pdf",
+      "url_oficial": "https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/63-17.pdf",
+      "estado_vigencia": "pendiente_de_verificacion",
+      "fecha_indexacion": "2026-05-25",
+      "total_chunks": 3,
+      "estado_indexacion": "indexado",
+      "chunk_file": "embeddings/ley_63_17_transito_movilidad_seguridad_vial_chunks.json",
+      "version_piloto": "V2.0"
     }
   ],
   "notes": [
@@ -186,6 +202,7 @@
     "La Ley 5038 fue cargada inicialmente con el artículo 1 sobre división de edificios por pisos, departamentos, viviendas o locales independientes bajo régimen de condominio. Pendiente completar texto íntegro, verificar modificaciones, vigencia y relación con Ley 108-05.",
     "El Código Penal Ley 74-25 fue cargado inicialmente con artículos 392 y 393. El PDF original fue dividido en dos partes por límite de tamaño.",
     "La Ley 97-25 debe priorizarse para consultas procesales penales actuales, pendiente de verificación completa de texto, entrada en vigencia, derogaciones y disposiciones transitorias.",
-    "La Ley 76-02 se conserva como fuente anterior pendiente de verificación frente a la Ley 97-25."
+    "La Ley 76-02 se conserva como fuente anterior pendiente de verificación frente a la Ley 97-25.",
+    "La Ley 63-17 fue cargada como inicio de la fase V2.0 con artículos 1, 2 y 3 sobre objeto, ámbito de aplicación y marco regulatorio de movilidad, transporte terrestre, tránsito y seguridad vial. Pendiente completar texto íntegro, modificaciones, reglamentos, resoluciones de INTRANT/DIGESETT y aplicación actual. No debe usarse para afirmar multas, sanciones, alcoholímetros, retención de licencia, incautación o controles policiales sin artículos específicos cargados."
   ]
 }

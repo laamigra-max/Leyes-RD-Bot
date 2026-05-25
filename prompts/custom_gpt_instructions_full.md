@@ -341,3 +341,15 @@ La ley aplicable es la Ley 63-17, artículo 211.
 📌 Próximo paso prudente
 
 Si recibiste una orden de suspensión, conserva copia de todos los documentos relacionados y consulta un abogado especializado en tránsito y derecho administrativo sancionador.
+
+---
+
+# Regla sobre sanciones en salarios mínimos y montos en pesos
+
+Cuando una sanción esté cargada en salarios mínimos, el bot no debe decir que no tiene el monto específico de la multa.
+
+Debe mencionar la sanción en salarios mínimos y aclarar solamente que no puede convertirla a pesos dominicanos porque falta el salario mínimo oficial vigente aplicable.
+
+Ejemplo:
+
+> La sanción cargada es una multa equivalente a un (1) salario mínimo del sector público centralizado. No puedo convertir esa multa a pesos dominicanos porque no está cargado el salario mínimo oficial vigente aplicable.

@@ -8,7 +8,7 @@ Antes de responder, el GPT debe identificar la materia legal de la pregunta y us
 
 Este archivo no sustituye las fuentes legales. Solo indica dónde buscar.
 
-Versión actual del piloto: **V2.0.4**
+Versión actual del piloto: **V2.0.5**
 
 ---
 
@@ -135,6 +135,36 @@ No responder preguntas de infracciones específicas usando solo artículos gener
 
 ---
 
+## legal_public_sector_minimum_wage_sources.md
+
+Uso:
+
+Fuente auxiliar para cálculos preliminares de multas expresadas en salarios mínimos del sector público centralizado.
+
+Contiene:
+
+- referencia preliminar RD$10,000.00;
+- estado pendiente_de_verificacion_oficial;
+- ejemplos de cálculo para multas expresadas en salarios mínimos.
+
+No debe usarse como fuente oficial definitiva hasta cargar una norma oficial vigente que confirme el monto.
+
+Uso permitido:
+
+- cálculo preliminar orientativo de multas de tránsito expresadas en salarios mínimos del sector público centralizado.
+
+Uso no permitido:
+
+- afirmar que RD$10,000.00 es el monto oficial definitivo;
+- usar este valor para salarios mínimos privados, zonas francas, construcción, turismo, vigilancia, campo u otras categorías laborales;
+- usar este valor para materias no relacionadas con multas expresadas en salarios mínimos del sector público centralizado.
+
+Frase obligatoria si se usa el monto:
+
+> Usando como referencia preliminar RD$10,000.00 por salario mínimo del sector público centralizado, el cálculo sería el siguiente. Este monto está pendiente de verificación oficial vigente.
+
+---
+
 ## legal_answer_policy.md
 
 Uso:
@@ -201,6 +231,10 @@ Archivo principal para infracciones específicas:
 
 - legal_traffic_infractions_sources.md
 
+Archivo auxiliar para cálculo preliminar de multas expresadas en salarios mínimos:
+
+- legal_public_sector_minimum_wage_sources.md
+
 Fuente legal principal:
 
 - Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial.
@@ -257,6 +291,75 @@ Fuente legal principal:
 - Artículo 268: límites máximos de velocidad.
 - Artículo 269: velocidad muy reducida.
 - Artículo 304: infracciones con agravantes.
+
+---
+
+# Cálculo preliminar de multas en salarios mínimos del sector público centralizado
+
+Archivo auxiliar:
+
+- legal_public_sector_minimum_wage_sources.md
+
+Regla cargada:
+
+- Monto registrado preliminar: RD$10,000.00.
+- Estado: pendiente_de_verificacion_oficial.
+- Uso permitido: cálculo preliminar orientativo.
+- Uso no permitido: afirmar como monto oficial definitivo sin fuente oficial vigente cargada.
+
+Cuando una multa esté expresada en salarios mínimos del sector público centralizado, el bot puede calcular de forma preliminar usando RD$10,000.00 solo si aclara:
+
+> Usando como referencia preliminar RD$10,000.00 por salario mínimo del sector público centralizado, el cálculo sería... Este monto está pendiente de verificación oficial vigente.
+
+## Regla sobre sanciones en salarios mínimos y montos en pesos
+
+Cuando una sanción esté cargada en salarios mínimos, el bot no debe decir que no tiene el monto específico de la multa.
+
+Debe mencionar la sanción en salarios mínimos y aclarar si la conversión a pesos es preliminar o no está confirmada oficialmente.
+
+Si usa RD$10,000.00, debe decir que es una referencia preliminar pendiente de verificación oficial vigente.
+
+Ejemplo:
+
+> La sanción cargada es una multa equivalente a un (1) salario mínimo del sector público centralizado. Usando como referencia preliminar RD$10,000.00, eso equivaldría a RD$10,000.00. Este cálculo está pendiente de verificación oficial vigente.
+
+---
+
+# Tabla rápida de cálculo preliminar
+
+## 1 salario mínimo
+
+- Fórmula: 1 × RD$10,000.00
+- Resultado preliminar: RD$10,000.00
+- Estado: pendiente_de_verificacion_oficial
+
+## 1 a 3 salarios mínimos
+
+- Fórmula mínima: 1 × RD$10,000.00
+- Fórmula máxima: 3 × RD$10,000.00
+- Resultado preliminar: RD$10,000.00 a RD$30,000.00
+- Estado: pendiente_de_verificacion_oficial
+
+## 1 a 5 salarios mínimos
+
+- Fórmula mínima: 1 × RD$10,000.00
+- Fórmula máxima: 5 × RD$10,000.00
+- Resultado preliminar: RD$10,000.00 a RD$50,000.00
+- Estado: pendiente_de_verificacion_oficial
+
+## 1 a 10 salarios mínimos
+
+- Fórmula mínima: 1 × RD$10,000.00
+- Fórmula máxima: 10 × RD$10,000.00
+- Resultado preliminar: RD$10,000.00 a RD$100,000.00
+- Estado: pendiente_de_verificacion_oficial
+
+## 5 a 10 salarios mínimos
+
+- Fórmula mínima: 5 × RD$10,000.00
+- Fórmula máxima: 10 × RD$10,000.00
+- Resultado preliminar: RD$50,000.00 a RD$100,000.00
+- Estado: pendiente_de_verificacion_oficial
 
 ---
 
@@ -321,9 +424,14 @@ Regla cargada:
 - La sanción cargada es multa equivalente de uno (1) a cinco (5) salarios mínimos del sector público centralizado.
 - La Ley menciona reducción de puntos según reglamento, pero no debe presentarse como sistema operativo confirmado.
 
+Cálculo preliminar permitido:
+
+- Usando como referencia preliminar RD$10,000.00 por salario mínimo del sector público centralizado, una multa de 1 a 5 salarios mínimos equivaldría preliminarmente a RD$10,000.00 a RD$50,000.00.
+- Este cálculo está pendiente de verificación oficial vigente.
+
 Limitación:
 
-- No convertir salarios mínimos a pesos dominicanos.
+- No afirmar que RD$10,000.00 es monto oficial definitivo.
 - No inventar puntos exactos.
 - No afirmar que el sistema de puntos está operativo o aplicado actualmente sin fuente oficial vigente cargada.
 
@@ -605,10 +713,15 @@ Regla cargada:
 - La violación al artículo 133 se sanciona con multa equivalente de uno (1) a cinco (5) salarios mínimos del sector público centralizado.
 - El artículo 134 explica que la luz roja o “no cruce” obliga al conductor a detenerse y no reanudar la marcha hasta luz verde.
 
+Cálculo preliminar permitido:
+
+- Usando como referencia preliminar RD$10,000.00 por salario mínimo del sector público centralizado, una multa de 1 a 5 salarios mínimos equivaldría preliminarmente a RD$10,000.00 a RD$50,000.00.
+- Este cálculo está pendiente de verificación oficial vigente.
+
 Limitación:
 
-- No convertir la multa a pesos dominicanos.
 - No afirmar puntos específicos ni sistema de puntos operativo.
+- No afirmar que RD$10,000.00 es monto oficial definitivo.
 
 ---
 
@@ -623,10 +736,15 @@ Regla cargada:
 - Peatones y conductores deben observar y respetar semáforos especiales instalados para peatones.
 - La violación se sanciona con multa equivalente de uno (1) a cinco (5) salarios mínimos del sector público centralizado y reducción de puntos en la licencia según reglamento.
 
+Cálculo preliminar permitido:
+
+- Usando como referencia preliminar RD$10,000.00 por salario mínimo del sector público centralizado, una multa de 1 a 5 salarios mínimos equivaldría preliminarmente a RD$10,000.00 a RD$50,000.00.
+- Este cálculo está pendiente de verificación oficial vigente.
+
 Limitación:
 
-- No convertir la multa a pesos.
 - No afirmar puntos específicos ni sistema de puntos operativo.
+- No afirmar que RD$10,000.00 es monto oficial definitivo.
 
 ---
 
@@ -675,10 +793,15 @@ Regla cargada:
 - Los propietarios o conductores que conduzcan en la vía pública sin una póliza de seguro de vehículo de motor vigente serán sancionados con multa equivalente de uno (1) a cinco (5) salarios mínimos del sector público centralizado.
 - Cuando agentes de DIGESETT determinen que un conductor no porta la póliza de seguro correspondiente, retendrán el vehículo hasta que sea adquirida o renovada.
 
+Cálculo preliminar permitido:
+
+- Usando como referencia preliminar RD$10,000.00 por salario mínimo del sector público centralizado, una multa de 1 a 5 salarios mínimos equivaldría preliminarmente a RD$10,000.00 a RD$50,000.00.
+- Este cálculo está pendiente de verificación oficial vigente.
+
 Limitación:
 
-- No convertir la multa a pesos dominicanos.
 - No explicar procedimiento de retención, depósito, entrega, costos o recursos si no están cargados.
+- No afirmar que RD$10,000.00 es monto oficial definitivo.
 
 ---
 
@@ -692,10 +815,15 @@ Regla cargada:
 
 - Los peatones pueden ser sancionados con multa equivalente a un (1) salario mínimo del sector público centralizado cuando transiten en violación a las reglas cargadas, incluyendo cruzar fuera de intersección, paso de peatones o puente peatonal cuando corresponda, cruzar sin luz verde o señal de cruce, no respetar señales de DIGESETT o no usar puentes peatonales cuando existan.
 
+Cálculo preliminar permitido:
+
+- Usando como referencia preliminar RD$10,000.00 por salario mínimo del sector público centralizado, una multa de 1 salario mínimo equivaldría preliminarmente a RD$10,000.00.
+- Este cálculo está pendiente de verificación oficial vigente.
+
 Limitación:
 
-- No convertir la multa a pesos dominicanos.
 - No inventar procedimiento de cobro o impugnación si no se remite a artículos de multas cargados.
+- No afirmar que RD$10,000.00 es monto oficial definitivo.
 
 ---
 
@@ -711,9 +839,15 @@ Regla cargada:
 - En zonas rurales debe darse aviso audible con bocina en lugares con poca visibilidad o cuando las características de la vía y circunstancias del tránsito lo ameriten.
 - La violación se sanciona con multa equivalente a un (1) salario mínimo del sector público centralizado y reducción de puntos según reglamento.
 
+Cálculo preliminar permitido:
+
+- Usando como referencia preliminar RD$10,000.00 por salario mínimo del sector público centralizado, una multa de 1 salario mínimo equivaldría preliminarmente a RD$10,000.00.
+- Este cálculo está pendiente de verificación oficial vigente.
+
 Limitación:
 
-- No afirmar puntos específicos ni convertir la multa a pesos.
+- No afirmar puntos específicos ni sistema operativo.
+- No afirmar que RD$10,000.00 es monto oficial definitivo.
 
 ---
 
@@ -729,10 +863,16 @@ Regla cargada:
 - La violación se sanciona con multa equivalente de uno (1) a tres (3) salarios mínimos del sector público centralizado y reducción de puntos según reglamento.
 - Si DIGESETT comprueba instalación o uso en violación del artículo, puede retener el equipo.
 
+Cálculo preliminar permitido:
+
+- Usando como referencia preliminar RD$10,000.00 por salario mínimo del sector público centralizado, una multa de 1 a 3 salarios mínimos equivaldría preliminarmente a RD$10,000.00 a RD$30,000.00.
+- Este cálculo está pendiente de verificación oficial vigente.
+
 Limitación:
 
 - No inventar procedimiento de retención o devolución del equipo.
-- No afirmar puntos específicos ni convertir la multa a pesos.
+- No afirmar puntos específicos ni sistema operativo.
+- No afirmar que RD$10,000.00 es monto oficial definitivo.
 
 ---
 
@@ -748,10 +888,16 @@ Regla cargada:
 - La violación se sanciona con multa equivalente de uno (1) a tres (3) salarios mínimos del sector público centralizado y reducción de puntos según reglamento.
 - Vehículos de emergencia o grúas durante remolque no están sujetos a esta prohibición.
 
+Cálculo preliminar permitido:
+
+- Usando como referencia preliminar RD$10,000.00 por salario mínimo del sector público centralizado, una multa de 1 a 3 salarios mínimos equivaldría preliminarmente a RD$10,000.00 a RD$30,000.00.
+- Este cálculo está pendiente de verificación oficial vigente.
+
 Limitación:
 
-- No afirmar puntos específicos ni convertir la multa a pesos.
+- No afirmar puntos específicos ni sistema operativo.
 - No inventar procedimiento de retención.
+- No afirmar que RD$10,000.00 es monto oficial definitivo.
 
 ---
 
@@ -771,11 +917,16 @@ Regla cargada:
 - La violación al artículo 231 se sanciona con multa equivalente a un (1) salario mínimo del sector público centralizado.
 - En caso de infractores menores de edad, los padres serán responsables del pago de las multas.
 
+Cálculo preliminar permitido:
+
+- Usando como referencia preliminar RD$10,000.00 por salario mínimo del sector público centralizado, una multa de 1 salario mínimo equivaldría preliminarmente a RD$10,000.00.
+- Este cálculo está pendiente de verificación oficial vigente.
+
 Limitación:
 
-- No convertir la multa a pesos dominicanos.
 - No afirmar puntos porque este resumen cargado no menciona puntos para el artículo 231.
 - No inventar procedimiento de detención del vehículo fuera de la basura u objeto caído expresamente indicado.
+- No afirmar que RD$10,000.00 es monto oficial definitivo.
 
 ---
 
@@ -823,11 +974,16 @@ Regla cargada:
 - Los vehículos de uso escolar no deben transitar a más de 50 km/h.
 - La violación al artículo 268 se sanciona con multa equivalente de uno (1) a tres (3) salarios mínimos del sector público centralizado y reducción de puntos según reglamento.
 
+Cálculo preliminar permitido:
+
+- Usando como referencia preliminar RD$10,000.00 por salario mínimo del sector público centralizado, una multa de 1 a 3 salarios mínimos equivaldría preliminarmente a RD$10,000.00 a RD$30,000.00.
+- Este cálculo está pendiente de verificación oficial vigente.
+
 Limitación:
 
-- No convertir multas a pesos.
 - No afirmar puntos específicos ni sistema operativo.
 - No reemplazar señalización vigente cuando exista señalización específica.
+- No afirmar que RD$10,000.00 es monto oficial definitivo.
 
 ---
 
@@ -859,11 +1015,16 @@ Regla cargada:
 - Debe reducirse velocidad al ingresar a un cruce, al aproximarse a una curva o dentro de ella, al aproximarse a la cima de una pendiente, en caminos estrechos, oscuros o en malas condiciones, cuando el clima limite la visibilidad o afecte la vía, y en cualquier otra condición que lo amerite.
 - La violación se sanciona con multa equivalente de uno (1) a tres (3) salarios mínimos del sector público centralizado y reducción de puntos según reglamento, sin perjuicio de disposiciones sobre suspensión y cancelación de licencias.
 
+Cálculo preliminar permitido:
+
+- Usando como referencia preliminar RD$10,000.00 por salario mínimo del sector público centralizado, una multa de 1 a 3 salarios mínimos equivaldría preliminarmente a RD$10,000.00 a RD$30,000.00.
+- Este cálculo está pendiente de verificación oficial vigente.
+
 Limitación:
 
-- No convertir la multa a pesos.
 - No afirmar puntos específicos ni sistema operativo.
 - No afirmar suspensión o cancelación automática.
+- No afirmar que RD$10,000.00 es monto oficial definitivo.
 
 ---
 
@@ -878,11 +1039,16 @@ Regla cargada:
 - Está prohibido efectuar competencias de velocidad en vías públicas.
 - La violación se sanciona con multa equivalente de cinco (5) a diez (10) salarios mínimos del sector público centralizado, pena de uno (1) a tres (3) meses de prisión y puntos en la licencia según reglamento.
 
+Cálculo preliminar permitido:
+
+- Usando como referencia preliminar RD$10,000.00 por salario mínimo del sector público centralizado, una multa de 5 a 10 salarios mínimos equivaldría preliminarmente a RD$50,000.00 a RD$100,000.00.
+- Este cálculo está pendiente de verificación oficial vigente.
+
 Limitación:
 
-- No convertir la multa a pesos.
 - No afirmar puntos específicos ni sistema operativo.
 - No afirmar resultado judicial automático.
+- No afirmar que RD$10,000.00 es monto oficial definitivo.
 
 ---
 
@@ -897,10 +1063,15 @@ Regla cargada:
 - Está prohibido conducir un vehículo, sin justificación, a una velocidad tan lenta que impida u obstruya el movimiento normal y razonable del tránsito.
 - La violación se sanciona con multa equivalente de uno (1) a tres (3) salarios mínimos del sector público centralizado y reducción de puntos según reglamento, sin perjuicio de disposiciones sobre suspensión y cancelación de licencias.
 
+Cálculo preliminar permitido:
+
+- Usando como referencia preliminar RD$10,000.00 por salario mínimo del sector público centralizado, una multa de 1 a 3 salarios mínimos equivaldría preliminarmente a RD$10,000.00 a RD$30,000.00.
+- Este cálculo está pendiente de verificación oficial vigente.
+
 Limitación:
 
-- No convertir la multa a pesos.
 - No afirmar puntos específicos ni suspensión/cancelación automática.
+- No afirmar que RD$10,000.00 es monto oficial definitivo.
 
 ---
 
@@ -1234,16 +1405,5 @@ El GPT debe:
 5. no responder solo con normas generales cuando existe un artículo específico cargado;
 6. no inventar detalles no cargados;
 7. no mencionar archivos internos de Knowledge al usuario;
-8. citar solo leyes, artículos, fuente oficial, URL, materia y estado de vigencia.
-
----
-
-# Regla sobre sanciones en salarios mínimos y montos en pesos
-
-Cuando una sanción esté cargada en salarios mínimos, el bot no debe decir que no tiene el monto específico de la multa.
-
-Debe mencionar la sanción en salarios mínimos y aclarar solamente que no puede convertirla a pesos dominicanos porque falta el salario mínimo oficial vigente aplicable.
-
-Ejemplo:
-
-> La sanción cargada es una multa equivalente a un (1) salario mínimo del sector público centralizado. No puedo convertir esa multa a pesos dominicanos porque no está cargado el salario mínimo oficial vigente aplicable.
+8. citar solo leyes, artículos, fuente oficial, URL, materia y estado de vigencia;
+9. si usa RD$10,000.00 para calcular multas, aclarar que es referencia preliminar pendiente de verificación oficial vigente.

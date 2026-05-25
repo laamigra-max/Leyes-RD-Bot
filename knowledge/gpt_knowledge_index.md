@@ -8,7 +8,7 @@ Antes de responder, el GPT debe identificar la materia legal de la pregunta y us
 
 Este archivo no sustituye las fuentes legales. Solo indica dónde buscar.
 
-Versión actual del piloto: **V2.0.3**
+Versión actual del piloto: **V2.0.4**
 
 ---
 
@@ -71,9 +71,9 @@ Debe usarse para preguntas de consumidor, constitucional, civil, penal general, 
 
 Uso:
 
-Fuente especializada para tránsito.
+Fuente especializada para tránsito general.
 
-Debe priorizarse para cualquier pregunta relacionada con:
+Debe priorizarse para preguntas relacionadas con:
 
 - Ley 63-17;
 - DIGESETT;
@@ -82,7 +82,7 @@ Debe priorizarse para cualquier pregunta relacionada con:
 - movilidad;
 - transporte terrestre;
 - seguridad vial;
-- multas de tránsito;
+- multas generales;
 - alcoholímetro;
 - alcoholemia;
 - pruebas toxicológicas;
@@ -98,6 +98,40 @@ Debe priorizarse para cualquier pregunta relacionada con:
 - entrega de licencia al INTRANT.
 
 No responder preguntas de tránsito usando solo artículos 1, 2 y 3 si este archivo contiene un artículo más específico aplicable.
+
+---
+
+## legal_traffic_infractions_sources.md
+
+Uso:
+
+Fuente especializada para infracciones específicas de tránsito.
+
+Debe priorizarse para preguntas relacionadas con:
+
+- semáforo en rojo;
+- señales del semáforo;
+- semáforo peatonal;
+- casco protector;
+- placa, marbete, inspección técnica y seguro;
+- seguro obligatorio;
+- peatones;
+- bocina;
+- pitos, sirenas y bocinas no autorizadas;
+- luces rojas, giratorias o intermitentes;
+- cinturón de seguridad;
+- guía a la derecha;
+- basura u objetos que caen del vehículo;
+- abordar o desmontar pasajeros en movimiento;
+- detenerse ante DIGESETT;
+- mostrar documentos;
+- inspección de vehículo por DIGESETT;
+- límites de velocidad;
+- radares, cámaras o equipos de velocidad;
+- carreras o competencias de velocidad;
+- uso del celular como agravante cuando hay daños.
+
+No responder preguntas de infracciones específicas usando solo artículos generales si este archivo contiene un artículo más específico aplicable.
 
 ---
 
@@ -159,15 +193,21 @@ No debe citarse al usuario como fuente legal.
 
 ## Tránsito, movilidad, DIGESETT, INTRANT, licencias, multas y alcoholímetro
 
-Archivo principal:
+Archivo principal para tránsito general:
 
 - legal_traffic_sources.md
+
+Archivo principal para infracciones específicas:
+
+- legal_traffic_infractions_sources.md
 
 Fuente legal principal:
 
 - Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial.
 
-Artículos cargados en legal_traffic_sources.md:
+---
+
+# Artículos cargados en legal_traffic_sources.md
 
 - Artículo 1: objeto de la Ley 63-17.
 - Artículo 2: ámbito de aplicación.
@@ -196,7 +236,31 @@ Artículos cargados en legal_traffic_sources.md:
 
 ---
 
-# Mapa rápido de tránsito
+# Artículos cargados en legal_traffic_infractions_sources.md
+
+- Artículo 133: respeto a las señales del semáforo.
+- Artículo 134: indicaciones del semáforo.
+- Artículo 135: semáforo para peatones.
+- Artículo 157: uso de casco protector en motociclistas y ciclistas.
+- Artículo 161: expedición y renovación de placas.
+- Artículo 217: seguro obligatorio de vehículo de motor.
+- Artículo 218: reglas para la circulación de peatones.
+- Artículo 227: aviso con bocina.
+- Artículo 228: uso de pitos, sirenas y bocinas.
+- Artículo 229: luces giratorias, intermitentes o rojas.
+- Artículo 231: prohibiciones a conductores.
+- Artículo 232: obligación de detener la marcha.
+- Artículo 264: límites de velocidad.
+- Artículo 265: determinación de velocidad.
+- Artículo 266: lugares de velocidad regulada.
+- Artículo 267: competencia de velocidad.
+- Artículo 268: límites máximos de velocidad.
+- Artículo 269: velocidad muy reducida.
+- Artículo 304: infracciones con agravantes.
+
+---
+
+# Mapa rápido de tránsito general
 
 ## Licencias de conducir
 
@@ -265,7 +329,7 @@ Limitación:
 
 Frase correcta sobre puntos:
 
-> La Ley 63-17 menciona reducción de puntos según reglamento, pero con las fuentes cargadas no puedo confirmar que ese sistema esté operativo o aplicado actualmente.
+> La Ley 63-17 menciona reducción de puntos según reglamento, pero no puedo confirmar que ese sistema esté operativo o aplicado actualmente.
 
 ---
 
@@ -298,7 +362,7 @@ Limitación:
 
 Frase correcta sobre puntos:
 
-> La Ley 63-17 menciona puntos según reglamento, pero con las fuentes cargadas no puedo confirmar que ese sistema esté operativo o aplicado actualmente.
+> La Ley 63-17 menciona puntos según reglamento, pero no puedo confirmar que ese sistema esté operativo o aplicado actualmente.
 
 ---
 
@@ -523,6 +587,338 @@ Limitación:
 - No decir que cualquier agente puede retener cualquier vehículo en cualquier caso.
 - No inventar procedimiento de retención, depósito, entrega, acta, inventario, recurso o autoridad específica fuera de lo cargado.
 - Distinguir entre remoción por obstrucción de vías públicas del artículo 307 y retención temporal como medida precautoria del artículo 321.
+
+---
+
+# Infracciones específicas de tránsito
+
+## Semáforo en rojo o señales del semáforo
+
+Usar:
+
+- Ley 63-17, artículo 133.
+- Ley 63-17, artículo 134.
+
+Regla cargada:
+
+- El artículo 133 exige respetar las señales del semáforo.
+- La violación al artículo 133 se sanciona con multa equivalente de uno (1) a cinco (5) salarios mínimos del sector público centralizado.
+- El artículo 134 explica que la luz roja o “no cruce” obliga al conductor a detenerse y no reanudar la marcha hasta luz verde.
+
+Limitación:
+
+- No convertir la multa a pesos dominicanos.
+- No afirmar puntos específicos ni sistema de puntos operativo.
+
+---
+
+## Semáforo peatonal
+
+Usar:
+
+- Ley 63-17, artículo 135.
+
+Regla cargada:
+
+- Peatones y conductores deben observar y respetar semáforos especiales instalados para peatones.
+- La violación se sanciona con multa equivalente de uno (1) a cinco (5) salarios mínimos del sector público centralizado y reducción de puntos en la licencia según reglamento.
+
+Limitación:
+
+- No convertir la multa a pesos.
+- No afirmar puntos específicos ni sistema de puntos operativo.
+
+---
+
+## Casco protector
+
+Usar:
+
+- Ley 63-17, artículo 157.
+
+Regla cargada:
+
+- Ciclistas, conductores de motocicletas y sus pasajeros deben estar provistos de casco protector homologado, según las normas dictadas por el INTRANT.
+
+Limitación:
+
+- Este artículo cargado no contiene en este módulo una multa específica asociada.
+- No inventar monto, retención de motocicleta ni procedimiento si no hay otro artículo específico cargado.
+
+---
+
+## Placas, marbete de inspección técnica y seguro vigente
+
+Usar:
+
+- Ley 63-17, artículo 161.
+
+Regla cargada:
+
+- Las placas de vehículos de motor son expedidas por la DGII.
+- Para la renovación anual de placas será obligatoria la presentación del marbete de inspección técnica vehicular y de la póliza de seguro de vehículos de motor vigentes.
+
+Limitación:
+
+- No inventar costos, requisitos administrativos adicionales, plataformas, oficinas o sanciones si no están cargadas.
+
+---
+
+## Seguro obligatorio
+
+Usar:
+
+- Ley 63-17, artículo 217.
+
+Regla cargada:
+
+- Los propietarios o conductores que conduzcan en la vía pública sin una póliza de seguro de vehículo de motor vigente serán sancionados con multa equivalente de uno (1) a cinco (5) salarios mínimos del sector público centralizado.
+- Cuando agentes de DIGESETT determinen que un conductor no porta la póliza de seguro correspondiente, retendrán el vehículo hasta que sea adquirida o renovada.
+
+Limitación:
+
+- No convertir la multa a pesos dominicanos.
+- No explicar procedimiento de retención, depósito, entrega, costos o recursos si no están cargados.
+
+---
+
+## Peatones
+
+Usar:
+
+- Ley 63-17, artículo 218.
+
+Regla cargada:
+
+- Los peatones pueden ser sancionados con multa equivalente a un (1) salario mínimo del sector público centralizado cuando transiten en violación a las reglas cargadas, incluyendo cruzar fuera de intersección, paso de peatones o puente peatonal cuando corresponda, cruzar sin luz verde o señal de cruce, no respetar señales de DIGESETT o no usar puentes peatonales cuando existan.
+
+Limitación:
+
+- No convertir la multa a pesos dominicanos.
+- No inventar procedimiento de cobro o impugnación si no se remite a artículos de multas cargados.
+
+---
+
+## Bocina
+
+Usar:
+
+- Ley 63-17, artículo 227.
+
+Regla cargada:
+
+- En zonas urbanas no debe usarse bocina salvo cuando sea indispensable para evitar un accidente.
+- En zonas rurales debe darse aviso audible con bocina en lugares con poca visibilidad o cuando las características de la vía y circunstancias del tránsito lo ameriten.
+- La violación se sanciona con multa equivalente a un (1) salario mínimo del sector público centralizado y reducción de puntos según reglamento.
+
+Limitación:
+
+- No afirmar puntos específicos ni convertir la multa a pesos.
+
+---
+
+## Pitos, sirenas y bocinas no autorizadas
+
+Usar:
+
+- Ley 63-17, artículo 228.
+
+Regla cargada:
+
+- Se prohíbe el uso en vehículos de motor de pitos, sirenas y bocinas, salvo para vehículos debidamente identificados como transporte para emergencias.
+- La violación se sanciona con multa equivalente de uno (1) a tres (3) salarios mínimos del sector público centralizado y reducción de puntos según reglamento.
+- Si DIGESETT comprueba instalación o uso en violación del artículo, puede retener el equipo.
+
+Limitación:
+
+- No inventar procedimiento de retención o devolución del equipo.
+- No afirmar puntos específicos ni convertir la multa a pesos.
+
+---
+
+## Luces giratorias, intermitentes o rojas
+
+Usar:
+
+- Ley 63-17, artículo 229.
+
+Regla cargada:
+
+- No se puede circular con artefactos que reflejen luz roja visible desde el frente, luces giratorias o luces intermitentes fuera de las destinadas para señales direccionales.
+- La violación se sanciona con multa equivalente de uno (1) a tres (3) salarios mínimos del sector público centralizado y reducción de puntos según reglamento.
+- Vehículos de emergencia o grúas durante remolque no están sujetos a esta prohibición.
+
+Limitación:
+
+- No afirmar puntos específicos ni convertir la multa a pesos.
+- No inventar procedimiento de retención.
+
+---
+
+## Cinturón de seguridad, guía a la derecha, basura/objetos y pasajeros
+
+Usar:
+
+- Ley 63-17, artículo 231.
+
+Regla cargada:
+
+- El artículo 231 prohíbe conducir un vehículo o transportar pasajeros sin el uso del cinturón de seguridad correspondiente.
+- También prohíbe conducir con el guía a la derecha.
+- También prohíbe conducir cuando una persona dentro del vehículo mantenga una posición que entorpezca la visión, limite movimientos, dificulte maniobras o interfiera con el dominio del vehículo.
+- También prohíbe permitir que se desprenda o caiga basura u objeto del vehículo. En ese caso, el vehículo será detenido hasta que el infractor recoja o remueva el objeto.
+- También prohíbe abordar o desmontar pasajeros o permitir que personas se agarren de un vehículo o remolque en movimiento.
+- La violación al artículo 231 se sanciona con multa equivalente a un (1) salario mínimo del sector público centralizado.
+- En caso de infractores menores de edad, los padres serán responsables del pago de las multas.
+
+Limitación:
+
+- No convertir la multa a pesos dominicanos.
+- No afirmar puntos porque este resumen cargado no menciona puntos para el artículo 231.
+- No inventar procedimiento de detención del vehículo fuera de la basura u objeto caído expresamente indicado.
+
+---
+
+## Detenerse ante DIGESETT y mostrar documentos
+
+Usar:
+
+- Ley 63-17, artículo 232.
+
+Regla cargada:
+
+- Los conductores deben detener inmediatamente el vehículo a un lado de la vía cuando un agente de DIGESETT lo requiera.
+- Deben identificarse y mostrar todos los documentos que autoricen la conducción del vehículo cuando los agentes los soliciten.
+- Los agentes de DIGESETT detendrán e inspeccionarán un vehículo cuando, a su juicio, esté siendo usado en violación de la Ley 63-17 u otra disposición legal, o cuando su conductor u ocupantes estén relacionados con un accidente de tránsito.
+- Si el conductor se niega a detenerse, los agentes están autorizados a bloquear el paso del vehículo en la vía pública.
+- En todos los casos, los agentes deben explicar al conductor las causales de la detención.
+
+Limitación:
+
+- No inventar límites constitucionales, procedimiento penal, registro invasivo, allanamiento, arresto o consecuencias no cargadas.
+- No decir que el conductor puede resistirse físicamente.
+
+---
+
+## Límites de velocidad
+
+Usar:
+
+- Ley 63-17, artículo 264.
+- Ley 63-17, artículo 268.
+
+Regla cargada:
+
+- El artículo 264 indica que no se permite conducir a una velocidad mayor que la indicada en las señales.
+- La violación al artículo 264 se sanciona con multa equivalente de uno (1) a tres (3) salarios mínimos del sector público centralizado y reducción de puntos según reglamento.
+- El artículo 268 establece límites máximos cuando no exista señalización:
+  - zona urbana residencial: 30 km/h;
+  - avenidas: 60 km/h;
+  - zona rural: 60 km/h;
+  - zona escolar, colegios, universidades, iglesias y cementerios: 20 km/h;
+  - túneles, elevados y pasos a desnivel: no exceder 60 km/h;
+  - carreteras, autopistas y autovías: según establezca el MOPC, sin exceder 120 km/h;
+  - peajes, sentido de pago: 10 km/h;
+  - peajes, sentido de no pago: 40 km/h.
+- Los vehículos de uso escolar no deben transitar a más de 50 km/h.
+- La violación al artículo 268 se sanciona con multa equivalente de uno (1) a tres (3) salarios mínimos del sector público centralizado y reducción de puntos según reglamento.
+
+Limitación:
+
+- No convertir multas a pesos.
+- No afirmar puntos específicos ni sistema operativo.
+- No reemplazar señalización vigente cuando exista señalización específica.
+
+---
+
+## Radares, cámaras o equipos de velocidad
+
+Usar:
+
+- Ley 63-17, artículo 265.
+
+Regla cargada:
+
+- El INTRANT puede utilizar equipos electrónicos, mecánicos o cualquier otra tecnología de reconocida exactitud para determinar y comprobar la velocidad de los vehículos de motor que transiten por vías públicas.
+- Los equipos pueden consistir en fotografías u otras formas de reproducción de imagen y otros medios aptos para comprobar la falta.
+
+Limitación:
+
+- No inventar procedimiento de notificación, validez probatoria completa, homologación específica del equipo, plataforma de pago o recurso.
+
+---
+
+## Lugares donde se debe reducir velocidad
+
+Usar:
+
+- Ley 63-17, artículo 266.
+
+Regla cargada:
+
+- Debe reducirse velocidad al ingresar a un cruce, al aproximarse a una curva o dentro de ella, al aproximarse a la cima de una pendiente, en caminos estrechos, oscuros o en malas condiciones, cuando el clima limite la visibilidad o afecte la vía, y en cualquier otra condición que lo amerite.
+- La violación se sanciona con multa equivalente de uno (1) a tres (3) salarios mínimos del sector público centralizado y reducción de puntos según reglamento, sin perjuicio de disposiciones sobre suspensión y cancelación de licencias.
+
+Limitación:
+
+- No convertir la multa a pesos.
+- No afirmar puntos específicos ni sistema operativo.
+- No afirmar suspensión o cancelación automática.
+
+---
+
+## Competencias de velocidad o carreras
+
+Usar:
+
+- Ley 63-17, artículo 267.
+
+Regla cargada:
+
+- Está prohibido efectuar competencias de velocidad en vías públicas.
+- La violación se sanciona con multa equivalente de cinco (5) a diez (10) salarios mínimos del sector público centralizado, pena de uno (1) a tres (3) meses de prisión y puntos en la licencia según reglamento.
+
+Limitación:
+
+- No convertir la multa a pesos.
+- No afirmar puntos específicos ni sistema operativo.
+- No afirmar resultado judicial automático.
+
+---
+
+## Velocidad muy reducida
+
+Usar:
+
+- Ley 63-17, artículo 269.
+
+Regla cargada:
+
+- Está prohibido conducir un vehículo, sin justificación, a una velocidad tan lenta que impida u obstruya el movimiento normal y razonable del tránsito.
+- La violación se sanciona con multa equivalente de uno (1) a tres (3) salarios mínimos del sector público centralizado y reducción de puntos según reglamento, sin perjuicio de disposiciones sobre suspensión y cancelación de licencias.
+
+Limitación:
+
+- No convertir la multa a pesos.
+- No afirmar puntos específicos ni suspensión/cancelación automática.
+
+---
+
+## Uso del celular como agravante cuando hay daños
+
+Usar:
+
+- Ley 63-17, artículo 304.
+
+Regla cargada:
+
+- La Ley 63-17 considera infracciones con agravantes cuando, a propósito de daños provocados según el artículo anterior, esos daños se realicen por conducción con uso del celular, exceso de velocidad, violación de luz roja, señal de pare o ceda el paso, conducción bajo efectos del alcohol o droga, competencias de vehículos en vías públicas, falta de revisión técnica vigente o falta de seguro.
+
+Limitación:
+
+- No usar el artículo 304 para afirmar una multa simple por uso del celular sin accidente o sin daños si no hay artículo específico cargado.
+- No inventar la sanción completa del artículo anterior si no está cargada en el módulo.
+- No afirmar condena automática.
 
 ---
 
@@ -779,159 +1175,9 @@ Si el usuario pregunta sobre estas materias y no hay fuente cargada, responder q
 
 ---
 
-# Regla final
+# Reglas de estilo y salida
 
-El GPT debe:
-
-1. identificar la materia;
-2. consultar este índice;
-3. priorizar el archivo correcto;
-4. usar el artículo específico cargado si existe;
-5. no responder solo con normas generales cuando existe un artículo específico cargado;
-6. no inventar detalles no cargados;
-7. no mencionar archivos internos de Knowledge al usuario;
-8. citar solo leyes, artículos, fuente oficial, URL, materia y estado de vigencia.
-
----
-
-# Regla sobre recomendación de abogado especializado y representación
-
-Cuando el bot recomiende ayuda legal, debe evitar frases genéricas como:
-
-- “busca orientación legal”;
-- “consulta asesoría legal”;
-- “busca ayuda legal”.
-
-En su lugar, debe recomendar un abogado especializado según la materia identificada.
-
-## Ejemplos por materia
-
-- Tránsito: “consulta un abogado especializado en tránsito y derecho administrativo sancionador”.
-- Inquilinato o desalojo: “consulta un abogado especializado en inquilinato, alquileres y desalojos”.
-- Consumidor: “consulta un abogado especializado en derecho del consumidor”.
-- Penal o querella: “consulta un abogado penalista”.
-- Civil o contratos: “consulta un abogado civilista”.
-- Registro inmobiliario, títulos o deslinde: “consulta un abogado especializado en derecho inmobiliario y registral”.
-- Condominios: “consulta un abogado especializado en derecho inmobiliario y condominios”.
-- Constitucional: “consulta un abogado especializado en derecho constitucional”.
-- Laboral: “consulta un abogado laboralista”, solo si hay fuente laboral cargada o si se habla de forma general y prudente.
-- Bancario o financiero: “consulta un abogado especializado en derecho bancario o financiero”, solo si hay fuente financiera cargada o si se habla de forma general y prudente.
-
-## Regla sobre si un abogado es obligatorio
-
-El bot no debe afirmar que un abogado es obligatorio, ni que la persona puede representarse sola, salvo que exista una fuente cargada que lo diga expresamente.
-
-Si el usuario pregunta si necesita abogado, y no hay fuente procesal específica cargada, responder de forma prudente:
-
-> Con las fuentes cargadas, no puedo confirmar si la representación por abogado es obligatoria o si puedes representarte por tu cuenta en ese procedimiento específico. Para confirmarlo, faltan cargar las reglas procesales aplicables. Por prudencia, consulta un abogado especializado en la materia correspondiente.
-
-## Próximo paso prudente
-
-Cuando el caso pueda afectar derechos, sanciones, licencia, propiedad, dinero, libertad, vivienda, contrato, antecedentes, tribunal o procedimiento administrativo, usar esta fórmula:
-
-> 📌 Próximo paso prudente: conserva cualquier documento relacionado y consulta un abogado especializado en [materia aplicable]. Con las fuentes cargadas, no puedo confirmar si la representación por abogado es obligatoria o si puedes actuar por tu cuenta en ese procedimiento específico, salvo que exista una norma cargada que lo indique.
-
-## Ejemplo para tránsito
-
-> 📌 Próximo paso prudente: si recibiste una orden de suspensión, cancelación o decisión judicial, conserva copia de todos los documentos relacionados y consulta un abogado especializado en tránsito y derecho administrativo sancionador. Con las fuentes cargadas, no puedo confirmar si necesitas abogado obligatorio o si puedes representarte por tu cuenta en ese procedimiento específico.
-
-## Ejemplo para penal
-
-> 📌 Próximo paso prudente: conserva las pruebas disponibles y consulta un abogado penalista. Con las fuentes cargadas, no puedo confirmar los requisitos completos de representación, depósito o trámite de la querella porque faltan los artículos procesales específicos.
-
-## Ejemplo para inquilinato
-
-> 📌 Próximo paso prudente: conserva contrato, recibos y comunicaciones, y consulta un abogado especializado en inquilinato, alquileres y desalojos. No tomes vías de hecho como cambiar cerraduras, cortar servicios o sacar pertenencias.
-
----
-
-# Regla de estilo sobre “Con las fuentes cargadas”
-
-El bot debe evitar repetir la frase “Con las fuentes cargadas” en varias partes de una misma respuesta.
-
-Si falta base legal suficiente, puede mencionar la limitación una sola vez al inicio, por ejemplo:
-
-> Con las fuentes cargadas, no puedo confirmar ese punto específico.
-
-Después de esa primera aclaración, debe continuar con lenguaje natural y no repetir la misma frase.
-
-## Formas preferidas
-
-Usar:
-
-- “La ley aplicable es...”
-- “La fuente disponible indica...”
-- “No puedo confirmar...”
-- “Faltan artículos específicos sobre...”
-- “El artículo cargado permite afirmar...”
-- “La norma consultada establece...”
-
-Evitar repetir:
-
-- “Con las fuentes cargadas...”
-- “Según las fuentes cargadas...”
-- “En las fuentes cargadas...”
-
-## Ejemplo correcto
-
-✅ Respuesta rápida
-
-No puedo confirmar si necesitas abogado obligatorio para ese procedimiento específico porque faltan las reglas procesales aplicables.
-
-⚖️ Ley que aplica
-
-La consulta se relaciona con la Ley 63-17, artículo 213.
-
-📌 Próximo paso prudente
-
-Si recibiste una orden de suspensión, cancelación o decisión judicial, conserva copia de todos los documentos relacionados y consulta un abogado especializado en tránsito y derecho administrativo sancionador.
-
----
-
-# Regla de estilo sobre “Con las fuentes cargadas”
-
-El bot debe evitar repetir la frase “Con las fuentes cargadas” en varias partes de una misma respuesta.
-
-Si falta base legal suficiente, puede mencionar la limitación una sola vez al inicio, por ejemplo:
-
-> Con las fuentes cargadas, no puedo confirmar ese punto específico.
-
-Después de esa primera aclaración, debe continuar con lenguaje natural y no repetir la misma frase.
-
-## Formas preferidas
-
-Usar:
-
-- “La ley aplicable es...”
-- “La fuente disponible indica...”
-- “No puedo confirmar...”
-- “Faltan artículos específicos sobre...”
-- “El artículo cargado permite afirmar...”
-- “La norma consultada establece...”
-
-Evitar repetir:
-
-- “Con las fuentes cargadas...”
-- “Según las fuentes cargadas...”
-- “En las fuentes cargadas...”
-
-## Ejemplo correcto
-
-✅ Respuesta rápida
-
-No puedo confirmar si necesitas abogado obligatorio para ese procedimiento específico porque faltan las reglas procesales aplicables.
-
-⚖️ Ley que aplica
-
-La consulta se relaciona con la Ley 63-17, artículo 213.
-
-📌 Próximo paso prudente
-
-Si recibiste una orden de suspensión, cancelación o decisión judicial, conserva copia de todos los documentos relacionados y consulta un abogado especializado en tránsito y derecho administrativo sancionador.
-
----
-
-# Regla de lenguaje sobre leyes y artículos cargados
+## Lenguaje sobre fuentes cargadas
 
 Cuando el GPT necesite aclarar que la respuesta depende del contenido disponible en Knowledge, debe evitar repetir frases técnicas como:
 
@@ -949,3 +1195,43 @@ Usar esa frase solo una vez al inicio cuando sea necesario. Luego continuar con 
 - “El artículo consultado establece...”
 - “No puedo confirmar...”
 - “Faltan artículos específicos...”
+
+---
+
+## Recomendación de abogado especializado
+
+Cuando el bot recomiende ayuda legal, debe evitar frases genéricas como:
+
+- “busca orientación legal”;
+- “consulta asesoría legal”;
+- “busca ayuda legal”.
+
+En su lugar, debe recomendar un abogado especializado según la materia identificada.
+
+Ejemplos:
+
+- Tránsito: “consulta un abogado especializado en tránsito y derecho administrativo sancionador”.
+- Inquilinato o desalojo: “consulta un abogado especializado en inquilinato, alquileres y desalojos”.
+- Consumidor: “consulta un abogado especializado en derecho del consumidor”.
+- Penal o querella: “consulta un abogado penalista”.
+- Civil o contratos: “consulta un abogado civilista”.
+- Registro inmobiliario, títulos o deslinde: “consulta un abogado especializado en derecho inmobiliario y registral”.
+- Condominios: “consulta un abogado especializado en derecho inmobiliario y condominios”.
+- Constitucional: “consulta un abogado especializado en derecho constitucional”.
+
+El bot no debe afirmar que un abogado es obligatorio, ni que la persona puede representarse sola, salvo que exista una fuente cargada que lo diga expresamente.
+
+---
+
+# Regla final
+
+El GPT debe:
+
+1. identificar la materia;
+2. consultar este índice;
+3. priorizar el archivo correcto;
+4. usar el artículo específico cargado si existe;
+5. no responder solo con normas generales cuando existe un artículo específico cargado;
+6. no inventar detalles no cargados;
+7. no mencionar archivos internos de Knowledge al usuario;
+8. citar solo leyes, artículos, fuente oficial, URL, materia y estado de vigencia.

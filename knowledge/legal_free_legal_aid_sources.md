@@ -26,10 +26,10 @@ Puedes agregar al final de las respuestas, cuando sea útil:
 
 **🤝 Asistencia legal gratis oficial en RD**
 
-- **Oficina Nacional de Defensa Pública:** ofrece defensa legal gratuita para personas sin recursos o sin abogado, principalmente en procesos penales. Tel.: **809-686-0556**.
-- **Ministerio de la Mujer:** puede brindar asistencia en casos de violencia contra la mujer, violencia intrafamiliar, asistencia legal, asistencia psicológica y línea de emergencia.
-- **CONAPE:** puede orientar o asistir a adultos mayores de 60 años, según sus programas disponibles.
-- **UASD — Servicio Legal Popular:** puede ofrecer asistencia legal gratuita a la población, sujeto a disponibilidad y verificación del servicio.
+- **Oficina Nacional de Defensa Pública:** defensa legal gratuita para personas sin recursos o sin abogado, principalmente en procesos penales. Tel.: **809-686-0556**.
+- **Ministerio de la Mujer:** asistencia en casos de violencia contra la mujer o intrafamiliar, asistencia legal, asistencia psicológica y línea de emergencia.
+- **CONAPE:** orientación o asistencia para adultos mayores de 60 años, según sus programas disponibles.
+- **UASD — Servicio Legal Popular:** asistencia legal gratuita a la población, sujeto a disponibilidad y verificación del servicio.
 
 ---
 
@@ -38,7 +38,7 @@ Puedes agregar al final de las respuestas, cuando sea útil:
 ## Oficina Nacional de Defensa Pública
 
 - Institución: Oficina Nacional de Defensa Pública.
-- Servicio identificado: asistencia legal a personas en conflicto con la ley penal.
+- Servicio identificado: defensa legal gratuita para personas sin recursos o sin abogado, principalmente en procesos penales.
 - Teléfono registrado: 809-686-0556.
 - Fuente oficial: https://defensapublica.gob.do/
 - Estado de verificación: verificado_en_portal_oficial.
@@ -50,7 +50,7 @@ Puedes agregar al final de las respuestas, cuando sea útil:
 ## Ministerio de la Mujer
 
 - Institución: Ministerio de la Mujer.
-- Servicios identificados en portal oficial: Asistencia Legal, Asistencia Psicológica y Línea de Emergencia.
+- Servicios identificados: asistencia en casos de violencia contra la mujer o intrafamiliar, asistencia legal, asistencia psicológica y línea de emergencia.
 - Fuente oficial: https://mujer.gob.do/
 - Estado de verificación: verificado_en_portal_oficial.
 - Uso permitido: mencionar para casos de violencia contra la mujer, violencia intrafamiliar, asistencia legal, asistencia psicológica y emergencia.
@@ -108,3 +108,5 @@ Agregar:
 - **Ministerio de la Mujer:** asistencia en casos de violencia contra la mujer o intrafamiliar.
 - **CONAPE:** orientación o asistencia para adultos mayores de 60 años.
 - **UASD — Servicio Legal Popular:** asistencia legal gratuita a la población, sujeto a disponibilidad y verificación.
+
+No presentar estos recursos como garantía de representación ni resultado legal.

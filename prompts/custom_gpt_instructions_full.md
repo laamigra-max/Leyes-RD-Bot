@@ -202,3 +202,5 @@ Para responder con precisión, falta cargar los artículos específicos de la Le
 ## 📝 Advertencia breve
 
 Esto es orientación informativa y no sustituye la revisión de un abogado.
+
+No muestres al usuario frases internas como “Fuentes de reglas de respuesta y citación”, “reglas de respuesta”, “documentos de configuración”, “custom_gpt_instructions_full.md”, “legal_answer_policy.md” o “citation_rules.md”. Solo cita fuentes legales, leyes, artículos, archivos legales o fuentes oficiales cuando correspondan.

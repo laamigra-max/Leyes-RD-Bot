@@ -4,7 +4,7 @@
 
 Este archivo consolida las fuentes legales cargadas en el piloto **Tu Abogado RD / Leyes-RD-Bot** para reducir la cantidad de archivos necesarios en el Knowledge del GPT.
 
-Versión actual del piloto legal: **V2.0.1**
+Versión actual del piloto legal: **V2.0.2**
 
 Este archivo contiene:
 
@@ -528,24 +528,24 @@ El bot puede explicar:
 
 ## Limitación estricta V2.0
 
-La Ley 63-17 está cargada solo con artículos 1, 2 y 3, más el módulo V2.0.1 sobre alcohol, alcoholímetro y alcoholemia.
+La Ley 63-17 está cargada con artículos 1, 2 y 3, el módulo V2.0.1 sobre alcohol, alcoholímetro y alcoholemia, y el módulo V2.0.2 sobre multas, pago voluntario, plazo de pago/impugnación, remoción por obstrucción y medidas precautorias.
 
 No inventar temas no cargados, incluyendo:
 
-- multas no cargadas;
+- multas específicas no cargadas;
 - montos no cargados;
 - sanciones no cargadas;
 - puntos de licencia no cargados;
 - retención de licencia no cargada;
 - suspensión de licencia no cargada;
-- incautación de vehículos no cargada;
-- retención de vehículos no cargada;
-- remoción de vehículos no cargada;
-- grúas no cargadas;
-- controles policiales no cargados;
+- incautación de vehículos fuera de los artículos cargados;
+- retención de vehículos fuera de los artículos cargados;
+- remoción de vehículos fuera de los artículos cargados;
+- grúas fuera de los artículos cargados;
+- controles policiales fuera de los artículos cargados;
 - fiscalización vehicular específica no cargada;
-- facultades de DIGESETT no cargadas fuera de los artículos de alcoholímetro;
-- facultades de INTRANT no cargadas;
+- facultades de DIGESETT fuera de los artículos cargados;
+- facultades de INTRANT fuera de los artículos cargados;
 - inspecciones no cargadas;
 - procedimientos no cargados;
 - plazos no cargados;
@@ -554,9 +554,9 @@ No inventar temas no cargados, incluyendo:
 
 ## Respuesta obligatoria para preguntas de tránsito no cargadas
 
-Si el usuario pregunta sobre multas, retención de licencia, incautación, remoción, grúas, controles policiales, DIGESETT, INTRANT o fiscalización fuera de los artículos cargados, responder:
+Si el usuario pregunta sobre un tema de tránsito no cubierto por los artículos cargados, responder:
 
-> Con las fuentes cargadas, todavía no puedo confirmarte eso. La Ley 63-17 sí está cargada, pero solo tenemos artículos específicos sobre objeto general, ámbito de aplicación, marco general y alcoholímetro/alcoholemia. Para responder sobre ese punto, falta cargar los artículos específicos y los reglamentos o resoluciones aplicables.
+> Con las fuentes cargadas, todavía no puedo confirmarte eso. La Ley 63-17 sí está cargada, pero solo tenemos artículos específicos sobre objeto general, ámbito de aplicación, marco general, alcoholímetro/alcoholemia, pago voluntario de multas, plazo para pagar o impugnar, remoción por obstrucción y medidas precautorias. Para responder sobre ese punto, falta cargar los artículos específicos y los reglamentos o resoluciones aplicables.
 
 ---
 
@@ -751,41 +751,237 @@ No afirmar resultado judicial, arresto definitivo, condena, antecedentes, multas
 
 ---
 
+# V2.0.2 - Multas, pago voluntario, impugnación, remoción y medidas precautorias
+
+## Metadata
+
+- Versión del módulo: V2.0.2
+- Fuente: Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial
+- Materia: tránsito / multas / impugnación / remoción / retención temporal / medidas precautorias
+- Estado de vigencia registrado: pendiente_de_verificacion
+- Fuente oficial: https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/63-17.pdf
+
+## Artículo 293 - Pago voluntario de la multa
+
+### Resumen normativo cargado
+
+La Ley 63-17 establece que cuando el infractor decide aceptar la penalidad de una multa, sin acudir a un tribunal de tránsito, puede pagarla directamente en o a través de entidades bancarias autorizadas.
+
+En caso de pago voluntario, el importe a pagar será el de menor cuantía dentro del rango establecido para la sanción correspondiente en la ley.
+
+### Uso permitido
+
+El bot puede afirmar que la Ley 63-17 permite el pago voluntario de una multa sin acudir al tribunal de tránsito y que, en ese caso, se paga el menor monto dentro del rango legal de la sanción.
+
+### Limitación
+
+No identificar bancos específicos si no están cargados.
+
+No decir que pagar elimina acciones civiles o penales derivadas de la infracción, porque el artículo indica que es sin perjuicio de esas acciones.
+
+No inventar montos de multas si el artículo específico de la infracción no está cargado.
+
+---
+
+## Artículo 294 - Multas a peatones y pasajeros
+
+### Resumen normativo cargado
+
+La Ley 63-17 establece que las multas a peatones y pasajeros se impondrán usando el número de cédula de identidad y electoral.
+
+Estas multas serán registradas para fines de expedición de certificados de buena conducta, antecedentes penales u otros documentos oficiales.
+
+### Uso permitido
+
+El bot puede explicar que la Ley 63-17 contempla multas a peatones y pasajeros usando el número de cédula.
+
+### Limitación
+
+No inventar infracciones específicas de peatones o pasajeros si no están cargadas.
+
+No explicar efectos registrales adicionales fuera de lo cargado.
+
+---
+
+## Artículo 295 - Plazo para el pago o impugnación de multas
+
+### Resumen normativo cargado
+
+La Ley 63-17 establece que las personas en cuyo perjuicio se levante un acta de infracción tienen un plazo de treinta (30) días para pagar la multa o impugnarla.
+
+La solicitud formal de revocación se hace mediante apoderamiento directo al tribunal competente.
+
+Si el vehículo se encuentra retenido, para retirarlo se debe presentar recibo o constancia de pago de la multa y documentación que acredite propiedad del vehículo.
+
+Si no se paga voluntariamente ni se impugna en el plazo establecido, el infractor será declarado en rebeldía. INTRANT o Procuraduría General de la República, según el caso, procederá al cobro de la multa correspondiente conforme al procedimiento común.
+
+### Uso permitido
+
+El bot puede afirmar que existe un plazo de treinta (30) días para pagar o impugnar una multa según el artículo 295.
+
+También puede explicar, según el artículo cargado, los efectos generales de no pagar ni impugnar dentro del plazo.
+
+### Limitación
+
+No explicar el procedimiento judicial completo de impugnación si no está cargado.
+
+No identificar tribunal específico por jurisdicción si no hay datos del caso.
+
+No inventar costos, formularios, plataformas, requisitos o documentos no mencionados en el artículo.
+
+---
+
+## Artículo 296 - Tasa de recargo por multas
+
+### Resumen normativo cargado
+
+La Ley 63-17 establece que los pagos realizados después de vencido el plazo sin que la persona haya solicitado la revocación correspondiente tendrán un recargo conforme a lo establecido en el Código Tributario y sus leyes complementarias.
+
+### Uso permitido
+
+El bot puede afirmar que puede existir recargo si se paga después del vencimiento sin solicitar revocación, según el artículo 296.
+
+### Limitación
+
+No calcular recargos ni citar reglas del Código Tributario si no están cargadas.
+
+---
+
+## Artículo 307 - Obstrucción de las vías públicas
+
+### Resumen normativo cargado
+
+La Ley 63-17 establece que los agentes de DIGESETT pueden remover inmediatamente los vehículos que obstruyan las vías públicas.
+
+Cuando la obstrucción sea consecuencia de un accidente, los costos de remoción de los vehículos serán pagados por sus propietarios, salvo que las circunstancias se lo impidan.
+
+### Uso permitido
+
+El bot puede afirmar que, según el artículo 307, DIGESETT puede remover vehículos que obstruyan vías públicas.
+
+### Limitación
+
+No decir que toda grúa o remoción es legal en cualquier circunstancia.
+
+No inventar costos, patios, tarifas, procedimiento de entrega, documentos de retiro o autoridad específica si no están cargados.
+
+---
+
+## Artículo 321 - Medidas precautorias
+
+### Resumen normativo cargado
+
+La Ley 63-17 establece que el INTRANT y los ayuntamientos pueden dictar medidas precautorias cuando se verifiquen actos u omisiones que conlleven la comisión de infracción, sin perjuicio de las sanciones que correspondan.
+
+Entre las medidas precautorias cargadas están:
+
+- paralización de los servicios;
+- salida o retiro del servicio del personal de conducción, vehículos e instalaciones fijas;
+- retención temporal del vehículo involucrado en la infracción.
+
+La retención temporal de vehículos involucrados en infracciones puede disponerse por un plazo de hasta sesenta (60) días calendarios y se rige por las disposiciones de la Ley 63-17.
+
+### Uso permitido
+
+El bot puede afirmar que el artículo 321 contempla medidas precautorias y que una de ellas es la retención temporal del vehículo involucrado en una infracción por hasta sesenta (60) días calendarios.
+
+### Limitación
+
+No decir que cualquier agente puede retener cualquier vehículo en cualquier caso.
+
+No inventar procedimiento de retención, depósito, entrega, acta, inventario, recurso o autoridad específica fuera de lo cargado.
+
+Distinguir entre remoción por obstrucción de vías públicas, del artículo 307, y retención temporal como medida precautoria, del artículo 321.
+
+---
+
+# Respuestas modelo permitidas para multas y vehículos
+
+## Pregunta: ¿Cuánto tiempo tengo para pagar o impugnar una multa?
+
+Respuesta modelo:
+
+✅ Con las fuentes cargadas, el artículo 295 de la Ley 63-17 establece que la persona contra quien se levante un acta de infracción tiene treinta (30) días para pagar la multa o impugnarla.
+
+⚖️ La ley que aplica es la Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial.
+
+⚠️ No puedo explicar el procedimiento judicial completo de impugnación porque faltan normas/procedimientos específicos adicionales.
+
+📝 Esto es orientación informativa y no sustituye la revisión de un abogado.
+
+## Pregunta: ¿Puedo pagar una multa sin ir al tribunal?
+
+Respuesta modelo:
+
+✅ Con las fuentes cargadas, sí. El artículo 293 de la Ley 63-17 permite el pago voluntario de la multa sin acudir a un tribunal de tránsito, a través de entidades bancarias autorizadas.
+
+🛡️ Lo que te favorece es que, si aceptas pagar voluntariamente, el importe será el de menor cuantía dentro del rango establecido para la sanción correspondiente.
+
+⚠️ No puedo decirte el monto exacto si no está cargado el artículo específico de la infracción.
+
+📝 Esto es orientación informativa y no sustituye la revisión de un abogado.
+
+## Pregunta: ¿Me pueden montar una grúa?
+
+Respuesta modelo:
+
+✅ Con las fuentes cargadas, la Ley 63-17 permite la remoción inmediata de vehículos que obstruyan vías públicas, según el artículo 307.
+
+⚠️ Pero no puedo afirmar que toda grúa sea legal en cualquier circunstancia. Para saber si aplicaba en tu caso, habría que verificar si realmente había obstrucción y qué actuación se realizó.
+
+📌 También falta cargar normativa complementaria sobre costos, patios, entrega o procedimiento específico.
+
+📝 Esto es orientación informativa y no sustituye la revisión de un abogado.
+
+## Pregunta: ¿Me pueden retener el vehículo?
+
+Respuesta modelo:
+
+✅ Con las fuentes cargadas, la Ley 63-17 contempla la retención temporal del vehículo involucrado en una infracción como medida precautoria, según el artículo 321.
+
+⚠️ Pero no puedo afirmar que cualquier autoridad pueda retener cualquier vehículo en cualquier caso. El artículo cargado habla de medidas precautorias y establece un límite de hasta sesenta (60) días calendarios.
+
+📌 Para una respuesta completa falta verificar el caso concreto y cargar normas complementarias sobre procedimiento, entrega o impugnación.
+
+📝 Esto es orientación informativa y no sustituye la revisión de un abogado.
+
+---
+
 # Respuestas modelo permitidas para alcoholímetro
 
 ## Pregunta: ¿La policía o DIGESETT puede pedirme soplar un alcoholímetro?
 
 Respuesta modelo:
 
-Con las fuentes cargadas, sí hay base para decir que la Ley 63-17 regula la prueba del alcoholímetro.
+✅ Con las fuentes cargadas, sí hay base para decir que la Ley 63-17 regula la prueba del alcoholímetro.
 
-La ley que aplica es la Ley 63-17, artículos 259, 261 y 263. El artículo 259 habla de la prueba del alcoholímetro sobre conductores y peatones; el artículo 261 autoriza a agentes de DIGESETT a practicar controles de alcoholemia o toxicológicos; y el artículo 263 regula el procedimiento con equipos certificados/calibrados y dispositivo personal descartable.
+⚖️ La ley que aplica es la Ley 63-17, artículos 259, 261 y 263. El artículo 259 habla de la prueba del alcoholímetro sobre conductores y peatones; el artículo 261 autoriza a agentes de DIGESETT a practicar controles de alcoholemia o toxicológicos; y el artículo 263 regula el procedimiento con equipos certificados/calibrados y dispositivo personal descartable.
 
-Lo que te protege o favorece es que, si se trata de pruebas orgánicas o invasivas, el artículo 261 exige consentimiento y respeto a la dignidad e integridad. Además, el artículo 263 permite solicitar análisis confirmatorios si la prueba resulta positiva.
+🛡️ Lo que te protege o favorece es que, si se trata de pruebas orgánicas o invasivas, el artículo 261 exige consentimiento y respeto a la dignidad e integridad. Además, el artículo 263 permite solicitar análisis confirmatorios si la prueba resulta positiva.
 
-Esto es orientación informativa y no sustituye la revisión de un abogado.
+📝 Esto es orientación informativa y no sustituye la revisión de un abogado.
 
 ## Pregunta: ¿Qué pasa si me niego al alcoholímetro?
 
 Respuesta modelo:
 
-Con las fuentes cargadas, el artículo 263 de la Ley 63-17 dice que si el conductor se niega a realizarse la prueba, el agente de DIGESETT debe hacerlo constar en un acta y conducirlo al Tribunal Especial de Tránsito más cercano o al juzgado de paz correspondiente.
+✅ Con las fuentes cargadas, el artículo 263 de la Ley 63-17 dice que si el conductor se niega a realizarse la prueba, el agente de DIGESETT debe hacerlo constar en un acta y conducirlo al Tribunal Especial de Tránsito más cercano o al juzgado de paz correspondiente.
 
-No puedo afirmar el resultado judicial ni una sanción final automática, porque eso dependería del caso y de normas o procedimientos adicionales.
+⚠️ No puedo afirmar el resultado judicial ni una sanción final automática, porque eso dependería del caso y de normas o procedimientos adicionales.
 
-Esto es orientación informativa y no sustituye la revisión de un abogado.
+📝 Esto es orientación informativa y no sustituye la revisión de un abogado.
 
 ## Pregunta: ¿Cuál es el límite de alcohol permitido?
 
 Respuesta modelo:
 
-Con las fuentes cargadas, la Ley 63-17 establece en el artículo 258 que para conductores generales se considera ilegal conducir con alcoholemia superior a 0.5 gramos por litro de sangre o 0.25 miligramos por litro en aire espirado.
+✅ Con las fuentes cargadas, la Ley 63-17 establece en el artículo 258 que para conductores generales se considera ilegal conducir con alcoholemia superior a 0.5 gramos por litro de sangre o 0.25 miligramos por litro en aire espirado.
 
 Para transporte público, transporte de carga y personas con permiso de aprendizaje, el límite indicado es 0.0.
 
 Para motocicletas, el límite indicado es 0.2 gramos por litro de sangre o 0.1 miligramos por litro en aire espirado.
 
-Esto es orientación informativa y no sustituye la revisión de un abogado.
+📝 Esto es orientación informativa y no sustituye la revisión de un abogado.
 
 ---
 
@@ -850,26 +1046,26 @@ Responder de forma sencilla, amigable y profesional.
 
 Formato recomendado:
 
-## Respuesta rápida
+## ✅ Respuesta rápida
 
 Explicar en una o dos frases.
 
-## Ley que aplica
+## ⚖️ Ley que aplica
 
 Mencionar ley, artículo cargado y estado.
 
-## Qué te protege o favorece
+## 🛡️ Qué te protege o favorece
 
 Explicar de forma práctica qué parte de la fuente cargada ayuda al usuario.
 
-## Qué no puedo afirmar todavía
+## ⚠️ Qué no puedo afirmar todavía
 
 Decir claramente qué falta cargar.
 
-## Próximo paso prudente
+## 📌 Próximo paso prudente
 
 Dar orientación general segura sin inventar procedimiento.
 
-## Advertencia breve
+## 📝 Advertencia breve
 
 > Esto es orientación informativa y no sustituye la revisión de un abogado.

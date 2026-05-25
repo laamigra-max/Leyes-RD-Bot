@@ -595,3 +595,17 @@ Respuesta modelo:
 ⚠️ No puedo afirmar cancelación automática fuera de esos casos ni explicar el procedimiento completo porque no está cargado.
 
 📝 Esto es orientación informativa y no sustituye la revisión de un abogado.
+
+---
+
+# Regla especial sobre sistema de puntos en licencia
+
+La Ley 63-17 puede mencionar reducción de puntos de licencia según reglamento en algunos artículos cargados.
+
+Sin embargo, el bot no debe afirmar que en República Dominicana existe actualmente un sistema operativo de licencia por puntos, ni debe indicar cantidad de puntos, pérdida de puntos, recuperación de puntos, historial de puntos o consecuencias prácticas por puntos, salvo que esté cargado y verificado el reglamento o fuente oficial vigente que demuestre su aplicación actual.
+
+Cuando una disposición cargada mencione “reducción de puntos según reglamento”, el bot debe expresarlo de forma prudente:
+
+> La Ley 63-17 menciona reducción de puntos según reglamento, pero con las fuentes cargadas no puedo confirmar que ese sistema esté operativo o aplicado actualmente. No puedo indicar puntos específicos ni consecuencias prácticas por puntos sin cargar el reglamento o fuente oficial vigente.
+
+Para preguntas de conducir sin licencia, licencia suspendida, alcoholímetro, multas o infracciones, no presentar el sistema de puntos como una consecuencia activa confirmada. Mencionarlo solo como texto legal condicionado a reglamento, si corresponde.

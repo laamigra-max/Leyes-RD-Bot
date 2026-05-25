@@ -4,7 +4,7 @@
 
 Este archivo consolida las fuentes legales cargadas en el piloto **Tu Abogado RD / Leyes-RD-Bot** para reducir la cantidad de archivos necesarios en el Knowledge del GPT.
 
-Versión actual del piloto legal: **V2.0**
+Versión actual del piloto legal: **V2.0.1**
 
 Este archivo contiene:
 
@@ -528,38 +528,264 @@ El bot puede explicar:
 
 ## Limitación estricta V2.0
 
-La Ley 63-17 está cargada solo con artículos 1, 2 y 3.
+La Ley 63-17 está cargada solo con artículos 1, 2 y 3, más el módulo V2.0.1 sobre alcohol, alcoholímetro y alcoholemia.
 
-No inventar:
+No inventar temas no cargados, incluyendo:
 
-- multas;
-- montos;
-- sanciones;
-- puntos;
-- niveles de alcohol;
-- alcoholímetros;
-- obligación o negativa frente a alcoholímetros;
-- retención de licencia;
-- suspensión de licencia;
-- incautación de vehículos;
-- retención de vehículos;
-- remoción de vehículos;
-- grúas;
-- controles policiales;
-- fiscalización vehicular específica;
-- facultades de DIGESETT;
-- facultades de INTRANT;
-- inspecciones;
-- procedimientos;
-- plazos;
-- requisitos;
-- consecuencias administrativas específicas.
+- multas no cargadas;
+- montos no cargados;
+- sanciones no cargadas;
+- puntos de licencia no cargados;
+- retención de licencia no cargada;
+- suspensión de licencia no cargada;
+- incautación de vehículos no cargada;
+- retención de vehículos no cargada;
+- remoción de vehículos no cargada;
+- grúas no cargadas;
+- controles policiales no cargados;
+- fiscalización vehicular específica no cargada;
+- facultades de DIGESETT no cargadas fuera de los artículos de alcoholímetro;
+- facultades de INTRANT no cargadas;
+- inspecciones no cargadas;
+- procedimientos no cargados;
+- plazos no cargados;
+- requisitos no cargados;
+- consecuencias administrativas específicas no cargadas.
 
-## Respuesta obligatoria para preguntas de tránsito específicas
+## Respuesta obligatoria para preguntas de tránsito no cargadas
 
-Si el usuario pregunta sobre multas, alcoholímetros, retención de licencia, incautación, remoción, grúas, controles policiales, DIGESETT, INTRANT o fiscalización, responder:
+Si el usuario pregunta sobre multas, retención de licencia, incautación, remoción, grúas, controles policiales, DIGESETT, INTRANT o fiscalización fuera de los artículos cargados, responder:
 
-> Con las fuentes cargadas, todavía no puedo confirmarte eso. La Ley 63-17 sí está cargada, pero por ahora solo tenemos los artículos 1, 2 y 3, que hablan del objeto, ámbito de aplicación y marco general del tránsito. Para responder sobre multas, alcoholímetros, retención de licencia, incautación, remoción, grúas o controles policiales, falta cargar los artículos específicos y los reglamentos o resoluciones aplicables.
+> Con las fuentes cargadas, todavía no puedo confirmarte eso. La Ley 63-17 sí está cargada, pero solo tenemos artículos específicos sobre objeto general, ámbito de aplicación, marco general y alcoholímetro/alcoholemia. Para responder sobre ese punto, falta cargar los artículos específicos y los reglamentos o resoluciones aplicables.
+
+---
+
+# V2.0.1 - Alcohol, alcoholímetro y alcoholemia
+
+## Metadata
+
+- Versión del módulo: V2.0.1
+- Fuente: Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial
+- Materia: tránsito / alcoholímetro / alcoholemia / DIGESETT / seguridad vial
+- Estado de vigencia registrado: pendiente_de_verificacion
+- Fuente oficial: https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/63-17.pdf
+
+## Artículo 256 - Prohibición de conducir en estado de embriaguez
+
+### Resumen normativo cargado
+
+La Ley 63-17 prohíbe a los conductores de vehículos ingerir bebidas alcohólicas mientras transitan por las vías públicas o conducir en estado de embriaguez.
+
+La violación a esta disposición está asociada a multa de cinco (5) a diez (10) salarios mínimos del sector público centralizado y reducción de puntos de la licencia según reglamento, sin perjuicio de disposiciones sobre suspensión y cancelación de licencia.
+
+### Uso permitido
+
+El bot puede afirmar que la Ley 63-17 prohíbe conducir en estado de embriaguez y que el artículo 256 contiene una sanción de multa expresada en salarios mínimos del sector público centralizado y reducción de puntos según reglamento.
+
+### Limitación
+
+No convertir automáticamente esos salarios mínimos a pesos dominicanos si no hay fuente actual cargada sobre el salario mínimo aplicable.
+
+No afirmar puntos específicos de licencia si el reglamento de puntos no está cargado.
+
+No afirmar suspensión o cancelación de licencia si no están cargados los artículos específicos aplicables.
+
+---
+
+## Artículo 257 - Conducción bajo efectos de drogas o sustancias controladas
+
+### Resumen normativo cargado
+
+La Ley 63-17 prohíbe conducir un vehículo bajo los efectos de drogas o sustancias controladas.
+
+La violación a esta disposición está asociada a multa de cinco (5) a diez (10) salarios mínimos del sector público centralizado y reducción de puntos de licencia según reglamento, sin perjuicio de disposiciones sobre suspensión y cancelación de licencia.
+
+### Uso permitido
+
+El bot puede afirmar que está prohibido conducir bajo efectos de drogas o sustancias controladas y que el artículo 257 contiene sanción expresada en salarios mínimos y puntos según reglamento.
+
+### Limitación
+
+No afirmar procedimiento penal o administrativo completo.
+
+No aplicar la Ley 50-88 salvo que el artículo específico o fuente complementaria esté cargada.
+
+No convertir salarios mínimos a pesos dominicanos sin fuente actual cargada.
+
+---
+
+## Artículo 258 - Alcoholemia
+
+### Resumen normativo cargado
+
+La Ley 63-17 considera ilegal conducir un vehículo de motor por vías públicas cuando el grado de alcoholemia sea superior a:
+
+- 0.5 gramos por litro de alcohol en la sangre; o
+- 0.25 miligramos por litro en el aire espirado.
+
+Para conductores de transporte público de pasajeros, transporte de carga y personas con permiso de aprendizaje, el límite indicado es:
+
+- 0.0 gramos de alcohol por litro de sangre; o
+- 0.0 miligramos por litro en el aire espirado.
+
+Para motocicletas, la ley indica que no deben conducirse con más de:
+
+- 0.2 gramos de alcohol por litro de sangre; o
+- 0.1 miligramos por litro en el aire espirado.
+
+### Uso permitido
+
+El bot puede responder preguntas sobre límites de alcoholemia según el artículo 258 cargado.
+
+### Ejemplo permitido
+
+Con las fuentes cargadas, la Ley 63-17 establece en el artículo 258 que para conductores generales es ilegal conducir con alcoholemia superior a 0.5 g/l en sangre o 0.25 mg/l en aire espirado.
+
+Para transporte público, transporte de carga y permiso de aprendizaje, el límite indicado es 0.0.
+
+Para motocicletas, el límite indicado es 0.2 g/l en sangre o 0.1 mg/l en aire espirado.
+
+### Limitación
+
+No afirmar cómo se calibra el equipo ni procedimiento operativo completo si no se cita el artículo 263 o reglamentos complementarios.
+
+---
+
+## Artículo 259 - Prueba del alcoholímetro
+
+### Resumen normativo cargado
+
+La Ley 63-17 establece que las pruebas del alcoholímetro se efectúan sobre conductores y peatones que deben espirar sobre el instrumento, con el propósito de detectar presencia de alcohol en la respiración y determinar el grado consumido.
+
+Cuando la prueba del alcoholímetro resulte positiva, el agente de DIGESETT puede mantener bajo vigilancia al conductor hasta por cuatro (4) horas.
+
+El conductor puede marcharse inmediatamente si se presenta un familiar o relacionado que se responsabilice de llevarlo a su destino.
+
+### Uso permitido
+
+El bot puede afirmar que el artículo 259 regula la prueba del alcoholímetro y la vigilancia de hasta cuatro horas cuando la prueba sea positiva.
+
+### Limitación
+
+No decir que la vigilancia es arresto penal.
+
+No explicar procedimiento de traslado, acta o tribunal si no se está usando también el artículo 263.
+
+---
+
+## Artículo 260 - Prueba toxicológica
+
+### Resumen normativo cargado
+
+La Ley 63-17 regula pruebas toxicológicas mediante toma de saliva con detector de drogas estéril y descartable, debidamente acreditado, para detectar sustancias prohibidas o controladas que disminuyan la aptitud y facultades para conducir.
+
+### Uso permitido
+
+El bot puede explicar que la Ley 63-17 contempla pruebas toxicológicas.
+
+### Limitación
+
+No explicar detalles técnicos del detector, cadena de custodia, laboratorio o procedimiento completo si no están cargados reglamentos o normas complementarias.
+
+---
+
+## Artículo 261 - Pruebas a conductores y peatones
+
+### Resumen normativo cargado
+
+La Ley 63-17 autoriza a los agentes de DIGESETT a practicar a conductores y peatones controles de alcoholemia o toxicológicos para comprobar la existencia de alcohol o drogas, en determinaciones cualitativas o cuantitativas, cuando disminuyan la aptitud y facultades para conducir o circular.
+
+Cuando esos procedimientos impliquen pruebas orgánicas o invasivas, conductores o peatones deben otorgar su consentimiento.
+
+Dichos controles deben realizarse con respeto a la dignidad e integridad de las personas.
+
+### Uso permitido
+
+El bot puede afirmar que el artículo 261 autoriza controles de alcoholemia o toxicológicos por agentes de DIGESETT y que, si son pruebas orgánicas o invasivas, se requiere consentimiento y respeto a la dignidad e integridad.
+
+### Limitación
+
+No afirmar que toda prueba requiere consentimiento.
+
+Distinguir entre soplar alcoholímetro y pruebas orgánicas o invasivas.
+
+---
+
+## Artículo 262 - Pruebas aleatorias a conductores
+
+### Resumen normativo cargado
+
+La Ley 63-17 permite practicar alcoholimetría o prueba toxicológica de manera preventiva, circunstancial o como parte de operativos a personas en lugares públicos que pretendan conducir un vehículo de motor, cuando el agente considere que su comportamiento es inadecuado y presenta síntomas evidentes de disminución de aptitud y facultades para conducir.
+
+### Uso permitido
+
+El bot puede explicar que la ley contempla pruebas preventivas o aleatorias en las condiciones indicadas por el artículo 262.
+
+### Limitación
+
+No afirmar que cualquier persona puede ser sometida a prueba en cualquier circunstancia sin analizar los supuestos del artículo.
+
+---
+
+## Artículo 263 - Procedimiento para alcoholimetría y pruebas toxicológicas
+
+### Resumen normativo cargado
+
+La Ley 63-17 establece que los agentes de DIGESETT realizarán alcoholimetría y pruebas toxicológicas con instrumentos que garanticen calidad de medición o detección, certificados y calibrados, usando con cada individuo un dispositivo personal de material descartable.
+
+Si el conductor se niega a realizarse la prueba, el agente de DIGESETT debe hacerlo constar en el acta levantada al efecto y conducirlo al Tribunal Especial de Tránsito más cercano o al juzgado de paz correspondiente.
+
+Si se dificulta constatar el nivel de alcohol por causa atribuible al conductor, se procede igual que ante la negativa.
+
+Si la prueba resulta positiva, el conductor puede solicitar análisis confirmatorios como contraprueba.
+
+Los gastos médicos, insumos u otros derivados de la prueba solicitada estarán a cargo del interesado.
+
+### Uso permitido
+
+El bot puede responder preguntas sobre negativa al alcoholímetro, acta, tribunal o juzgado de paz y contraprueba, siempre citando el artículo 263.
+
+### Limitación
+
+No afirmar resultado judicial, arresto definitivo, condena, antecedentes, multas exactas adicionales ni procedimiento completo fuera de lo expresamente cargado.
+
+---
+
+# Respuestas modelo permitidas para alcoholímetro
+
+## Pregunta: ¿La policía o DIGESETT puede pedirme soplar un alcoholímetro?
+
+Respuesta modelo:
+
+Con las fuentes cargadas, sí hay base para decir que la Ley 63-17 regula la prueba del alcoholímetro.
+
+La ley que aplica es la Ley 63-17, artículos 259, 261 y 263. El artículo 259 habla de la prueba del alcoholímetro sobre conductores y peatones; el artículo 261 autoriza a agentes de DIGESETT a practicar controles de alcoholemia o toxicológicos; y el artículo 263 regula el procedimiento con equipos certificados/calibrados y dispositivo personal descartable.
+
+Lo que te protege o favorece es que, si se trata de pruebas orgánicas o invasivas, el artículo 261 exige consentimiento y respeto a la dignidad e integridad. Además, el artículo 263 permite solicitar análisis confirmatorios si la prueba resulta positiva.
+
+Esto es orientación informativa y no sustituye la revisión de un abogado.
+
+## Pregunta: ¿Qué pasa si me niego al alcoholímetro?
+
+Respuesta modelo:
+
+Con las fuentes cargadas, el artículo 263 de la Ley 63-17 dice que si el conductor se niega a realizarse la prueba, el agente de DIGESETT debe hacerlo constar en un acta y conducirlo al Tribunal Especial de Tránsito más cercano o al juzgado de paz correspondiente.
+
+No puedo afirmar el resultado judicial ni una sanción final automática, porque eso dependería del caso y de normas o procedimientos adicionales.
+
+Esto es orientación informativa y no sustituye la revisión de un abogado.
+
+## Pregunta: ¿Cuál es el límite de alcohol permitido?
+
+Respuesta modelo:
+
+Con las fuentes cargadas, la Ley 63-17 establece en el artículo 258 que para conductores generales se considera ilegal conducir con alcoholemia superior a 0.5 gramos por litro de sangre o 0.25 miligramos por litro en aire espirado.
+
+Para transporte público, transporte de carga y personas con permiso de aprendizaje, el límite indicado es 0.0.
+
+Para motocicletas, el límite indicado es 0.2 gramos por litro de sangre o 0.1 miligramos por litro en aire espirado.
+
+Esto es orientación informativa y no sustituye la revisión de un abogado.
 
 ---
 

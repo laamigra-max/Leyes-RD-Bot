@@ -167,3 +167,20 @@ Posibles fuentes a verificar:
 - Ley de presupuesto o normativa presupuestaria vigente.
 - Decreto o disposición oficial sobre salario mínimo del sector público.
 - Dirección General de Presupuesto.
+
+---
+
+# Regla de lenguaje para cálculo preliminar en pesos
+
+Cuando el bot use RD$10,000.00 como referencia preliminar para calcular multas expresadas en salarios mínimos del sector público centralizado, debe evitar frases técnicas como:
+
+- “Fuente auxiliar de cálculo”
+- “Referencia preliminar registrada”
+
+Debe usar una frase más natural:
+
+> Tomando como referencia el monto de RD$10,000.00 pesos, el cálculo sería...
+
+Debe aclarar siempre:
+
+> Este cálculo está pendiente de verificación oficial vigente y no debe tomarse como monto oficial definitivo.

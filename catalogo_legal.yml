@@ -235,3 +235,27 @@ fuentes:
     prioridad: "alta"
     estado: "cargada_pendiente_verificacion_completa"
     nota: "Documento inicial cargado desde fuente oficial de DGII. Pendiente completar texto íntegro, verificar modificaciones, vigencia, aplicación actual y relación con Ley 108-05 de Registro Inmobiliario."
+
+  - id: ley_63_17_transito_movilidad_seguridad_vial
+    titulo: "Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial"
+    numero: "63-17"
+    version_piloto: "V2.0"
+    materia:
+      - transito
+      - movilidad
+      - transporte_terrestre
+      - seguridad_vial
+      - fiscalizacion_vehicular
+      - multas_de_transito
+      - alcoholimetros
+      - retencion_de_licencia
+      - incautacion_de_vehiculos
+      - controles_policiales_de_transito
+      - digesett
+      - intrant
+    archivo_repo: "transito/ley_63_17_transito_movilidad_seguridad_vial.md"
+    fuente_oficial: "https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/63-17.pdf"
+    autoridad: "DGII"
+    prioridad: "alta"
+    estado: "cargada_pendiente_verificacion_completa"
+    nota: "Fuente inicial V2.0 del piloto legal. Documento cargado desde fuente oficial de DGII. Pendiente completar texto íntegro, verificar modificaciones, reglamentos, resoluciones de INTRANT/DIGESETT y aplicación actual. No usar para afirmar multas, sanciones, alcoholímetros, retención de licencia, incautación o controles policiales sin artículos específicos cargados."

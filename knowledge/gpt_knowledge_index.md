@@ -886,16 +886,16 @@ Regla cargada:
 
 - No se puede circular con artefactos que reflejen luz roja visible desde el frente, luces giratorias o luces intermitentes fuera de las destinadas para señales direccionales.
 - La violación se sanciona con multa equivalente de uno (1) a tres (3) salarios mínimos del sector público centralizado y reducción de puntos según reglamento.
-- Vehículos de emergencia o grúas durante remolque no están sujetos a esta prohibición.
+- Los vehículos de emergencia o grúas dedicadas al remolque de vehículos averiados durante dicho remolque no están sujetos a esta prohibición.
 
 Cálculo preliminar permitido:
 
-- Usando como referencia preliminar RD$10,000.00 por salario mínimo del sector público centralizado, una multa de 1 a 3 salarios mínimos equivaldría preliminarmente a RD$10,000.00 a RD$30,000.00.
-- Este cálculo está pendiente de verificación oficial vigente.
+- Tomando como referencia el monto de RD$10,000.00 pesos por salario mínimo del sector público centralizado, una multa de 1 a 3 salarios mínimos equivaldría preliminarmente a RD$10,000.00 a RD$30,000.00.
+- Este cálculo está pendiente de verificación oficial vigente y no debe tomarse como monto oficial definitivo.
 
 Limitación:
 
-- No afirmar puntos específicos ni sistema operativo.
+- No afirmar puntos específicos ni sistema de puntos operativo.
 - No inventar procedimiento de retención.
 - No afirmar que RD$10,000.00 es monto oficial definitivo.
 

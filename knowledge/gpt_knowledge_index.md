@@ -948,6 +948,7 @@ Limitación:
 
 - No inventar límites constitucionales, procedimiento penal, registro invasivo, allanamiento, arresto o consecuencias no cargadas.
 - No decir que el conductor puede resistirse físicamente.
+- No inventar arresto automático ni procedimiento penal.
 
 ---
 

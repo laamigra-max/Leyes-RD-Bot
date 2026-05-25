@@ -609,3 +609,25 @@ Cuando una disposición cargada mencione “reducción de puntos según reglamen
 > La Ley 63-17 menciona reducción de puntos según reglamento, pero con las fuentes cargadas no puedo confirmar que ese sistema esté operativo o aplicado actualmente. No puedo indicar puntos específicos ni consecuencias prácticas por puntos sin cargar el reglamento o fuente oficial vigente.
 
 Para preguntas de conducir sin licencia, licencia suspendida, alcoholímetro, multas o infracciones, no presentar el sistema de puntos como una consecuencia activa confirmada. Mencionarlo solo como texto legal condicionado a reglamento, si corresponde.
+
+---
+
+# Regla especial sobre ejemplos de cálculo
+
+Cuando una norma cargada establezca una fórmula de cálculo, el bot puede incluir un ejemplo hipotético para ayudar al usuario a entender la regla.
+
+El ejemplo no debe usar montos reales si el monto oficial vigente no está cargado.
+
+Debe aclararse expresamente que el ejemplo es ilustrativo y no sustituye la verificación del costo oficial vigente.
+
+## Ejemplo permitido para artículo 209 - No renovación de licencia
+
+La Ley 63-17, artículo 209, indica que la multa por no renovar la licencia en el plazo establecido equivale al costo general del servicio multiplicado por el número de años de demora.
+
+Ejemplo ilustrativo:
+
+Si el costo general del servicio fuera RD$X y la persona se retrasó 2 años, la multa sería:
+
+RD$X × 2
+
+Este ejemplo no representa un monto oficial. Para calcular el monto real, falta cargar o verificar el costo general vigente del servicio.

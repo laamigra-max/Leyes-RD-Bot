@@ -1042,14 +1042,14 @@ Regla cargada:
 
 Cálculo preliminar permitido:
 
-- Usando como referencia preliminar RD$10,000.00 por salario mínimo del sector público centralizado, una multa de 5 a 10 salarios mínimos equivaldría preliminarmente a RD$50,000.00 a RD$100,000.00.
-- Este cálculo está pendiente de verificación oficial vigente.
+- Tomando como referencia el monto de RD$10,000.00 pesos por salario mínimo del sector público centralizado, una multa de 5 a 10 salarios mínimos equivaldría preliminarmente a RD$50,000.00 a RD$100,000.00.
+- Este cálculo está pendiente de verificación oficial vigente y no debe tomarse como monto oficial definitivo.
 
 Limitación:
 
-- No afirmar puntos específicos ni sistema operativo.
-- No afirmar resultado judicial automático.
-- No afirmar que RD$10,000.00 es monto oficial definitivo.
+- No afirmar puntos específicos ni sistema de puntos operativo.
+- No afirmar condena automática.
+- No inventar procedimiento penal, retención de vehículo, suspensión de licencia ni medidas adicionales si no están cargadas.
 
 ---
 

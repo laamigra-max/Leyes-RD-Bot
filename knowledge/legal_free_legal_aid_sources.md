@@ -4,32 +4,47 @@
 
 Este archivo registra instituciones y servicios de asistencia legal gratuita u orientación pública en República Dominicana para ayudar a la población al final de las respuestas del GPT **Tu Abogado RD**.
 
-Versión del módulo: **V2.0.6**
+Versión del módulo: **V2.0.9-hotfix-3**
 
 ---
 
 # Regla principal
 
-Esta información debe mostrarse debajo de la advertencia legal:
+Esta información debe mostrarse siempre debajo de la advertencia legal:
 
 > 📝 Esto es orientación informativa y no sustituye la revisión de un abogado.
 
-El bot debe presentar esta sección como ayuda social u orientación de contacto, no como sustituto de asesoría legal privada ni como garantía de representación.
+El bot debe presentar esta sección como ayuda social u orientación de contacto, no como sustituto de asesoría legal privada ni como garantía de representación, defensa, aceptación del caso o resultado legal.
 
 ---
 
-# Texto base para respuestas
+# Texto obligatorio para respuestas
 
-## Asistencia legal gratis oficial en RD
+Después de la advertencia legal, el bot debe agregar siempre esta sección completa:
 
-Puedes agregar al final de las respuestas, cuando sea útil:
-
-**🤝 Asistencia legal gratis oficial en RD**
+## 🤝 Asistencia legal gratis oficial en RD
 
 - **Oficina Nacional de Defensa Pública:** defensa legal gratuita para personas sin recursos o sin abogado, principalmente en procesos penales. Tel.: **809-686-0556**.
-- **Ministerio de la Mujer:** asistencia en casos de violencia contra la mujer o intrafamiliar, asistencia legal, asistencia psicológica y línea de emergencia.
-- **CONAPE:** orientación o asistencia para adultos mayores de 60 años, según sus programas disponibles.
-- **UASD — Servicio Legal Popular:** asistencia legal gratuita a la población, sujeto a disponibilidad y verificación del servicio.
+- **Ministerio de la Mujer:** asistencia en casos de violencia contra la mujer o intrafamiliar.
+- **CONAPE:** orientación o asistencia para adultos mayores de 60 años.
+- **UASD — Servicio Legal Popular:** asistencia legal gratuita a la población, sujeta a disponibilidad y verificación.
+
+---
+
+# Regla obligatoria de no omisión
+
+El bot no debe omitir ninguno de estos cuatro recursos:
+
+- Oficina Nacional de Defensa Pública.
+- Ministerio de la Mujer.
+- CONAPE.
+- UASD — Servicio Legal Popular.
+
+Si incluye la sección de asistencia legal gratis, debe incluir los cuatro recursos completos.
+
+No debe reemplazar esta sección por una versión corta.
+
+No debe agregar enlaces adicionales dentro del footer salvo que el usuario los pida o que otra fuente cargada lo requiera.
 
 ---
 
@@ -90,23 +105,27 @@ No debe mostrar archivos internos ni decir “según legal_free_legal_aid_source
 
 No debe presentar estos servicios como garantía de resultado legal.
 
-Si el caso es urgente, penal, violencia intrafamiliar, abuso, amenaza o riesgo físico, debe recomendar contactar la institución correspondiente o servicios de emergencia disponibles.
+No debe omitir CONAPE.
+
+No debe agregar “Más información” ni enlaces adicionales dentro del footer si no forman parte del formato obligatorio.
+
+Si el caso es urgente, penal, violencia intrafamiliar, abuso, amenaza o riesgo físico, debe recomendar contactar la institución correspondiente o servicios de emergencia disponibles, siempre sin inventar procedimientos no cargados.
 
 ---
 
-# Formato recomendado al final de cada respuesta
+# Formato obligatorio al final de cada respuesta
 
 Después de:
 
 > 📝 Esto es orientación informativa y no sustituye la revisión de un abogado.
 
-Agregar:
+Agregar exactamente:
 
 **🤝 Asistencia legal gratis oficial en RD**
 
 - **Oficina Nacional de Defensa Pública:** defensa legal gratuita para personas sin recursos o sin abogado, principalmente en procesos penales. Tel.: **809-686-0556**.
 - **Ministerio de la Mujer:** asistencia en casos de violencia contra la mujer o intrafamiliar.
 - **CONAPE:** orientación o asistencia para adultos mayores de 60 años.
-- **UASD — Servicio Legal Popular:** asistencia legal gratuita a la población, sujeto a disponibilidad y verificación.
+- **UASD — Servicio Legal Popular:** asistencia legal gratuita a la población, sujeta a disponibilidad y verificación.
 
 No presentar estos recursos como garantía de representación ni resultado legal.

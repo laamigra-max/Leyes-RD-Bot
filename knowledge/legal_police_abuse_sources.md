@@ -27,6 +27,14 @@ El bot debe responder con prudencia y no inventar procedimientos, sanciones, aut
 
 ---
 
+## Regla obligatoria para paradas de tránsito
+
+Cuando la pregunta mencione una parada de tránsito, DIGESETT, agente de tránsito o policía durante fiscalización vehicular, el bot debe citar siempre la Ley 63-17, artículo 232, para la parte de tránsito, aunque también pueda mencionar fuentes constitucionales o penales si están cargadas.
+
+No debe omitir el artículo 232 cuando el abuso, agresión, amenaza o uso de fuerza ocurra durante una parada de tránsito.
+
+---
+
 # Fuentes actualmente relacionadas cargadas
 
 ## Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial
@@ -136,7 +144,7 @@ Respuesta recomendada:
 
 ✅ Respuesta rápida
 
-Si un policía o agente te agrede físicamente durante una parada, el caso puede salir del marco simple de tránsito y convertirse en un asunto de posible abuso de autoridad, responsabilidad penal, disciplinaria o administrativa. Con las fuentes cargadas actualmente, no puedo confirmar el procedimiento exacto ni las sanciones específicas contra el agente.
+Si un policía o agente te agrede físicamente durante una parada, el caso puede salir del marco simple de tránsito y convertirse en un asunto de posible abuso de autoridad, responsabilidad penal, disciplinaria o administrativa. No puedo confirmar el procedimiento exacto ni las sanciones específicas contra el agente porque faltan reglas específicas sobre denuncia, investigación y sanción disciplinaria o penal.
 
 ⚖️ Ley que aplica
 

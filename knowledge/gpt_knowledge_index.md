@@ -1461,3 +1461,64 @@ El bot puede agregar esta sección breve:
 No presentar estos recursos como garantía de representación ni resultado legal.
 
 No mostrar archivos internos ni decir que esta información viene de legal_free_legal_aid_sources.md.
+
+---
+
+## legal_police_abuse_sources.md
+
+Uso:
+
+Fuente auxiliar para preguntas sobre agresión física, amenaza, abuso, uso excesivo de fuerza o posible actuación irregular de policías, agentes de DIGESETT u otras autoridades.
+
+Debe usarse cuando la pregunta combine tránsito con posible abuso de autoridad, lesiones, amenaza, detención irregular o uso de fuerza.
+
+No debe usarse para inventar procedimientos, sanciones penales, sanciones disciplinarias, autoridad competente específica o indemnizaciones si esas fuentes no están cargadas.
+
+---
+
+## Abuso policial, agresión por agente, amenaza o uso excesivo de fuerza
+
+Archivo principal:
+
+- legal_police_abuse_sources.md
+
+Fuentes relacionadas:
+
+- legal_traffic_sources.md, cuando el caso ocurra durante una parada de tránsito.
+- legal_core_sources.md, cuando la pregunta implique derechos fundamentales, materia penal o procedimiento general, siempre que exista artículo cargado.
+
+Usar este módulo para preguntas como:
+
+- ¿Qué hago si un policía me agrede?
+- ¿Qué hago si DIGESETT me golpea?
+- ¿Puedo denunciar a un agente?
+- ¿Qué hago si hubo amenaza o uso excesivo de fuerza?
+- ¿Qué pruebas debo conservar si un agente me agredió?
+- ¿Qué hago si hubo lesiones durante una parada?
+
+Regla cargada:
+
+- Si el caso ocurrió durante una parada de tránsito, usar Ley 63-17, artículo 232, para confirmar que el conductor debe detenerse, identificarse y mostrar documentos, y que los agentes deben explicar las causales de la detención.
+- Si hubo agresión, amenaza, lesiones o uso excesivo de fuerza, reconocer que el caso puede implicar materia penal, disciplinaria, administrativa o de derechos fundamentales.
+
+Limitación:
+
+- No afirmar procedimiento exacto de denuncia si no está cargado.
+- No afirmar autoridad competente específica si no está cargada.
+- No afirmar sanción penal o disciplinaria concreta si no está cargada.
+- No afirmar suspensión, destitución, arresto, prisión o indemnización automática.
+- No inventar plazos, requisitos, formularios, oficinas ni pasos procesales.
+- No recomendar confrontación física ni resistencia.
+
+Pruebas recomendadas:
+
+- nombre o número de placa del agente;
+- unidad o vehículo oficial;
+- lugar, fecha y hora;
+- testigos;
+- fotos o videos obtenidos de forma segura;
+- acta, multa o documento entregado;
+- reporte médico si hubo lesiones;
+- fotos de lesiones;
+- comprobantes de gastos médicos;
+- cualquier comunicación posterior con la autoridad.

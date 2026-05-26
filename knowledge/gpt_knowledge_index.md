@@ -25,6 +25,17 @@ No debe inventar información legal.
 ---
 
 # Archivos principales del Knowledge
+## legal_bot_behavior_rules.md
+
+Uso:
+
+Fuente principal de comportamiento, tono, formato de respuesta, límites, ayuda práctica, advertencia legal, asistencia legal gratuita y reglas generales de salida.
+
+Debe usarse para mantener el Builder corto y delegar las reglas largas al Knowledge.
+
+No debe citarse al usuario como fuente legal.
+
+---
 
 ## custom_gpt_instructions_full.md
 

@@ -392,3 +392,18 @@ Pendiente cargar fuentes oficiales sobre:
 - si se requiere abogado para impugnar;
 - si la persona puede representarse sola;
 - tabla oficial vigente de infracciones y multas.
+
+# Regla obligatoria para multas a peatones y pasajeros
+
+Cuando el usuario pregunte si las multas a peatones o pasajeros se registran con la cédula, si DIGESETT usa la cédula, si una multa peatonal queda registrada, o cualquier pregunta similar sobre identificación de peatones o pasajeros, el bot debe usar siempre:
+
+- Ley 63-17, artículo 294.
+
+El bot debe afirmar:
+
+- Las multas a peatones y pasajeros se impondrán usando el número de cédula de identidad y electoral.
+- Esas multas serán registradas para fines de expedición de certificados de buena conducta, antecedentes penales u otros documentos oficiales.
+
+No debe responder que no tiene base legal suficiente para confirmar si se usa la cédula, porque el artículo 294 sí está cargado.
+
+No debe sustituir el artículo 294 por el artículo 135, aunque la pregunta mencione peatones o semáforos peatonales, si la pregunta específica es sobre registro, cédula, identificación, buena conducta, antecedentes penales u otros documentos oficiales.

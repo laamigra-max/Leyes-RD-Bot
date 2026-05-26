@@ -8,7 +8,7 @@ Antes de responder, el GPT debe identificar la materia legal de la pregunta y us
 
 Este archivo no sustituye las fuentes legales. Solo indica dónde buscar.
 
-Versión actual del piloto: **V2.0.6**
+Versión actual del piloto: **V2.0.8**
 
 ---
 
@@ -135,6 +135,26 @@ No responder preguntas de infracciones específicas usando solo artículos gener
 
 ---
 
+## legal_traffic_fines_procedure_sources.md
+
+Uso:
+
+Fuente especializada para preguntas sobre pago de multas, pago voluntario, impugnación, plazo de treinta (30) días, rebeldía, recargos, multas a peatones y pasajeros, y límites sobre bancos, plataformas, formularios, tribunal específico o pasos procesales no cargados.
+
+Debe usarse cuando el usuario pregunte:
+
+- cómo pagar una multa de tránsito;
+- cuánto tiempo tiene para pagar o impugnar;
+- si puede pagar sin ir al tribunal;
+- qué pasa si no paga;
+- qué es pago voluntario;
+- cuál es la menor cuantía en pago voluntario;
+- si hay recargo por pago tardío;
+- cómo se registran multas a peatones o pasajeros;
+- si puede impugnar o pedir revocación de una multa.
+
+No debe usarse para inventar bancos, plataformas, enlaces de pago, formularios, oficinas, tribunal específico por localidad, requisitos, recargos, pasos procesales completos ni consecuencias adicionales no cargadas.
+
 ## legal_public_sector_minimum_wage_sources.md
 
 Uso:
@@ -176,9 +196,6 @@ Debe usarse debajo de la advertencia legal cuando sea útil.
 No sustituye las fuentes legales del caso ni debe presentarse como garantía de representación o resultado legal.
 
 No debe citarse al usuario como fuente legal principal.
-
----
-
 ## legal_answer_policy.md
 
 Uso:
@@ -252,6 +269,67 @@ Archivo auxiliar para cálculo preliminar de multas expresadas en salarios míni
 Fuente legal principal:
 
 - Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial.
+
+---
+
+## Procedimiento de multas de tránsito, pago voluntario, impugnación, rebeldía y recargos
+
+Archivo principal:
+
+- legal_traffic_fines_procedure_sources.md
+
+Fuentes relacionadas:
+
+- legal_traffic_sources.md, cuando el caso sea una multa general de tránsito.
+- legal_traffic_infractions_sources.md, cuando el usuario pregunte por una infracción específica.
+- legal_public_sector_minimum_wage_sources.md, cuando la multa esté expresada en salarios mínimos del sector público centralizado y el usuario pregunte por cálculo preliminar en pesos.
+
+Artículos cargados de la Ley 63-17:
+
+- Artículo 293: pago voluntario de multa.
+- Artículo 294: multas a peatones y pasajeros.
+- Artículo 295: plazo para pagar o impugnar multas.
+- Artículo 296: tasa de recargo por multas.
+
+Usar este módulo para preguntas como:
+
+- ¿Cómo pago una multa de tránsito?
+- ¿Puedo pagar una multa sin ir al tribunal?
+- ¿Cuánto tiempo tengo para pagar una multa?
+- ¿Cuánto tiempo tengo para impugnar una multa?
+- ¿Qué pasa si no pago una multa?
+- ¿Qué pasa si acepto la multa?
+- ¿Qué es pago voluntario?
+- ¿Si pago voluntariamente pago el mínimo?
+- ¿Qué pasa si pago tarde?
+- ¿Me pueden declarar en rebeldía?
+- ¿Cómo se registran multas a peatones o pasajeros?
+
+Reglas cargadas:
+
+- El artículo 293 permite pago voluntario cuando el infractor acepta la penalidad sin acudir al tribunal de tránsito.
+- En pago voluntario, el importe a pagar será el de menor cuantía dentro del rango establecido para la sanción correspondiente.
+- El artículo 295 establece treinta (30) días para pagar la multa o impugnarla.
+- La impugnación se realiza mediante solicitud formal de revocación por apoderamiento directo al tribunal competente.
+- Si no se paga voluntariamente ni se impugna dentro del plazo, el infractor será declarado en rebeldía.
+- El artículo 296 indica que pagos después del plazo, sin solicitud de revocación, tendrán recargo conforme al Código Tributario y leyes complementarias.
+- El artículo 294 indica que las multas a peatones y pasajeros se impondrán usando el número de cédula de identidad y electoral y serán registradas para fines de expedición de certificados de buena conducta, antecedentes penales u otros documentos oficiales.
+
+Limitación:
+
+- No inventar bancos autorizados, plataformas digitales, enlaces de pago, formularios, oficinas, horarios ni procedimiento práctico completo.
+- No inventar tribunal específico por provincia o municipio.
+- No afirmar si necesita abogado o si puede representarse solo, salvo que una fuente cargada lo confirme.
+- No calcular recargos ni inventar porcentajes del Código Tributario si esos artículos no están cargados.
+- No afirmar que la rebeldía produce arresto, impedimento de salida, antecedente penal, bloqueo de licencia u otra consecuencia práctica no cargada.
+- No decir que el pago elimina responsabilidad civil, penal o administrativa no cargada.
+
+Regla de pago voluntario y menor cuantía:
+
+- Si la infracción tiene rango de 1 a 5 salarios mínimos, la menor cuantía es 1 salario mínimo.
+- Si la infracción tiene rango de 1 a 3 salarios mínimos, la menor cuantía es 1 salario mínimo.
+- Si la infracción tiene rango de 5 a 10 salarios mínimos, la menor cuantía es 5 salarios mínimos.
+- Si se usa RD$10,000.00 como referencia preliminar, siempre aclarar que está pendiente de verificación oficial vigente y no debe tomarse como monto oficial definitivo.
 
 ---
 
@@ -1422,7 +1500,8 @@ El GPT debe:
 6. no inventar detalles no cargados;
 7. no mencionar archivos internos de Knowledge al usuario;
 8. citar solo leyes, artículos, fuente oficial, URL, materia y estado de vigencia;
-9. si usa RD$10,000.00 para calcular multas, aclarar que es referencia preliminar pendiente de verificación oficial vigente.
+9. si usa RD$10,000.00 para calcular multas, aclarar que es referencia preliminar pendiente de verificación oficial vigente;
+10. si el usuario pregunta sobre pago, impugnación, plazo, rebeldía o recargos de multas, consultar legal_traffic_fines_procedure_sources.md.
 
 ---
 
@@ -1461,64 +1540,3 @@ El bot puede agregar esta sección breve:
 No presentar estos recursos como garantía de representación ni resultado legal.
 
 No mostrar archivos internos ni decir que esta información viene de legal_free_legal_aid_sources.md.
-
----
-
-## legal_police_abuse_sources.md
-
-Uso:
-
-Fuente auxiliar para preguntas sobre agresión física, amenaza, abuso, uso excesivo de fuerza o posible actuación irregular de policías, agentes de DIGESETT u otras autoridades.
-
-Debe usarse cuando la pregunta combine tránsito con posible abuso de autoridad, lesiones, amenaza, detención irregular o uso de fuerza.
-
-No debe usarse para inventar procedimientos, sanciones penales, sanciones disciplinarias, autoridad competente específica o indemnizaciones si esas fuentes no están cargadas.
-
----
-
-## Abuso policial, agresión por agente, amenaza o uso excesivo de fuerza
-
-Archivo principal:
-
-- legal_police_abuse_sources.md
-
-Fuentes relacionadas:
-
-- legal_traffic_sources.md, cuando el caso ocurra durante una parada de tránsito.
-- legal_core_sources.md, cuando la pregunta implique derechos fundamentales, materia penal o procedimiento general, siempre que exista artículo cargado.
-
-Usar este módulo para preguntas como:
-
-- ¿Qué hago si un policía me agrede?
-- ¿Qué hago si DIGESETT me golpea?
-- ¿Puedo denunciar a un agente?
-- ¿Qué hago si hubo amenaza o uso excesivo de fuerza?
-- ¿Qué pruebas debo conservar si un agente me agredió?
-- ¿Qué hago si hubo lesiones durante una parada?
-
-Regla cargada:
-
-- Si el caso ocurrió durante una parada de tránsito, usar Ley 63-17, artículo 232, para confirmar que el conductor debe detenerse, identificarse y mostrar documentos, y que los agentes deben explicar las causales de la detención.
-- Si hubo agresión, amenaza, lesiones o uso excesivo de fuerza, reconocer que el caso puede implicar materia penal, disciplinaria, administrativa o de derechos fundamentales.
-
-Limitación:
-
-- No afirmar procedimiento exacto de denuncia si no está cargado.
-- No afirmar autoridad competente específica si no está cargada.
-- No afirmar sanción penal o disciplinaria concreta si no está cargada.
-- No afirmar suspensión, destitución, arresto, prisión o indemnización automática.
-- No inventar plazos, requisitos, formularios, oficinas ni pasos procesales.
-- No recomendar confrontación física ni resistencia.
-
-Pruebas recomendadas:
-
-- nombre o número de placa del agente;
-- unidad o vehículo oficial;
-- lugar, fecha y hora;
-- testigos;
-- fotos o videos obtenidos de forma segura;
-- acta, multa o documento entregado;
-- reporte médico si hubo lesiones;
-- fotos de lesiones;
-- comprobantes de gastos médicos;
-- cualquier comunicación posterior con la autoridad.

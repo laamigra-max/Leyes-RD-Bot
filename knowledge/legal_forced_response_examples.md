@@ -6,7 +6,7 @@ Este archivo contiene respuestas modelo obligatorias para preguntas que el GPT h
 
 Debe usarse como prioridad cuando la pregunta del usuario coincida con uno de los casos definidos aquí.
 
-Versión del módulo: **V2.0.9-hotfix-2**
+Versión del módulo: **V2.0.9-hotfix-3**
 
 ---
 
@@ -35,7 +35,8 @@ El bot no debe decir al usuario frases como:
 - “referencia operativa”;
 - “fuentes visibles actuales”;
 - “según el archivo”;
-- “según el módulo”.
+- “según el módulo”;
+- “según las reglas cargadas”.
 
 Debe hablar directamente de la ley o del artículo.
 
@@ -76,8 +77,6 @@ Fuente oficial: DGII.
 URL oficial: https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/63-17.pdf
 Estado de vigencia: pendiente_de_verificacion.
 
----
-
 Regla obligatoria de asistencia legal gratis
 
 Después de la advertencia legal, el bot debe incluir siempre los cuatro recursos:
@@ -107,6 +106,29 @@ Usar esta respuesta cuando el usuario pregunte:
 ¿Cómo identifican a un peatón multado?
 ¿Si multan a un peatón, cómo lo registran?
 ¿Una multa a un peatón se registra con su identificación?
+Regla de redacción obligatoria para artículo 294
+
+Para este caso, el bot debe usar literalmente esta frase en la respuesta rápida:
+
+La Ley 63-17, artículo 294, establece que las multas a peatones y pasajeros se impondrán usando el número de cédula de identidad y electoral.
+
+No debe cambiarla por:
+
+“pueden registrarse”;
+“puede asociarse”;
+“menciona el uso de la cédula”;
+“puede utilizarse la cédula”;
+“cuando la persona no tenga licencia”;
+“según las reglas cargadas”;
+“según la referencia cargada”;
+“según las fuentes cargadas”.
+
+También debe incluir literalmente esta frase:
+
+También indica que esas multas se registran para fines de certificados de buena conducta, antecedentes penales u otros documentos oficiales.
+
+El footer de asistencia legal gratis debe incluir siempre CONAPE.
+
 Respuesta obligatoria
 
 ✅ Respuesta rápida
@@ -179,11 +201,14 @@ Para esta pregunta, el bot no debe:
 usar artículo 135;
 decir que falta base legal para confirmar si se usa cédula;
 decir “puede registrarse” si el artículo dice “se impondrán usando el número de cédula”;
+decir “puede asociarse”;
+decir “cuando la persona no tenga licencia”;
 decir “fuentes legales cargadas”;
 decir “referencia cargada”;
 decir “módulo especializado”;
 decir “repositorio cargado”;
 decir “referencia operativa”;
+decir “según las reglas cargadas”;
 mencionar archivos internos;
 inventar bloqueo de trámites;
 inventar tiempo de permanencia;

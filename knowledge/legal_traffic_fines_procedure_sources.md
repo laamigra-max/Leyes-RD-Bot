@@ -22,6 +22,8 @@ Este módulo debe usarse cuando la pregunta trate sobre:
 - recargo por pago tardío;
 - multas a peatones;
 - multas a pasajeros;
+- multas registradas con cédula;
+- multas peatonales con cédula;
 - consecuencias generales de no pagar una multa;
 - si una multa puede pagarse en bancos;
 - si una multa puede pagarse por plataforma digital;
@@ -31,6 +33,23 @@ Este módulo debe usarse cuando la pregunta trate sobre:
 - qué pasa si no acepto la multa.
 
 El bot debe responder con base en los artículos cargados de la Ley 63-17 y no debe inventar bancos, plataformas, montos exactos en pesos, formularios, oficinas, tribunal específico por localidad, requisitos no cargados ni pasos procesales completos.
+
+---
+
+# Regla obligatoria para multas a peatones y pasajeros
+
+Cuando el usuario pregunte si las multas a peatones o pasajeros se registran con la cédula, si DIGESETT usa la cédula, si una multa peatonal queda registrada, o cualquier pregunta similar sobre identificación de peatones o pasajeros, el bot debe usar siempre:
+
+- Ley 63-17, artículo 294.
+
+El bot debe afirmar:
+
+- Las multas a peatones y pasajeros se impondrán usando el número de cédula de identidad y electoral.
+- Esas multas serán registradas para fines de expedición de certificados de buena conducta, antecedentes penales u otros documentos oficiales.
+
+No debe responder que no tiene base legal suficiente para confirmar si se usa la cédula, porque el artículo 294 sí está cargado.
+
+No debe sustituir el artículo 294 por el artículo 135, aunque la pregunta mencione peatones o semáforos peatonales, si la pregunta específica es sobre registro, cédula, identificación, buena conducta, antecedentes penales u otros documentos oficiales.
 
 ---
 
@@ -87,47 +106,72 @@ El bot no debe afirmar:
 
 ---
 
-# Regla de menor cuantía en pago voluntario
+# Artículo 294 — Multas a peatones y pasajeros
 
-Cuando una infracción tenga una sanción expresada en rango de salarios mínimos, y el usuario pregunte por pago voluntario, el bot puede explicar que el artículo 293 indica que se pagaría la menor cuantía del rango legal.
+## Regla cargada
 
-Ejemplos:
+Las multas a peatones y pasajeros se impondrán utilizando el número de cédula de identidad y electoral.
 
-## Multa de 1 a 5 salarios mínimos
+Estas multas serán registradas para fines de expedición de certificados de buena conducta, antecedentes penales u otros documentos oficiales.
 
-- Rango legal cargado: uno (1) a cinco (5) salarios mínimos.
-- Pago voluntario según artículo 293: menor cuantía del rango.
-- Menor cuantía: un (1) salario mínimo del sector público centralizado.
+## Uso permitido
 
-Si se usa el valor preliminar de RD$10,000.00:
+El bot puede afirmar:
 
-> Tomando como referencia el monto de RD$10,000.00 pesos, el pago voluntario preliminar sería RD$10,000.00. Este cálculo está pendiente de verificación oficial vigente y no debe tomarse como monto oficial definitivo.
+- que las multas a peatones y pasajeros se imponen usando el número de cédula de identidad y electoral;
+- que esas multas serán registradas para fines de expedición de certificados de buena conducta, antecedentes penales u otros documentos oficiales;
+- que el artículo aplicable para esa pregunta es el artículo 294 de la Ley 63-17.
 
-## Multa de 1 a 3 salarios mínimos
+## Limitación
 
-- Rango legal cargado: uno (1) a tres (3) salarios mínimos.
-- Pago voluntario según artículo 293: menor cuantía del rango.
-- Menor cuantía: un (1) salario mínimo del sector público centralizado.
+El bot no debe afirmar:
 
-Si se usa el valor preliminar de RD$10,000.00:
+- que toda multa de peatón genera automáticamente antecedente penal;
+- que automáticamente bloquea trámites;
+- que impide renovar licencia, pasaporte, matrícula u otro documento;
+- tiempo de permanencia del registro;
+- procedimiento completo de pago, eliminación, corrección o impugnación;
+- plataformas específicas;
+- consecuencias prácticas adicionales no cargadas.
 
-> Tomando como referencia el monto de RD$10,000.00 pesos, el pago voluntario preliminar sería RD$10,000.00. Este cálculo está pendiente de verificación oficial vigente y no debe tomarse como monto oficial definitivo.
+## Respuesta modelo obligatoria
 
-## Multa de 5 a 10 salarios mínimos
+Pregunta: “¿Las multas a peatones se registran con la cédula?”
 
-- Rango legal cargado: cinco (5) a diez (10) salarios mínimos.
-- Pago voluntario según artículo 293: menor cuantía del rango.
-- Menor cuantía: cinco (5) salarios mínimos del sector público centralizado.
+Respuesta esperada:
 
-Si se usa el valor preliminar de RD$10,000.00:
+✅ Respuesta rápida
 
-> Tomando como referencia el monto de RD$10,000.00 pesos, el pago voluntario preliminar sería RD$50,000.00. Este cálculo está pendiente de verificación oficial vigente y no debe tomarse como monto oficial definitivo.
+Sí. La Ley 63-17, artículo 294, establece que las multas a peatones y pasajeros se impondrán usando el número de cédula de identidad y electoral.
 
-## Limitación importante
+⚖️ Ley que aplica
 
-El bot debe aclarar que el cálculo en pesos usando RD$10,000.00 es preliminar y está pendiente de verificación oficial vigente.
+La Ley 63-17, artículo 294, regula las multas a peatones y pasajeros.
 
-No debe presentar RD$10,000.00 como monto oficial definitivo.
+Ese artículo también indica que esas multas serán registradas para fines de expedición de certificados de buena conducta, antecedentes penales u otros documentos oficiales.
+
+⚠️ Qué no puedo afirmar todavía
+
+No puedo confirmar consecuencias prácticas adicionales como bloqueo de trámites, tiempo de permanencia del registro, eliminación automática, plataformas de pago o procedimiento completo porque esos detalles no están cargados.
+
+📌 Qué puedes hacer ahora
+
+- Conserva copia o foto del volante de multa.
+- Verifica que tus datos estén correctos.
+- Si entiendes que la multa fue incorrecta, conserva evidencia como fotos, videos, testigos, lugar, fecha y hora.
+- Si la multa te afecta para un trámite oficial, consulta un abogado especializado en tránsito o derecho administrativo.
+
+📚 Fuente consultada
+
+Ley o norma: Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial.  
+Número: 63-17.  
+Artículo: 294.  
+Materia: tránsito / multas a peatones y pasajeros.  
+Fuente oficial: DGII.  
+URL oficial: https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/63-17.pdf  
+Estado de vigencia: pendiente_de_verificacion.
+
+📝 Esto es orientación informativa y no sustituye la revisión de un abogado.
 
 ---
 
@@ -200,34 +244,6 @@ Frase recomendada:
 
 ---
 
-# Artículo 294 — Multas a peatones y pasajeros
-
-## Regla cargada
-
-Las multas a peatones y pasajeros se impondrán utilizando el número de cédula de identidad y electoral.
-
-Estas multas serán registradas para fines de expedición de certificados de buena conducta, antecedentes penales u otros documentos oficiales.
-
-## Uso permitido
-
-El bot puede afirmar:
-
-- que las multas a peatones y pasajeros pueden registrarse usando la cédula;
-- que la Ley 63-17 indica que esas multas serán registradas para fines de expedición de certificados de buena conducta, antecedentes penales u otros documentos oficiales.
-
-## Limitación
-
-El bot no debe afirmar:
-
-- que toda multa de peatón genera automáticamente antecedente penal;
-- consecuencias prácticas específicas no cargadas;
-- bloqueo de trámites específicos no cargados;
-- procedimiento completo de pago o eliminación;
-- tiempo de permanencia del registro;
-- si puede impedir trabajo, viaje o renovación de documentos.
-
----
-
 # Integración con infracciones específicas
 
 Cuando el usuario pregunte por una multa específica, el bot debe combinar:
@@ -267,133 +283,39 @@ Usar:
 
 ---
 
-# Respuestas modelo
+# Regla de menor cuantía en pago voluntario
 
-## Pregunta: “¿Cuánto tiempo tengo para pagar una multa de tránsito?”
+Cuando una infracción tenga una sanción expresada en rango de salarios mínimos, y el usuario pregunte por pago voluntario, el bot puede explicar que el artículo 293 indica que se pagaría la menor cuantía del rango legal.
 
-✅ Respuesta rápida
+## Multa de 1 a 5 salarios mínimos
 
-La Ley 63-17 establece un plazo de treinta (30) días para pagar la multa o impugnarla.
+- Rango legal cargado: uno (1) a cinco (5) salarios mínimos.
+- Pago voluntario según artículo 293: menor cuantía del rango.
+- Menor cuantía: un (1) salario mínimo del sector público centralizado.
 
-⚖️ Ley que aplica
+Si se usa el valor preliminar de RD$10,000.00:
 
-Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial, artículo 295.
+> Tomando como referencia el monto de RD$10,000.00 pesos, el pago voluntario preliminar sería RD$10,000.00. Este cálculo está pendiente de verificación oficial vigente y no debe tomarse como monto oficial definitivo.
 
-🛡️ Qué te protege o favorece
+## Multa de 1 a 3 salarios mínimos
 
-Dentro de ese plazo puedes pagar la multa o impugnarla ante el tribunal competente mediante solicitud formal de revocación.
+- Rango legal cargado: uno (1) a tres (3) salarios mínimos.
+- Pago voluntario según artículo 293: menor cuantía del rango.
+- Menor cuantía: un (1) salario mínimo del sector público centralizado.
 
-⚠️ Qué no puedo afirmar todavía
+Si se usa el valor preliminar de RD$10,000.00:
 
-No puedo confirmar el tribunal específico, formularios, costos, plataforma exacta o pasos completos porque esos detalles no están cargados.
+> Tomando como referencia el monto de RD$10,000.00 pesos, el pago voluntario preliminar sería RD$10,000.00. Este cálculo está pendiente de verificación oficial vigente y no debe tomarse como monto oficial definitivo.
 
-📚 Fuente consultada
+## Multa de 5 a 10 salarios mínimos
 
-Ley o norma: Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial.  
-Artículo: 295.  
-Materia: tránsito / multas / plazo para pagar o impugnar.  
-Fuente oficial: DGII.  
-URL oficial: https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/63-17.pdf  
-Estado de vigencia: pendiente de verificación.
+- Rango legal cargado: cinco (5) a diez (10) salarios mínimos.
+- Pago voluntario según artículo 293: menor cuantía del rango.
+- Menor cuantía: cinco (5) salarios mínimos del sector público centralizado.
 
-📝 Esto es orientación informativa y no sustituye la revisión de un abogado.
+Si se usa el valor preliminar de RD$10,000.00:
 
----
-
-## Pregunta: “¿Puedo pagar una multa sin ir al tribunal?”
-
-✅ Respuesta rápida
-
-Sí. La Ley 63-17 permite el pago voluntario cuando el infractor decide aceptar la multa sin acudir al tribunal de tránsito.
-
-⚖️ Ley que aplica
-
-Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial, artículo 293.
-
-🛡️ Qué te protege o favorece
-
-En caso de pago voluntario, el importe a pagar será el de menor cuantía dentro del rango establecido para la sanción correspondiente.
-
-⚠️ Qué no puedo afirmar todavía
-
-No puedo confirmar bancos específicos, plataformas, enlaces de pago, oficinas, horarios ni procedimiento práctico completo porque esos detalles no están cargados.
-
-📚 Fuente consultada
-
-Ley o norma: Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial.  
-Artículo: 293.  
-Materia: tránsito / multas / pago voluntario.  
-Fuente oficial: DGII.  
-URL oficial: https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/63-17.pdf  
-Estado de vigencia: pendiente de verificación.
-
-📝 Esto es orientación informativa y no sustituye la revisión de un abogado.
-
----
-
-## Pregunta: “¿Qué pasa si no pago una multa de tránsito?”
-
-✅ Respuesta rápida
-
-La Ley 63-17 establece que si no pagas voluntariamente ni impugnas dentro del plazo establecido, puedes ser declarado en rebeldía.
-
-⚖️ Ley que aplica
-
-Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial, artículo 295.
-
-⚠️ Recargo
-
-Si el pago se realiza después de vencido el plazo sin haber solicitado revocación, la Ley 63-17 indica que habrá recargo conforme al Código Tributario y leyes complementarias.
-
-⚠️ Qué no puedo afirmar todavía
-
-No puedo calcular el recargo ni confirmar consecuencias adicionales como arresto, antecedentes, bloqueo de licencia, impedimento de salida u otras medidas porque esas reglas específicas no están cargadas.
-
-📚 Fuente consultada
-
-Ley o norma: Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial.  
-Artículos: 295 y 296.  
-Materia: tránsito / multas / rebeldía / recargo.  
-Fuente oficial: DGII.  
-URL oficial: https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/63-17.pdf  
-Estado de vigencia: pendiente de verificación.
-
-📝 Esto es orientación informativa y no sustituye la revisión de un abogado.
-
----
-
-## Pregunta: “Si acepto la multa, ¿cuánto pago?”
-
-✅ Respuesta rápida
-
-Si aceptas la multa y haces pago voluntario, la Ley 63-17 indica que el importe a pagar será el de menor cuantía dentro del rango establecido para la sanción correspondiente.
-
-⚖️ Ley que aplica
-
-Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial, artículo 293.
-
-💰 Cálculo preliminar
-
-Si la infracción tiene una sanción de uno (1) a cinco (5) salarios mínimos del sector público centralizado, la menor cuantía sería un (1) salario mínimo.
-
-Tomando como referencia el monto de RD$10,000.00 pesos, el cálculo preliminar sería RD$10,000.00.
-
-Ese cálculo está pendiente de verificación oficial vigente y no debe tomarse como monto oficial definitivo.
-
-⚠️ Qué no puedo afirmar todavía
-
-No puedo confirmar el monto oficial definitivo en pesos, plataformas, bancos, oficinas o pasos completos porque esos detalles no están cargados.
-
-📚 Fuente consultada
-
-Ley o norma: Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial.  
-Artículo: 293.  
-Materia: tránsito / multas / pago voluntario.  
-Fuente oficial: DGII.  
-URL oficial: https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/63-17.pdf  
-Estado de vigencia: pendiente de verificación.
-
-📝 Esto es orientación informativa y no sustituye la revisión de un abogado.
+> Tomando como referencia el monto de RD$10,000.00 pesos, el pago voluntario preliminar sería RD$50,000.00. Este cálculo está pendiente de verificación oficial vigente y no debe tomarse como monto oficial definitivo.
 
 ---
 
@@ -413,26 +335,6 @@ Usar esa frase solo una vez cuando sea necesario.
 
 ---
 
-# Fuentes pendientes para completar este módulo
-
-Pendiente cargar fuentes oficiales sobre:
-
-- portal oficial de consulta y pago de multas;
-- bancos o entidades autorizadas actualmente;
-- procedimiento práctico de pago;
-- tribunal competente por localidad;
-- formularios o requisitos de impugnación;
-- procedimiento completo de revocación;
-- cálculo de recargos conforme al Código Tributario;
-- consecuencias administrativas prácticas por rebeldía;
-- si se requiere abogado para impugnar;
-- si la persona puede representarse sola;
-- tabla oficial vigente de infracciones y multas.
-
-Para preguntas sobre no poder pagar una multa, usa Ley 63-17, artículos 293, 295 y 296: pago voluntario, plazo de 30 días para pagar o impugnar, rebeldía y recargo. No digas que no puedes afirmar plazos si el artículo 295 aplica.
-
----
-
 # Regla de estilo para citar artículos de multas
 
 Cuando el bot responda sobre multas de tránsito y el artículo específico esté cargado, debe usar lenguaje directo.
@@ -447,6 +349,7 @@ Debe usar mejor:
 
 - “La Ley 63-17 establece...”
 - “El artículo 293 establece...”
+- “El artículo 294 establece...”
 - “El artículo 295 establece...”
 - “El artículo 296 indica...”
 
@@ -462,12 +365,30 @@ Correcto:
 
 Incorrecto:
 
-> La referencia cargada menciona los artículos 293, 295 y 296.
+> No tengo base legal suficiente para afirmar si las multas a peatones se registran con la cédula.
 
 Correcto:
 
-> La Ley 63-17 contiene reglas aplicables en los artículos 293, 295 y 296 sobre pago voluntario, plazo para pagar o impugnar, rebeldía y recargos.
+> La Ley 63-17, artículo 294, establece que las multas a peatones y pasajeros se impondrán usando el número de cédula de identidad y electoral.
 
 Limitación:
 
 El bot no debe usar lenguaje directo para detalles que no estén cargados. Si faltan bancos, plataformas, formularios, tribunal específico, cálculo de recargos o procedimiento completo, debe decir que no tiene base legal suficiente para afirmarlo.
+
+---
+
+# Fuentes pendientes para completar este módulo
+
+Pendiente cargar fuentes oficiales sobre:
+
+- portal oficial de consulta y pago de multas;
+- bancos o entidades autorizadas actualmente;
+- procedimiento práctico de pago;
+- tribunal competente por localidad;
+- formularios o requisitos de impugnación;
+- procedimiento completo de revocación;
+- cálculo de recargos conforme al Código Tributario;
+- consecuencias administrativas prácticas por rebeldía;
+- si se requiere abogado para impugnar;
+- si la persona puede representarse sola;
+- tabla oficial vigente de infracciones y multas.

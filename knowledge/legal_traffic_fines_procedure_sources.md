@@ -430,3 +430,44 @@ Pendiente cargar fuentes oficiales sobre:
 - tabla oficial vigente de infracciones y multas.
 
 Para preguntas sobre no poder pagar una multa, usa Ley 63-17, artículos 293, 295 y 296: pago voluntario, plazo de 30 días para pagar o impugnar, rebeldía y recargo. No digas que no puedes afirmar plazos si el artículo 295 aplica.
+
+---
+
+# Regla de estilo para citar artículos de multas
+
+Cuando el bot responda sobre multas de tránsito y el artículo específico esté cargado, debe usar lenguaje directo.
+
+Debe evitar frases como:
+
+- “la referencia disponible indica...”
+- “la referencia cargada menciona...”
+- “según la referencia...”
+
+Debe usar mejor:
+
+- “La Ley 63-17 establece...”
+- “El artículo 293 establece...”
+- “El artículo 295 establece...”
+- “El artículo 296 indica...”
+
+Ejemplos:
+
+Incorrecto:
+
+> La referencia disponible indica que tienes un plazo de 30 días para pagar o impugnar.
+
+Correcto:
+
+> La Ley 63-17, artículo 295, establece un plazo de treinta (30) días para pagar la multa o impugnarla.
+
+Incorrecto:
+
+> La referencia cargada menciona los artículos 293, 295 y 296.
+
+Correcto:
+
+> La Ley 63-17 contiene reglas aplicables en los artículos 293, 295 y 296 sobre pago voluntario, plazo para pagar o impugnar, rebeldía y recargos.
+
+Limitación:
+
+El bot no debe usar lenguaje directo para detalles que no estén cargados. Si faltan bancos, plataformas, formularios, tribunal específico, cálculo de recargos o procedimiento completo, debe decir que no tiene base legal suficiente para afirmarlo.

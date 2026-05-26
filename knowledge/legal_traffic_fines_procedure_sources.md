@@ -428,3 +428,5 @@ Pendiente cargar fuentes oficiales sobre:
 - si se requiere abogado para impugnar;
 - si la persona puede representarse sola;
 - tabla oficial vigente de infracciones y multas.
+
+Para preguntas sobre no poder pagar una multa, usa Ley 63-17, artículos 293, 295 y 296: pago voluntario, plazo de 30 días para pagar o impugnar, rebeldía y recargo. No digas que no puedes afirmar plazos si el artículo 295 aplica.

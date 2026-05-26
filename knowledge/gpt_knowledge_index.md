@@ -743,10 +743,58 @@ Regla cargada:
 - Las multas a peatones y pasajeros se impondrán usando el número de cédula de identidad y electoral.
 - Estas multas serán registradas para fines de expedición de certificados de buena conducta, antecedentes penales u otros documentos oficiales.
 
+Regla obligatoria:
+
+- Si el usuario pregunta si una multa peatonal se registra con cédula, si DIGESETT usa la cédula, si una multa a peatón queda registrada, si afecta buena conducta, antecedentes penales u otros documentos oficiales, usar siempre Ley 63-17, artículo 294.
+- No usar artículo 135 para responder preguntas sobre registro con cédula. El artículo 135 aplica a semáforos peatonales, pero no es el artículo correcto para explicar cómo se registran multas a peatones o pasajeros.
+- No decir que falta base legal para confirmar si se usa la cédula, porque el artículo 294 sí está cargado.
+
+Uso permitido:
+
+- afirmar que las multas a peatones y pasajeros se imponen usando el número de cédula de identidad y electoral;
+- afirmar que esas multas se registran para fines de expedición de certificados de buena conducta, antecedentes penales u otros documentos oficiales.
+
 Limitación:
 
-- No inventar infracciones específicas de peatones o pasajeros si no están cargadas.
-- No explicar efectos registrales adicionales fuera de lo cargado.
+- No afirmar que toda multa de peatón genera automáticamente antecedente penal.
+- No inventar bloqueo de trámites.
+- No inventar impedimento para renovar licencia, pasaporte, matrícula u otro documento.
+- No inventar tiempo de permanencia del registro.
+- No inventar procedimiento completo de pago, eliminación, corrección o impugnación.
+- No inventar plataformas específicas ni consecuencias prácticas adicionales no cargadas.
+
+Respuesta esperada:
+
+✅ Respuesta rápida
+
+Sí. La Ley 63-17, artículo 294, establece que las multas a peatones y pasajeros se impondrán usando el número de cédula de identidad y electoral.
+
+⚖️ Ley que aplica
+
+La Ley 63-17, artículo 294, regula las multas a peatones y pasajeros.
+
+Ese artículo también indica que esas multas serán registradas para fines de expedición de certificados de buena conducta, antecedentes penales u otros documentos oficiales.
+
+⚠️ Qué no puedo afirmar todavía
+
+No puedo confirmar consecuencias prácticas adicionales como bloqueo de trámites, tiempo de permanencia del registro, eliminación automática, plataformas de pago o procedimiento completo porque esos detalles no están cargados.
+
+📌 Qué puedes hacer ahora
+
+- Conserva copia o foto del volante de multa.
+- Verifica que tus datos estén correctos.
+- Si entiendes que la multa fue incorrecta, conserva evidencia como fotos, videos, testigos, lugar, fecha y hora.
+- Si la multa te afecta para un trámite oficial, consulta un abogado especializado en tránsito o derecho administrativo.
+
+📚 Fuente consultada
+
+Ley o norma: Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial.
+Número: 63-17.
+Artículo: 294.
+Materia: tránsito / multas a peatones y pasajeros.
+Fuente oficial: DGII.
+URL oficial: https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/63-17.pdf
+Estado de vigencia: pendiente_de_verificacion.
 
 ---
 

@@ -1,0 +1,125 @@
+{
+  "version": "1.0.0",
+  "description": "Fast routing rules for common Tu Abogado RD legal questions.",
+  "routes": [
+    {
+      "id": "traffic_pedestrian_passenger_id_fines",
+      "topic": "transito",
+      "match": {
+        "all": [
+          "peat"
+        ],
+        "any": [
+          "cedula",
+          "cédula",
+          "identidad",
+          "registro",
+          "registran",
+          "buena conducta",
+          "antecedente",
+          "antecedentes",
+          "pasajero",
+          "pasajeros"
+        ]
+      },
+      "result": {
+        "law": "Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial",
+        "number": "63-17",
+        "article": "294",
+        "matter": "tránsito / multas a peatones y pasajeros",
+        "answer_basis": "Las multas a peatones y pasajeros se impondrán usando el número de cédula de identidad y electoral. Estas multas serán registradas para fines de expedición de certificados de buena conducta, antecedentes penales u otros documentos oficiales.",
+        "source_official": "DGII",
+        "source_url": "https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/63-17.pdf",
+        "status": "pendiente_de_verificacion"
+      }
+    },
+    {
+      "id": "traffic_voluntary_payment",
+      "topic": "transito",
+      "match": {
+        "all": [
+          "multa"
+        ],
+        "any": [
+          "pago voluntario",
+          "pagar voluntariamente",
+          "pagar sin ir",
+          "acepto",
+          "aceptar",
+          "tribunal",
+          "menor cuantia",
+          "menor cuantía"
+        ]
+      },
+      "result": {
+        "law": "Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial",
+        "number": "63-17",
+        "article": "293",
+        "matter": "tránsito / multas / pago voluntario",
+        "answer_basis": "El artículo 293 regula el pago voluntario de multas. Si el infractor acepta la multa sin acudir al tribunal de tránsito, puede pagarla directamente o a través de entidades bancarias autorizadas. En caso de pago voluntario, el importe será el de menor cuantía dentro del rango legal aplicable.",
+        "source_official": "DGII",
+        "source_url": "https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/63-17.pdf",
+        "status": "pendiente_de_verificacion"
+      }
+    },
+    {
+      "id": "traffic_fine_deadline",
+      "topic": "transito",
+      "match": {
+        "all": [
+          "multa"
+        ],
+        "any": [
+          "plazo",
+          "30 dias",
+          "30 días",
+          "impugnar",
+          "recurrir",
+          "reclamar",
+          "cuanto tiempo",
+          "cuánto tiempo"
+        ]
+      },
+      "result": {
+        "law": "Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial",
+        "number": "63-17",
+        "article": "295",
+        "matter": "tránsito / multas / plazo para pagar o impugnar",
+        "answer_basis": "El artículo 295 establece que la persona contra quien se levante un acta de infracción tiene treinta (30) días para pagar la multa o impugnarla.",
+        "source_official": "DGII",
+        "source_url": "https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/63-17.pdf",
+        "status": "pendiente_de_verificacion"
+      }
+    },
+    {
+      "id": "traffic_fine_late_payment_recargo",
+      "topic": "transito",
+      "match": {
+        "all": [
+          "multa"
+        ],
+        "any": [
+          "recargo",
+          "rebeldia",
+          "rebeldía",
+          "vencida",
+          "no pago",
+          "no pagar",
+          "no impugno",
+          "no impugnar",
+          "dejo vencer"
+        ]
+      },
+      "result": {
+        "law": "Ley 63-17 de Movilidad, Transporte Terrestre, Tránsito y Seguridad Vial",
+        "number": "63-17",
+        "article": "296",
+        "matter": "tránsito / multas / recargos",
+        "answer_basis": "El artículo 296 indica que los pagos realizados después de vencido el plazo, sin haber solicitado revocación, tendrán recargo conforme al Código Tributario y leyes complementarias.",
+        "source_official": "DGII",
+        "source_url": "https://dgii.gov.do/legislacion/leyesTributarias/Documents/Otras%20Leyes%20de%20Inter%C3%A9s/63-17.pdf",
+        "status": "pendiente_de_verificacion"
+      }
+    }
+  ]
+}

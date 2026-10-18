@@ -1,55 +1,30 @@
-# Leyes-RD-Bot
+# Tu Abogado RD — Leyes-RD-Bot
 
-Bot jurídico especializado en leyes de la República Dominicana.
+Asistente de orientación ciudadana sobre normas dominicanas.
 
-## Objetivo
+## Fase 1 activa: tránsito terrestre
+Consultas por texto sobre multas, licencias, accidentes y otras situaciones de tránsito respaldadas por fuentes verificadas. Las demás materias se conservan como archivos históricos del proyecto y no forman parte de la orientación activa de esta fase.
 
-Este proyecto tiene como objetivo crear una base legal dominicana organizada para alimentar un bot jurídico mediante búsqueda en fuentes verificables.
+## Configuración de la versión 1.1.1
+- Instrucciones: `prompts/custom_gpt_instructions.md`.
+- Base de tránsito: `knowledge/tu_abogado_rd_phase1_transito_v1_1_0.md`.
+- Actualidad fechada: `knowledge/transito_actualidad_2026_10_18.md`.
+- Contactos y límites de ayuda: `knowledge/legal_free_legal_aid_sources.md`.
+- Pruebas y resultados: `tests/test_queries_transito_phase1_v1_1_0.md`.
+- Pruebas de lenguaje cotidiano: `tests/test_plain_language_transito_v1_1_1.md`.
 
-El bot estará enfocado en orientación legal informativa sobre:
+El GPT publicado se configura por separado: GitHub no sincroniza automáticamente sus instrucciones ni su Knowledge. Los archivos antiguos no deben añadirse indiscriminadamente a la configuración activa si contienen reglas contradictorias.
 
-- Protección al consumidor
-- Derecho civil
-- Derecho penal
-- Derecho inmobiliario
-- Inquilinato y alquileres
-- Constitución dominicana
-- Procedimientos administrativos
-- Jurisprudencia relacionada
+## Reglas de respuesta
+La revisión 1.1.1 usa palabras cotidianas, explica cualquier término legal necesario y busca respuestas de 80–130 palabras (hasta 160 si hace falta). Las bases de conocimiento siguen siendo las de 1.1.0.
+Lenguaje sencillo, respuesta directa, hasta tres pasos útiles y fuente oficial. Diferenciar obligación de abogado, recomendación y requisito pendiente. Ofrecer ayuda gratuita según competencia y admisión, sin garantizar resultados.
 
-## Regla principal del bot
+Para actualidad, la búsqueda web debe estar habilitada y utilizarse cuando la respuesta dependa de noticias o condiciones actuales. El boletín no constituye monitoreo continuo; los avisos vencidos no se presentan como alertas de hoy.
 
-El bot no debe inventar leyes, artículos, plazos ni procedimientos.
+## Fuentes y antecedentes
+Los documentos por materia, PDF originales, configuración de procesamiento y registros históricos se conservan. Toda nueva fuente debe acreditar fecha, origen, vigencia y afectaciones. No inventar artículos, plazos, procedimientos, montos ni decisiones.
 
-Toda respuesta legal debe estar basada en documentos cargados en este repositorio o en fuentes oficiales verificadas.
+## Alcance futuro
+WhatsApp, notas de voz y otras materias se incorporarán por fases, después de validar la anterior.
 
-Si no existe fuente suficiente, el bot debe responder:
-
-> No tengo base legal suficiente en las fuentes cargadas para afirmarlo.
-
-## Alcance inicial
-
-La primera versión será para uso web y ChatGPT.
-
-No incluye todavía:
-
-- Aplicación móvil
-- WhatsApp
-- Telegram
-- Automatizaciones externas
-
-## Fuentes legales
-
-Las leyes serán organizadas por materia y cada documento debe incluir:
-
-- Nombre de la ley
-- Número de ley
-- Materia
-- Artículos
-- Fuente oficial
-- Fecha de revisión
-- Estado de vigencia pendiente de verificación
-
-## Advertencia
-
-Este bot ofrece orientación legal informativa y no sustituye la asesoría de un abogado habilitado en la República Dominicana.
+Orientación informativa; no sustituye la revisión profesional de un caso.

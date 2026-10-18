@@ -5,16 +5,18 @@ Asistente de orientación ciudadana sobre normas dominicanas.
 ## Fase 1 activa: tránsito terrestre
 Consultas por texto sobre multas, licencias, accidentes y otras situaciones de tránsito respaldadas por fuentes verificadas. Las demás materias se conservan como archivos históricos del proyecto y no forman parte de la orientación activa de esta fase.
 
-## Configuración de la versión 1.1.0
+## Configuración de la versión 1.1.1
 - Instrucciones: `prompts/custom_gpt_instructions.md`.
 - Base de tránsito: `knowledge/tu_abogado_rd_phase1_transito_v1_1_0.md`.
 - Actualidad fechada: `knowledge/transito_actualidad_2026_10_18.md`.
 - Contactos y límites de ayuda: `knowledge/legal_free_legal_aid_sources.md`.
 - Pruebas y resultados: `tests/test_queries_transito_phase1_v1_1_0.md`.
+- Pruebas de lenguaje cotidiano: `tests/test_plain_language_transito_v1_1_1.md`.
 
 El GPT publicado se configura por separado: GitHub no sincroniza automáticamente sus instrucciones ni su Knowledge. Los archivos antiguos no deben añadirse indiscriminadamente a la configuración activa si contienen reglas contradictorias.
 
 ## Reglas de respuesta
+La revisión 1.1.1 usa palabras cotidianas, explica cualquier término legal necesario y busca respuestas de 80–130 palabras (hasta 160 si hace falta). Las bases de conocimiento siguen siendo las de 1.1.0.
 Lenguaje sencillo, respuesta directa, hasta tres pasos útiles y fuente oficial. Diferenciar obligación de abogado, recomendación y requisito pendiente. Ofrecer ayuda gratuita según competencia y admisión, sin garantizar resultados.
 
 Para actualidad, la búsqueda web debe estar habilitada y utilizarse cuando la respuesta dependa de noticias o condiciones actuales. El boletín no constituye monitoreo continuo; los avisos vencidos no se presentan como alertas de hoy.
